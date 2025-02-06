@@ -9,7 +9,7 @@ import {
   useMemo,
 } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SystemStyleObject,
   chakra,
 } from "../../styled-system"
@@ -51,7 +51,7 @@ interface StackOptions {
   separator?: React.ReactElement
 }
 
-export interface StackProps extends HTMLChakraProps<"div", StackOptions> {}
+export interface StackProps extends HTMLAgniflowProps<"div", StackOptions> {}
 
 /**
  * Stacks help you easily create flexible and automatically distributed layouts

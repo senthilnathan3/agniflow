@@ -1,4 +1,4 @@
-import { For, Stack, Text, VStack } from "@chakra-ui/react"
+import { For, Stack, Text, VStack } from "@agniflow-ui/react"
 import { SegmentedControl } from "compositions/ui/segmented-control"
 
 export const SegmentedControlWithSizes = () => {

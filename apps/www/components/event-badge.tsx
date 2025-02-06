@@ -1,4 +1,4 @@
-import { HStack, Highlight, Stack, Text } from "@chakra-ui/react"
+import { HStack, Highlight, Stack, Text } from "@agniflow-ui/react"
 import { LuCalendar } from "react-icons/lu"
 import { LogoIcon } from "./logo"
 
@@ -20,7 +20,7 @@ export const EventBadge = () => {
           </HStack>
           <Text fontWeight="medium" lineHeight="1.3">
             <Highlight query="Meet-up" styles={{ px: "0.5", bg: "teal.muted" }}>
-              Come network with the Chakra Community ⚡️
+              Come network with the Agniflow Community ⚡️
             </Highlight>
           </Text>
           <HStack textStyle="sm" fontWeight="medium" color="teal.fg">

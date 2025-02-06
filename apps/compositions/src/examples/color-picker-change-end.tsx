@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, HStack, Stack, parseColor } from "@chakra-ui/react"
+import { Code, HStack, Stack, parseColor } from "@agniflow-ui/react"
 import {
   ColorPickerArea,
   ColorPickerContent,

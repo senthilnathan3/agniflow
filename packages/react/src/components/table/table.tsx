@@ -2,7 +2,7 @@
 
 import { forwardRef, useMemo } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type SystemStyleObject,
   type UnstyledProp,
@@ -31,7 +31,7 @@ export interface TableRootBaseProps
     UnstyledProp {}
 
 export interface TableRootProps
-  extends HTMLChakraProps<"table", TableRootBaseProps> {
+  extends HTMLAgniflowProps<"table", TableRootBaseProps> {
   /**
    * If `true`, the table will style its descendants with nested selectors
    */
@@ -76,7 +76,7 @@ export const TableRootPropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableRowProps extends HTMLChakraProps<"tr"> {}
+export interface TableRowProps extends HTMLAgniflowProps<"tr"> {}
 
 export const TableRow = withContext<HTMLTableRowElement, TableRowProps>(
   "tr",
@@ -85,7 +85,7 @@ export const TableRow = withContext<HTMLTableRowElement, TableRowProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableScrollAreaProps extends HTMLChakraProps<"div"> {}
+export interface TableScrollAreaProps extends HTMLAgniflowProps<"div"> {}
 
 export const TableScrollArea = chakra("div", {
   base: {
@@ -99,7 +99,7 @@ export const TableScrollArea = chakra("div", {
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableHeaderProps extends HTMLChakraProps<"thead"> {}
+export interface TableHeaderProps extends HTMLAgniflowProps<"thead"> {}
 
 export const TableHeader = withContext<
   HTMLTableSectionElement,
@@ -108,7 +108,7 @@ export const TableHeader = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableFooterProps extends HTMLChakraProps<"tfoot"> {}
+export interface TableFooterProps extends HTMLAgniflowProps<"tfoot"> {}
 
 export const TableFooter = withContext<
   HTMLTableSectionElement,
@@ -117,7 +117,7 @@ export const TableFooter = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableColumnHeaderProps extends HTMLChakraProps<"th"> {}
+export interface TableColumnHeaderProps extends HTMLAgniflowProps<"th"> {}
 
 export const TableColumnHeader = withContext<
   HTMLTableCellElement,
@@ -126,7 +126,7 @@ export const TableColumnHeader = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableCellProps extends HTMLChakraProps<"td"> {}
+export interface TableCellProps extends HTMLAgniflowProps<"td"> {}
 
 export const TableCell = withContext<HTMLTableCellElement, TableCellProps>(
   "td",
@@ -135,7 +135,7 @@ export const TableCell = withContext<HTMLTableCellElement, TableCellProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableCaptionProps extends HTMLChakraProps<"caption"> {}
+export interface TableCaptionProps extends HTMLAgniflowProps<"caption"> {}
 
 export const TableCaption = withContext<
   HTMLTableCaptionElement,
@@ -148,7 +148,7 @@ export const TableCaption = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableBodyProps extends HTMLChakraProps<"tbody"> {}
+export interface TableBodyProps extends HTMLAgniflowProps<"tbody"> {}
 
 export const TableBody = withContext<HTMLTableSectionElement, TableBodyProps>(
   "tbody",
@@ -157,7 +157,7 @@ export const TableBody = withContext<HTMLTableSectionElement, TableBodyProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableColumnGroupProps extends HTMLChakraProps<"colgroup"> {}
+export interface TableColumnGroupProps extends HTMLAgniflowProps<"colgroup"> {}
 
 export const TableColumnGroup = withContext<
   HTMLTableColElement,
@@ -166,7 +166,7 @@ export const TableColumnGroup = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TableColumnProps extends HTMLChakraProps<"col"> {}
+export interface TableColumnProps extends HTMLAgniflowProps<"col"> {}
 
 export const TableColumn = withContext<HTMLTableColElement, TableColumnProps>(
   "col",

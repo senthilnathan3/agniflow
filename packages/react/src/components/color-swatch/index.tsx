@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   chakra,
@@ -23,7 +23,7 @@ export interface ColorSwatchBaseProps
 }
 
 export interface ColorSwatchProps
-  extends Assign<HTMLChakraProps<"span">, ColorSwatchBaseProps> {}
+  extends Assign<HTMLAgniflowProps<"span">, ColorSwatchBaseProps> {}
 
 export const ColorSwatch = forwardRef<HTMLSpanElement, ColorSwatchProps>(
   function ColorSwatch(props, ref) {

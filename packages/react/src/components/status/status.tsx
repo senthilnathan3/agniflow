@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -25,7 +25,7 @@ export interface StatusRootBaseProps
     UnstyledProp {}
 
 export interface StatusRootProps
-  extends HTMLChakraProps<"div", StatusRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", StatusRootBaseProps> {}
 
 export const StatusRoot = withProvider<HTMLDivElement, StatusRootProps>(
   "div",
@@ -39,7 +39,7 @@ export const StatusPropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface StatusIndicatorProps extends HTMLChakraProps<"div"> {}
+export interface StatusIndicatorProps extends HTMLAgniflowProps<"div"> {}
 
 export const StatusIndicator = withContext<
   HTMLDivElement,

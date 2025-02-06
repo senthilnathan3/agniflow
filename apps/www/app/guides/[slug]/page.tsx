@@ -7,7 +7,7 @@ import {
   Heading,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { BreadcrumbLink, BreadcrumbRoot } from "compositions/ui/breadcrumb"
 import { Metadata } from "next"
 import Link from "next/link"

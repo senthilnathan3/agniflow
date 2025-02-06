@@ -2,7 +2,7 @@
 
 import { Field as ArkField } from "@ark-ui/react/field"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   createRecipeContext,
@@ -14,7 +14,8 @@ const { withContext, PropsProvider } = createRecipeContext({
 
 export interface InputBaseProps extends RecipeProps<"input">, UnstyledProp {}
 
-export interface InputProps extends HTMLChakraProps<"input", InputBaseProps> {}
+export interface InputProps
+  extends HTMLAgniflowProps<"input", InputBaseProps> {}
 
 export const Input = withContext<HTMLInputElement, InputProps>(ArkField.Input)
 

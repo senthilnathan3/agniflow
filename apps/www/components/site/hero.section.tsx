@@ -16,7 +16,7 @@ import {
   Span,
   Stack,
   Tabs,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuItem,
@@ -32,8 +32,9 @@ import { LuPartyPopper, LuTerminal } from "react-icons/lu"
 
 const tabsData = [
   {
-    label: "Chakra",
-    content: "Chakra UI is a component library for building web applications.",
+    label: "Agniflow",
+    content:
+      "Agniflow UI is a component library for building web applications.",
   },
   {
     label: "Ark",
@@ -149,13 +150,13 @@ export const HeroSection = () => (
         <Annoucement alignSelf="flex-start" asChild>
           <Link href="/blog/00-announcing-v3">
             <LuPartyPopper />
-            Celebrating the launch of Chakra 3.0
+            Celebrating the launch of Agniflow 3.0
             <HiArrowRight />
           </Link>
         </Annoucement>
         <Stack gap="5" pr="4" maxW="3xl" px="1.5">
           <HighlightHeading as="h1" query="with speed">
-            Chakra UI is a component system for building products with speed
+            Agniflow UI is a component system for building products with speed
           </HighlightHeading>
           <Subheading>
             Accessible React components for building high-quality web apps and
@@ -187,7 +188,7 @@ export const HeroSection = () => (
             gap="2.5"
           >
             <LuTerminal />
-            npm i @chakra-ui/react
+            npm i @agniflow-ui/react
           </Center>
         </Stack>
       </Stack>

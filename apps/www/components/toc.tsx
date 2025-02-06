@@ -1,7 +1,7 @@
 "use client"
 
 import { scrollIntoView } from "@/app/docs/scroll-into-view"
-import { Box, Stack, Text, chakra } from "@chakra-ui/react"
+import { Box, Stack, Text, agniflow } from "@agniflow-ui/react"
 import Link from "next/link"
 import { useEffect } from "react"
 import { useScrollSpy } from "../lib/use-scroll-spy"
@@ -16,7 +16,7 @@ interface Props {
   items: TocItem[]
 }
 
-const TocLink = chakra(Link, {
+const TocLink = agniflow(Link, {
   base: {
     fontSize: "sm",
     color: "fg.muted",

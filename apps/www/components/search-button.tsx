@@ -1,4 +1,4 @@
-import { Button, ButtonProps, IconButton, Kbd, Span } from "@chakra-ui/react"
+import { Button, ButtonProps, IconButton, Kbd, Span } from "@agniflow-ui/react"
 import { forwardRef } from "react"
 import { LuSearch } from "react-icons/lu"
 

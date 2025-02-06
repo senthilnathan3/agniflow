@@ -1,4 +1,4 @@
-import { For, HStack, Stack, Text } from "@chakra-ui/react"
+import { For, HStack, Stack, Text } from "@agniflow-ui/react"
 import { Blockquote } from "compositions/ui/blockquote"
 
 export const BlockquoteWithJustify = () => {

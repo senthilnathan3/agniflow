@@ -1,4 +1,4 @@
-import { Clipboard, IconButton } from "@chakra-ui/react"
+import { Clipboard, IconButton } from "@agniflow-ui/react"
 import { LuClipboard } from "react-icons/lu"
 import { LuCheck } from "react-icons/lu"
 

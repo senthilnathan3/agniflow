@@ -1,13 +1,13 @@
 "use client"
 
-import { type HTMLChakraProps, chakra } from "@chakra-ui/react"
+import { type HTMLAgniflowProps, agniflow } from "@agniflow-ui/react"
 import { useId } from "react"
 
-export const Logo = (props: HTMLChakraProps<"svg">) => {
+export const Logo = (props: HTMLAgniflowProps<"svg">) => {
   const id = useId()
 
   return (
-    <chakra.svg height="9" viewBox="0 0 128 36" fill="none" {...props}>
+    <agniflow.svg height="9" viewBox="0 0 128 36" fill="none" {...props}>
       <path
         d="M34.5655 17.9244L28.0585 16.7206L27.3139 18.0099L25.4813 21.1828L20.7231 29.4212C20.5147 29.7819 19.9653 29.6335 19.9653 29.2166V22.2928V21.5412C19.9653 21.1509 19.6901 20.8153 19.3087 20.7404L11.8954 19.2841L5.25929 18.0708C5.26937 18.4155 5.35079 18.7586 5.50582 19.0761L10.9828 28.5803C11.7469 29.9063 13.1577 30.7221 14.6835 30.7201L25.1868 30.7061C26.7118 30.7041 28.1198 29.8854 28.8808 28.5585L34.2409 19.2113C34.4694 18.8138 34.5768 18.3679 34.5655 17.9244Z"
         fill={`url(#paint0_linear_${id})`}
@@ -64,15 +64,15 @@ export const Logo = (props: HTMLChakraProps<"svg">) => {
           <stop offset="1" stopColor="#00DEAE" />
         </linearGradient>
       </defs>
-    </chakra.svg>
+    </agniflow.svg>
   )
 }
 
-export const LogoIcon = (props: HTMLChakraProps<"svg">) => {
+export const LogoIcon = (props: HTMLAgniflowProps<"svg">) => {
   const id = useId()
 
   return (
-    <chakra.svg height="8" viewBox="0 0 30 26" fill="none" {...props}>
+    <agniflow.svg height="8" viewBox="0 0 30 26" fill="none" {...props}>
       <path
         d="M29.5655 12.9244L23.0585 11.7206L22.3139 13.0099L20.4813 16.1828L15.7231 24.4212C15.5147 24.7819 14.9653 24.6335 14.9653 24.2166V17.2928V16.5412C14.9653 16.1509 14.6901 15.8153 14.3087 15.7404L6.89538 14.2841L0.259293 13.0708C0.269371 13.4155 0.350786 13.7586 0.505816 14.0761L5.98276 23.5803C6.74691 24.9063 8.15775 25.7221 9.68349 25.7201L20.1868 25.7061C21.7118 25.7041 23.1198 24.8854 23.8808 23.5585L29.2409 14.2113C29.4694 13.8138 29.5768 13.3679 29.5655 12.9244Z"
         fill={`url(#paint0_linear_${id})`}
@@ -105,13 +105,13 @@ export const LogoIcon = (props: HTMLChakraProps<"svg">) => {
           <stop offset="1" stopColor="#00DEAE" />
         </linearGradient>
       </defs>
-    </chakra.svg>
+    </agniflow.svg>
   )
 }
 
-export const LogoBlitzIcon = (props: HTMLChakraProps<"svg">) => {
+export const LogoBlitzIcon = (props: HTMLAgniflowProps<"svg">) => {
   return (
-    <chakra.svg
+    <agniflow.svg
       width="auto"
       height="8"
       viewBox="0 0 26 36"
@@ -122,6 +122,6 @@ export const LogoBlitzIcon = (props: HTMLChakraProps<"svg">) => {
         d="M0.439466 19.4621L19.1409 0.368881C19.4902 0.0121879 20.0525 0.446251 19.8166 0.890609L12.8561 14.0056C12.7007 14.298 12.9067 14.6549 13.2308 14.6549H25.2597C25.6473 14.6549 25.8343 15.1428 25.551 15.4147L4.47199 35.639C4.09405 36.0016 3.53148 35.4906 3.83492 35.0604L13.8133 20.9092C14.0178 20.6191 13.8163 20.2126 13.4676 20.2126H0.74036C0.359231 20.2126 0.169039 19.7382 0.439466 19.4621Z"
         fill="white"
       />
-    </chakra.svg>
+    </agniflow.svg>
   )
 }

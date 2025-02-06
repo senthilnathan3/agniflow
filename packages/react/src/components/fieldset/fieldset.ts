@@ -4,7 +4,7 @@ import type { Assign } from "@ark-ui/react"
 import { ark } from "@ark-ui/react/factory"
 import { Fieldset } from "@ark-ui/react/fieldset"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   createSlotRecipeContext,
 } from "../../styled-system"
@@ -17,7 +17,7 @@ interface FieldsetRootBaseProps
   extends Assign<Fieldset.RootBaseProps, SlotRecipeProps<"fieldset">> {}
 
 export interface FieldsetRootProps
-  extends HTMLChakraProps<"fieldset", FieldsetRootBaseProps> {}
+  extends HTMLAgniflowProps<"fieldset", FieldsetRootBaseProps> {}
 
 export const FieldsetRoot = withProvider<
   HTMLFieldSetElement,
@@ -25,7 +25,7 @@ export const FieldsetRoot = withProvider<
 >(Fieldset.Root, "root")
 
 export interface FieldsetErrorTextProps
-  extends HTMLChakraProps<"span", Fieldset.ErrorTextBaseProps> {}
+  extends HTMLAgniflowProps<"span", Fieldset.ErrorTextBaseProps> {}
 
 export const FieldsetErrorText = withContext<
   HTMLSpanElement,
@@ -33,7 +33,7 @@ export const FieldsetErrorText = withContext<
 >(Fieldset.ErrorText, "errorText")
 
 export interface FieldsetHelperTextProps
-  extends HTMLChakraProps<"span", Fieldset.HelperTextBaseProps> {}
+  extends HTMLAgniflowProps<"span", Fieldset.HelperTextBaseProps> {}
 
 export const FieldsetHelperText = withContext<
   HTMLSpanElement,
@@ -41,14 +41,14 @@ export const FieldsetHelperText = withContext<
 >(Fieldset.HelperText, "helperText")
 
 export interface FieldsetLegendProps
-  extends HTMLChakraProps<"legend", Fieldset.LegendBaseProps> {}
+  extends HTMLAgniflowProps<"legend", Fieldset.LegendBaseProps> {}
 
 export const FieldsetLegend = withContext<
   HTMLLegendElement,
   FieldsetLegendProps
 >(Fieldset.Legend, "legend")
 
-export interface FieldsetContentProps extends HTMLChakraProps<"div"> {}
+export interface FieldsetContentProps extends HTMLAgniflowProps<"div"> {}
 
 export const FieldsetContent = withContext<
   HTMLDivElement,

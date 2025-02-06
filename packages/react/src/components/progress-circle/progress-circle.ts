@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { Progress as ArkProgress } from "@ark-ui/react/progress"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -30,7 +30,7 @@ export interface ProgressCircleRootProviderBaseProps
     UnstyledProp {}
 
 export interface ProgressCircleRootProviderProps
-  extends HTMLChakraProps<"div", ProgressCircleRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", ProgressCircleRootProviderBaseProps> {}
 
 export const ProgressCircleRootProvider = withProvider<
   HTMLDivElement,
@@ -44,7 +44,7 @@ export interface ProgressCircleRootBaseProps
     UnstyledProp {}
 
 export interface ProgressCircleRootProps
-  extends HTMLChakraProps<"div", ProgressCircleRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", ProgressCircleRootBaseProps> {}
 
 export const ProgressCircleRoot = withProvider<
   HTMLDivElement,
@@ -59,7 +59,7 @@ export const ProgressCirclePropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressCircleLabelProps
-  extends HTMLChakraProps<"div", ArkProgress.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkProgress.LabelBaseProps> {}
 
 export const ProgressCircleLabel = withContext<
   HTMLDivElement,
@@ -69,7 +69,7 @@ export const ProgressCircleLabel = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressCircleCircleProps
-  extends HTMLChakraProps<"svg", ArkProgress.CircleBaseProps> {}
+  extends HTMLAgniflowProps<"svg", ArkProgress.CircleBaseProps> {}
 
 export const ProgressCircleCircle = withContext<
   SVGSVGElement,
@@ -79,7 +79,7 @@ export const ProgressCircleCircle = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressCircleTrackProps
-  extends HTMLChakraProps<"circle", ArkProgress.TrackBaseProps> {}
+  extends HTMLAgniflowProps<"circle", ArkProgress.TrackBaseProps> {}
 
 export const ProgressCircleTrack = withContext<
   SVGCircleElement,
@@ -89,7 +89,7 @@ export const ProgressCircleTrack = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressCircleRangeProps
-  extends HTMLChakraProps<"circle", ArkProgress.RangeBaseProps> {}
+  extends HTMLAgniflowProps<"circle", ArkProgress.RangeBaseProps> {}
 
 export const ProgressCircleRange = withContext<
   SVGCircleElement,
@@ -99,7 +99,7 @@ export const ProgressCircleRange = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressCircleValueTextProps
-  extends HTMLChakraProps<"div", ArkProgress.ValueTextBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkProgress.ValueTextBaseProps> {}
 
 export const ProgressCircleValueText = withContext<
   HTMLDivElement,

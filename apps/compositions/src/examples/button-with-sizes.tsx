@@ -1,4 +1,4 @@
-import { Button, HStack } from "@chakra-ui/react"
+import { Button, HStack } from "@agniflow-ui/react"
 
 export const ButtonWithSizes = () => {
   return (

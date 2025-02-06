@@ -1,4 +1,4 @@
-import { For, Stack } from "@chakra-ui/react"
+import { For, Stack } from "@agniflow-ui/react"
 import { NumberInputField, NumberInputRoot } from "compositions/ui/number-input"
 
 export const NumberInputWithSizes = () => {

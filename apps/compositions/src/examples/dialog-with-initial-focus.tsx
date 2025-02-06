@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Input, Stack } from "@chakra-ui/react"
+import { Button, Input, Stack } from "@agniflow-ui/react"
 import {
   DialogActionTrigger,
   DialogBody,

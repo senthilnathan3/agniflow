@@ -1,4 +1,4 @@
-import { Heading, Icon, Stack } from "@chakra-ui/react"
+import { Heading, Icon, Stack } from "@agniflow-ui/react"
 import {
   AccordionItem,
   AccordionItemContent,

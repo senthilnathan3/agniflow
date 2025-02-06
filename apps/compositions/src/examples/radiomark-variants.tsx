@@ -1,4 +1,4 @@
-import { For, Radiomark, Stack } from "@chakra-ui/react"
+import { For, Radiomark, Stack } from "@agniflow-ui/react"
 
 export const RadiomarkVariants = () => {
   return (

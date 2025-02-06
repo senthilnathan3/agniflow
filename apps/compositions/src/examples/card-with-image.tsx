@@ -1,4 +1,4 @@
-import { Button, Card, Image, Text } from "@chakra-ui/react"
+import { Button, Card, Image, Text } from "@agniflow-ui/react"
 
 export const CardWithImage = () => {
   return (

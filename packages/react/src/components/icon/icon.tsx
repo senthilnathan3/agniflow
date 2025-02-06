@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   chakra,
   createRecipeContext,
@@ -12,7 +12,7 @@ import { cx } from "../../utils"
 const { useRecipeResult, PropsProvider } = createRecipeContext({ key: "icon" })
 
 export interface IconProps
-  extends HTMLChakraProps<"svg">,
+  extends HTMLAgniflowProps<"svg">,
     RecipeProps<"icon"> {}
 
 /**

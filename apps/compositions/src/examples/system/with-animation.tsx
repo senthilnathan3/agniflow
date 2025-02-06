@@ -1,4 +1,4 @@
-import { Square } from "@chakra-ui/react"
+import { Square } from "@agniflow-ui/react"
 
 export const SystemWithAnimation = () => {
   return (

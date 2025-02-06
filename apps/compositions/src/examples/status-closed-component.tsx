@@ -1,10 +1,10 @@
-import type { ColorPalette } from "@chakra-ui/react"
-import { Status as ChakraStatus } from "@chakra-ui/react"
+import type { ColorPalette } from "@agniflow-ui/react"
+import { Status as AgniflowStatus } from "@agniflow-ui/react"
 import * as React from "react"
 
 type StatusValue = "success" | "error" | "warning" | "info"
 
-export interface StatusProps extends ChakraStatus.RootProps {
+export interface StatusProps extends AgniflowStatus.RootProps {
   value?: StatusValue
 }
 
@@ -20,10 +20,10 @@ export const Status = React.forwardRef<HTMLDivElement, StatusProps>(
     const { children, value = "info", ...rest } = props
     const colorPalette = rest.colorPalette ?? statusMap[value]
     return (
-      <ChakraStatus.Root ref={ref} {...rest} colorPalette={colorPalette}>
-        <ChakraStatus.Indicator />
+      <AgniflowStatus.Root ref={ref} {...rest} colorPalette={colorPalette}>
+        <AgniflowStatus.Indicator />
         {children}
-      </ChakraStatus.Root>
+      </AgniflowStatus.Root>
     )
   },
 )

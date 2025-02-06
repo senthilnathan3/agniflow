@@ -1,8 +1,13 @@
-import { Badge, Stat as ChakraStat, FormatNumber, Show } from "@chakra-ui/react"
+import {
+  Stat as AgniflowStat,
+  Badge,
+  FormatNumber,
+  Show,
+} from "@agniflow-ui/react"
 import { InfoTip } from "compositions/ui/toggle-tip"
 import * as React from "react"
 
-interface StatProps extends ChakraStat.RootProps {
+interface StatProps extends AgniflowStat.RootProps {
   label?: React.ReactNode
   value?: number
   info?: React.ReactNode
@@ -16,23 +21,23 @@ export const Stat = React.forwardRef<HTMLDivElement, StatProps>(
     const { label, value, valueText, change, info, formatOptions, ...rest } =
       props
     return (
-      <ChakraStat.Root {...rest}>
+      <AgniflowStat.Root {...rest}>
         {label && (
-          <ChakraStat.Label>
+          <AgniflowStat.Label>
             {label}
             {info && <InfoTip>{info}</InfoTip>}
-          </ChakraStat.Label>
+          </AgniflowStat.Label>
         )}
-        <ChakraStat.ValueText {...rest} ref={ref}>
+        <AgniflowStat.ValueText {...rest} ref={ref}>
           {valueText ||
             (value != null && formatOptions && (
               <FormatNumber value={value} {...formatOptions} />
             ))}
-        </ChakraStat.ValueText>
+        </AgniflowStat.ValueText>
         {change != null && (
           <Badge colorPalette={change > 0 ? "green" : "red"} gap="0">
-            <Show when={change > 0} fallback={<ChakraStat.DownIndicator />}>
-              <ChakraStat.UpIndicator />
+            <Show when={change > 0} fallback={<AgniflowStat.DownIndicator />}>
+              <AgniflowStat.UpIndicator />
             </Show>
             <FormatNumber
               value={Math.abs(change)}
@@ -41,7 +46,7 @@ export const Stat = React.forwardRef<HTMLDivElement, StatProps>(
             />
           </Badge>
         )}
-      </ChakraStat.Root>
+      </AgniflowStat.Root>
     )
   },
 )

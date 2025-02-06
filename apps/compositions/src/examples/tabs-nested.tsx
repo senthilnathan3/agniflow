@@ -1,4 +1,4 @@
-import { Heading, Input, Tabs, Text } from "@chakra-ui/react"
+import { Heading, Input, Tabs, Text } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 
 export const TabsNested = () => {

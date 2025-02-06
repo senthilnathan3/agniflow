@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react"
+import { Box } from "@agniflow-ui/react"
 import { Checkbox } from "compositions/ui/checkbox"
 
 export const CheckboxWithDescription = () => {

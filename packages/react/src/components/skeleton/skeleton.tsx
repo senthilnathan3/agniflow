@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   createRecipeContext,
@@ -12,7 +12,7 @@ const { withContext, PropsProvider } = createRecipeContext({
 })
 
 export interface SkeletonProps
-  extends HTMLChakraProps<"div">,
+  extends HTMLAgniflowProps<"div">,
     RecipeProps<"skeleton">,
     UnstyledProp {}
 

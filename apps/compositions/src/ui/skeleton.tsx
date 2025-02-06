@@ -1,11 +1,11 @@
 import type {
-  SkeletonProps as ChakraSkeletonProps,
+  SkeletonProps as AgniflowSkeletonProps,
   CircleProps,
-} from "@chakra-ui/react"
-import { Skeleton as ChakraSkeleton, Circle, Stack } from "@chakra-ui/react"
+} from "@agniflow-ui/react"
+import { Skeleton as AgniflowSkeleton, Circle, Stack } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface SkeletonCircleProps extends ChakraSkeletonProps {
+export interface SkeletonCircleProps extends AgniflowSkeletonProps {
   size?: CircleProps["size"]
 }
 
@@ -16,12 +16,12 @@ export const SkeletonCircle = React.forwardRef<
   const { size, ...rest } = props
   return (
     <Circle size={size} asChild ref={ref}>
-      <ChakraSkeleton {...rest} />
+      <AgniflowSkeleton {...rest} />
     </Circle>
   )
 })
 
-export interface SkeletonTextProps extends ChakraSkeletonProps {
+export interface SkeletonTextProps extends AgniflowSkeletonProps {
   noOfLines?: number
 }
 
@@ -31,7 +31,7 @@ export const SkeletonText = React.forwardRef<HTMLDivElement, SkeletonTextProps>(
     return (
       <Stack gap={gap} width="full" ref={ref}>
         {Array.from({ length: noOfLines }).map((_, index) => (
-          <ChakraSkeleton
+          <AgniflowSkeleton
             height="4"
             key={index}
             {...props}
@@ -44,4 +44,4 @@ export const SkeletonText = React.forwardRef<HTMLDivElement, SkeletonTextProps>(
   },
 )
 
-export const Skeleton = ChakraSkeleton
+export const Skeleton = AgniflowSkeleton

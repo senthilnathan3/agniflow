@@ -1,4 +1,4 @@
-import { CloseButton, For, HStack } from "@chakra-ui/react"
+import { CloseButton, For, HStack } from "@agniflow-ui/react"
 
 export const CloseButtonWithSizes = () => {
   return (

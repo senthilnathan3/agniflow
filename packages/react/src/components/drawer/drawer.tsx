@@ -4,7 +4,7 @@ import type { Assign } from "@ark-ui/react"
 import { Dialog as ArkDialog, useDialogContext } from "@ark-ui/react/dialog"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -61,7 +61,7 @@ export const DrawerRootPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface DrawerTriggerProps
-  extends HTMLChakraProps<"button", ArkDialog.TriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkDialog.TriggerBaseProps> {}
 
 export const DrawerTrigger = withContext<HTMLButtonElement, DrawerTriggerProps>(
   ArkDialog.Trigger,
@@ -72,7 +72,7 @@ export const DrawerTrigger = withContext<HTMLButtonElement, DrawerTriggerProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface DrawerPositionerProps
-  extends HTMLChakraProps<"div", ArkDialog.PositionerBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkDialog.PositionerBaseProps> {}
 
 export const DrawerPositioner = withContext<
   HTMLDivElement,
@@ -82,7 +82,7 @@ export const DrawerPositioner = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface DrawerContentProps
-  extends HTMLChakraProps<"section", ArkDialog.ContentBaseProps> {}
+  extends HTMLAgniflowProps<"section", ArkDialog.ContentBaseProps> {}
 
 export const DrawerContent = withContext<HTMLDivElement, DrawerContentProps>(
   ArkDialog.Content,
@@ -93,7 +93,7 @@ export const DrawerContent = withContext<HTMLDivElement, DrawerContentProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface DrawerDescriptionProps
-  extends HTMLChakraProps<"p", ArkDialog.DescriptionBaseProps> {}
+  extends HTMLAgniflowProps<"p", ArkDialog.DescriptionBaseProps> {}
 
 export const DrawerDescription = withContext<
   HTMLDivElement,
@@ -103,7 +103,7 @@ export const DrawerDescription = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface DrawerTitleProps
-  extends HTMLChakraProps<"h2", ArkDialog.TitleBaseProps> {}
+  extends HTMLAgniflowProps<"h2", ArkDialog.TitleBaseProps> {}
 
 export const DrawerTitle = withContext<HTMLDivElement, DrawerTitleProps>(
   ArkDialog.Title,
@@ -114,7 +114,7 @@ export const DrawerTitle = withContext<HTMLDivElement, DrawerTitleProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface DrawerCloseTriggerProps
-  extends HTMLChakraProps<"button", ArkDialog.CloseTriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkDialog.CloseTriggerBaseProps> {}
 
 export const DrawerCloseTrigger = withContext<
   HTMLButtonElement,
@@ -123,7 +123,7 @@ export const DrawerCloseTrigger = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface DrawerActionTriggerProps extends HTMLChakraProps<"button"> {}
+export interface DrawerActionTriggerProps extends HTMLAgniflowProps<"button"> {}
 
 export const DrawerActionTrigger = forwardRef<
   HTMLButtonElement,
@@ -138,7 +138,7 @@ export const DrawerActionTrigger = forwardRef<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface DrawerBackdropProps
-  extends HTMLChakraProps<"div", ArkDialog.BackdropBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkDialog.BackdropBaseProps> {}
 
 export const DrawerBackdrop = withContext<HTMLDivElement, DrawerBackdropProps>(
   ArkDialog.Backdrop,
@@ -148,7 +148,7 @@ export const DrawerBackdrop = withContext<HTMLDivElement, DrawerBackdropProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface DrawerBodyProps extends HTMLChakraProps<"div"> {}
+export interface DrawerBodyProps extends HTMLAgniflowProps<"div"> {}
 
 export const DrawerBody = withContext<HTMLDivElement, DrawerBodyProps>(
   "div",
@@ -157,7 +157,7 @@ export const DrawerBody = withContext<HTMLDivElement, DrawerBodyProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface DrawerFooterProps extends HTMLChakraProps<"footer"> {}
+export interface DrawerFooterProps extends HTMLAgniflowProps<"footer"> {}
 
 export const DrawerFooter = withContext<HTMLDivElement, DrawerFooterProps>(
   "div",
@@ -166,7 +166,7 @@ export const DrawerFooter = withContext<HTMLDivElement, DrawerFooterProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface DrawerHeaderProps extends HTMLChakraProps<"div"> {}
+export interface DrawerHeaderProps extends HTMLAgniflowProps<"div"> {}
 
 export const DrawerHeader = withContext<HTMLDivElement, DrawerHeaderProps>(
   "div",

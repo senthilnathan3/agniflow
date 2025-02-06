@@ -1,6 +1,6 @@
 "use client"
 
-import { QrCode, Stack } from "@chakra-ui/react"
+import { QrCode, Stack } from "@agniflow-ui/react"
 import { SegmentedControl } from "compositions/ui/segmented-control"
 import { useState } from "react"
 

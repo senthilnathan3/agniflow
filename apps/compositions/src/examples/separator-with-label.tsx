@@ -1,4 +1,4 @@
-import { HStack, Separator, Stack, Text } from "@chakra-ui/react"
+import { HStack, Separator, Stack, Text } from "@agniflow-ui/react"
 
 export const SeparatorWithLabel = () => {
   return (

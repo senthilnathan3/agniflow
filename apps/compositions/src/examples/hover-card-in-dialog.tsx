@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Link, Stack, Text } from "@chakra-ui/react"
+import { Button, Link, Stack, Text } from "@agniflow-ui/react"
 import {
   DialogBackdrop,
   DialogBody,
@@ -36,7 +36,7 @@ export const HoverCardInDialog = () => {
         <DialogBody>
           <HoverCardRoot size="sm">
             <HoverCardTrigger asChild>
-              <Link href="#">@chakra_ui</Link>
+              <Link href="#">@agniflow_ui</Link>
             </HoverCardTrigger>
             <HoverCardContent>
               <HoverCardArrow />
@@ -44,7 +44,7 @@ export const HoverCardInDialog = () => {
                 <Stack gap="3">
                   <Stack gap="1">
                     <Text textStyle="sm" fontWeight="semibold">
-                      Chakra UI
+                      Agniflow UI
                     </Text>
                     <Text textStyle="sm" color="fg.muted">
                       The most powerful toolkit for building modern web

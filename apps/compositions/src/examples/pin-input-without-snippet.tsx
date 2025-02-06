@@ -1,4 +1,4 @@
-import { PinInput } from "@chakra-ui/react"
+import { PinInput } from "@agniflow-ui/react"
 
 export const PinInputWithoutSnippet = () => {
   return (

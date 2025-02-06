@@ -4,7 +4,7 @@ import { Fragment, forwardRef } from "react"
 import { createContext } from "../../create-context"
 import {
   type ConditionalValue,
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -41,7 +41,7 @@ export interface AlertRootBaseProps
     UnstyledProp {}
 
 export interface AlertRootProps
-  extends HTMLChakraProps<"div", AlertRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", AlertRootBaseProps> {}
 
 export const AlertRoot = withProvider<HTMLDivElement, AlertRootProps>(
   "div",
@@ -66,7 +66,7 @@ export const AlertPropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface AlertTitleProps extends HTMLChakraProps<"div"> {}
+export interface AlertTitleProps extends HTMLAgniflowProps<"div"> {}
 
 export const AlertTitle = withContext<HTMLDivElement, AlertTitleProps>(
   "div",
@@ -75,7 +75,7 @@ export const AlertTitle = withContext<HTMLDivElement, AlertTitleProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface AlertDescriptionProps extends HTMLChakraProps<"div"> {}
+export interface AlertDescriptionProps extends HTMLAgniflowProps<"div"> {}
 
 export const AlertDescription = withContext<
   HTMLDivElement,
@@ -84,7 +84,7 @@ export const AlertDescription = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface AlertContentProps extends HTMLChakraProps<"div"> {}
+export interface AlertContentProps extends HTMLAgniflowProps<"div"> {}
 
 export const AlertContent = withContext<HTMLDivElement, AlertContentProps>(
   "div",
@@ -101,7 +101,7 @@ const iconMap = {
   neutral: InfoIcon,
 }
 
-export interface AlertIndicatorProps extends HTMLChakraProps<"span"> {}
+export interface AlertIndicatorProps extends HTMLAgniflowProps<"span"> {}
 
 export const AlertIndicator = forwardRef<SVGSVGElement, AlertIndicatorProps>(
   function AlertIndicator(props, ref) {

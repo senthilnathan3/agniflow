@@ -5,7 +5,7 @@ export async function getDiscordMembers() {
 
   try {
     const data = await fetch(
-      "https://discord.com/api/v9/invites/chakra-ui?with_counts=true",
+      "https://discord.com/api/v9/invites/agniflow-ui?with_counts=true",
     ).then((res) => res.json())
 
     count = data.approximate_member_count

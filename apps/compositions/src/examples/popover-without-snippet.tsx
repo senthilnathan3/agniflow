@@ -1,4 +1,4 @@
-import { Button, Input, Popover, Portal, Text } from "@chakra-ui/react"
+import { Button, Input, Popover, Portal, Text } from "@agniflow-ui/react"
 
 export const PopoverWithoutSnippet = () => {
   return (

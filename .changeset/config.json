@@ -2,10 +2,10 @@
   "$schema": "https://unpkg.com/@changesets/config@1.4.0/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "chakra-ui/chakra-ui" }
+    { "repo": "agniflow-ui/agniflow-ui" }
   ],
   "commit": false,
-  "fixed": [["@chakra-ui/**"]],
+  "fixed": [["@agniflow-ui/**"]],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
@@ -13,16 +13,8 @@
     "onlyUpdatePeerDependentsWhenOutOfRange": true
   },
   "ignore": [
-    "next-app",
-    "next-pages",
     "vite-ts",
-    "vite-jsx",
-    "remix-ts",
-    "panda-preset",
-    "storybook-ts",
-    "shadow-dom",
-    "sandbox-iframe",
-    "@chakra-ui/www",
-    "@chakra-ui/compositions"
+    "@agniflow-ui/www",
+    "@agniflow-ui/compositions"
   ]
 }

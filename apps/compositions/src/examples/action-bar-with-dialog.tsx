@@ -1,7 +1,7 @@
 "use client"
 
-import { DialogHeader } from "@chakra-ui/react"
-import { Button } from "@chakra-ui/react"
+import { DialogHeader } from "@agniflow-ui/react"
+import { Button } from "@agniflow-ui/react"
 import {
   ActionBarContent,
   ActionBarRoot,

@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Fieldset, HStack } from "@chakra-ui/react"
+import { Button, Fieldset, HStack } from "@agniflow-ui/react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Radio, RadioGroup } from "compositions/ui/radio"
 import { Controller, useForm } from "react-hook-form"

@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Flex, FormatNumber, HStack, Text } from "@chakra-ui/react"
+import { Box, Flex, FormatNumber, HStack, Text } from "@agniflow-ui/react"
 import { ChartRoot } from "compositions/chart/chart"
 import { useChartState } from "compositions/chart/use-chart-state"
 import { useState } from "react"

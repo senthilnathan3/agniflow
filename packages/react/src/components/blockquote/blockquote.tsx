@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -26,7 +26,7 @@ export interface BlockquoteRootBaseProps
     UnstyledProp {}
 
 export interface BlockquoteRootProps
-  extends HTMLChakraProps<"figure", BlockquoteRootBaseProps> {}
+  extends HTMLAgniflowProps<"figure", BlockquoteRootBaseProps> {}
 
 export const BlockquoteRoot = withProvider<HTMLElement, BlockquoteRootProps>(
   "figure",
@@ -40,7 +40,8 @@ export const BlockquotePropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BlockquoteContentProps extends HTMLChakraProps<"blockquote"> {}
+export interface BlockquoteContentProps
+  extends HTMLAgniflowProps<"blockquote"> {}
 
 export const BlockquoteContent = withContext<
   HTMLElement,
@@ -49,7 +50,8 @@ export const BlockquoteContent = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BlockquoteCaptionProps extends HTMLChakraProps<"figcaption"> {}
+export interface BlockquoteCaptionProps
+  extends HTMLAgniflowProps<"figcaption"> {}
 
 export const BlockquoteCaption = withContext<
   HTMLElement,
@@ -58,7 +60,7 @@ export const BlockquoteCaption = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BlockquoteIconProps extends HTMLChakraProps<"svg"> {}
+export interface BlockquoteIconProps extends HTMLAgniflowProps<"svg"> {}
 
 export const BlockquoteIcon = withContext<SVGElement, BlockquoteIconProps>(
   QuoteIcon,

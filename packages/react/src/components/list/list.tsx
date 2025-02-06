@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -25,7 +25,7 @@ export interface ListRootBaseProps
     UnstyledProp {}
 
 export interface ListRootProps
-  extends HTMLChakraProps<"ul", ListRootBaseProps> {}
+  extends HTMLAgniflowProps<"ul", ListRootBaseProps> {}
 
 export const ListRoot = withProvider<HTMLUListElement, ListRootProps>(
   "ul",
@@ -38,13 +38,13 @@ export const ListRootPropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface ListItemProps extends HTMLChakraProps<"li"> {}
+export interface ListItemProps extends HTMLAgniflowProps<"li"> {}
 
 export const ListItem = withContext<HTMLLIElement, ListItemProps>("li", "item")
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface ListIndicatorProps extends HTMLChakraProps<"span"> {}
+export interface ListIndicatorProps extends HTMLAgniflowProps<"span"> {}
 
 export const ListIndicator = withContext<HTMLSpanElement, ListIndicatorProps>(
   "span",

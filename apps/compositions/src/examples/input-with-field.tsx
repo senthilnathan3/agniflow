@@ -1,4 +1,4 @@
-import { HStack, Input } from "@chakra-ui/react"
+import { HStack, Input } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 
 export const InputWithField = () => {

@@ -1,10 +1,10 @@
 "use client"
 
-import type { HTMLChakraProps, RecipeProps } from "@chakra-ui/react"
-import { createRecipeContext } from "@chakra-ui/react"
+import type { HTMLAgniflowProps, RecipeProps } from "@agniflow-ui/react"
+import { createRecipeContext } from "@agniflow-ui/react"
 
 export interface LinkButtonProps
-  extends HTMLChakraProps<"a", RecipeProps<"button">> {}
+  extends HTMLAgniflowProps<"a", RecipeProps<"button">> {}
 
 const { withContext } = createRecipeContext({ key: "button" })
 

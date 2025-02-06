@@ -4,7 +4,7 @@ import type { Assign } from "@ark-ui/react"
 import { Switch as ArkSwitch, useSwitchContext } from "@ark-ui/react/switch"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -30,7 +30,7 @@ export interface SwitchRootProviderBaseProps
     UnstyledProp {}
 
 export interface SwitchRootProviderProps
-  extends HTMLChakraProps<"label", SwitchRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"label", SwitchRootProviderBaseProps> {}
 
 export const SwitchRootProvider = withProvider<
   HTMLLabelElement,
@@ -44,7 +44,7 @@ export interface SwitchRootBaseProps
     UnstyledProp {}
 
 export interface SwitchRootProps
-  extends HTMLChakraProps<"label", SwitchRootBaseProps> {}
+  extends HTMLAgniflowProps<"label", SwitchRootBaseProps> {}
 
 export const SwitchRoot = withProvider<HTMLLabelElement, SwitchRootProps>(
   ArkSwitch.Root,
@@ -60,7 +60,7 @@ export const SwitchPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface SwitchLabelProps
-  extends HTMLChakraProps<"span", ArkSwitch.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkSwitch.LabelBaseProps> {}
 
 export const SwitchLabel = withContext<HTMLSpanElement, SwitchLabelProps>(
   ArkSwitch.Label,
@@ -71,7 +71,7 @@ export const SwitchLabel = withContext<HTMLSpanElement, SwitchLabelProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface SwitchControlProps
-  extends HTMLChakraProps<"span", ArkSwitch.ControlBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkSwitch.ControlBaseProps> {}
 
 export const SwitchControl = withContext<HTMLSpanElement, SwitchControlProps>(
   ArkSwitch.Control,
@@ -82,7 +82,7 @@ export const SwitchControl = withContext<HTMLSpanElement, SwitchControlProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface SwitchThumbProps
-  extends HTMLChakraProps<"span", ArkSwitch.ThumbBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkSwitch.ThumbBaseProps> {}
 
 export const SwitchThumb = withContext<HTMLSpanElement, SwitchThumbProps>(
   ArkSwitch.Thumb,
@@ -92,7 +92,7 @@ export const SwitchThumb = withContext<HTMLSpanElement, SwitchThumbProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface SwitchIndicatorProps extends HTMLChakraProps<"span"> {
+export interface SwitchIndicatorProps extends HTMLAgniflowProps<"span"> {
   fallback?: React.ReactNode
 }
 
@@ -117,7 +117,7 @@ export const SwitchIndicator = forwardRef<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface SwitchThumbIndicatorProps extends HTMLChakraProps<"span"> {
+export interface SwitchThumbIndicatorProps extends HTMLAgniflowProps<"span"> {
   fallback?: React.ReactNode
 }
 

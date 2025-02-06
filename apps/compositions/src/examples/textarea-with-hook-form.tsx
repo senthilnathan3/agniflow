@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Input, Stack, Textarea } from "@chakra-ui/react"
+import { Button, Input, Stack, Textarea } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 import { useForm } from "react-hook-form"
 

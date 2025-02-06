@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@chakra-ui/react"
+import { Button } from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuItem,
@@ -60,10 +60,10 @@ const items: Item[] = [
       { value: "ark", label: "Ark UI" },
       {
         value: "chakra",
-        label: "Chakra v3",
+        label: "Agniflow v3",
         children: [
-          { value: "chakra-1", label: "Chakra v3.1" },
-          { value: "chakra-2", label: "Chakra v3.2" },
+          { value: "chakra-1", label: "Agniflow v3.1" },
+          { value: "chakra-2", label: "Agniflow v3.2" },
         ],
       },
     ],

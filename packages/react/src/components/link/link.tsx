@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   createRecipeContext,
@@ -13,7 +13,7 @@ const { withContext, PropsProvider } = createRecipeContext({
 
 export interface LinkBaseProps extends RecipeProps<"link">, UnstyledProp {}
 
-export interface LinkProps extends HTMLChakraProps<"a", LinkBaseProps> {}
+export interface LinkProps extends HTMLAgniflowProps<"a", LinkBaseProps> {}
 
 export const Link = withContext<HTMLAnchorElement, LinkProps>("a")
 

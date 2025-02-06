@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Kbd, Table } from "@chakra-ui/react"
+import { Button, Kbd, Table } from "@agniflow-ui/react"
 import {
   ActionBarContent,
   ActionBarRoot,

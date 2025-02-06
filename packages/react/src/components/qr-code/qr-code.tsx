@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { QrCode as ArkQrCode } from "@ark-ui/react/qr-code"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -27,7 +27,7 @@ export interface QrCodeRootBaseProps
     UnstyledProp {}
 
 export interface QrCodeRootProps
-  extends HTMLChakraProps<"div", QrCodeRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", QrCodeRootBaseProps> {}
 
 export const QrCodeRoot = withProvider<HTMLDivElement, QrCodeRootProps>(
   ArkQrCode.Root,
@@ -42,7 +42,7 @@ export interface QrCodeRootProviderBaseProps
     UnstyledProp {}
 
 export interface QrCodeRootProviderProps
-  extends HTMLChakraProps<"div", QrCodeRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", QrCodeRootProviderBaseProps> {}
 
 export const QrCodeRootProvider = withProvider<
   HTMLDivElement,
@@ -56,7 +56,7 @@ export const QrCodePropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface QrCodeFrameProps extends HTMLChakraProps<"svg"> {}
+export interface QrCodeFrameProps extends HTMLAgniflowProps<"svg"> {}
 
 export const QrCodeFrame = withContext<SVGSVGElement, QrCodeFrameProps>(
   ArkQrCode.Frame,
@@ -66,7 +66,7 @@ export const QrCodeFrame = withContext<SVGSVGElement, QrCodeFrameProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface QrCodePatternProps extends HTMLChakraProps<"path"> {}
+export interface QrCodePatternProps extends HTMLAgniflowProps<"path"> {}
 
 export const QrCodePattern = withContext<SVGPathElement, QrCodePatternProps>(
   ArkQrCode.Pattern,
@@ -76,7 +76,7 @@ export const QrCodePattern = withContext<SVGPathElement, QrCodePatternProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface QrCodeOverlayProps extends HTMLChakraProps<"div"> {}
+export interface QrCodeOverlayProps extends HTMLAgniflowProps<"div"> {}
 
 export const QrCodeOverlay = withContext<HTMLDivElement, QrCodeOverlayProps>(
   ArkQrCode.Overlay,
@@ -87,7 +87,7 @@ export const QrCodeOverlay = withContext<HTMLDivElement, QrCodeOverlayProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface QrCodeDownloadTriggerProps
-  extends HTMLChakraProps<"button", ArkQrCode.DownloadTriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkQrCode.DownloadTriggerBaseProps> {}
 
 export const QrCodeDownloadTrigger = withContext<
   HTMLButtonElement,

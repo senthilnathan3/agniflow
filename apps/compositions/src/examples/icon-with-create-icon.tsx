@@ -1,6 +1,6 @@
 "use client"
 
-import { createIcon } from "@chakra-ui/react"
+import { createIcon } from "@agniflow-ui/react"
 
 const HeartIcon = createIcon({
   displayName: "HeartIcon",

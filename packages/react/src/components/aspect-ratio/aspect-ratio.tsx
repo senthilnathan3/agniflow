@@ -3,13 +3,13 @@
 import { Children, forwardRef } from "react"
 import {
   type ConditionalValue,
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   chakra,
 } from "../../styled-system"
 import { cx, mapObject } from "../../utils"
 
 export interface AspectRatioProps
-  extends Omit<HTMLChakraProps<"div">, "aspectRatio"> {
+  extends Omit<HTMLAgniflowProps<"div">, "aspectRatio"> {
   /**
    * The aspect ratio of the Box. Common values are:
    *

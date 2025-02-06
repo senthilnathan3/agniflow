@@ -1,4 +1,4 @@
-import { FormatNumber, Text } from "@chakra-ui/react"
+import { FormatNumber, Text } from "@agniflow-ui/react"
 
 export const FormatNumberWithCompact = () => {
   return (

@@ -1,4 +1,4 @@
-import { Button, Group, IconButton, MenuTrigger } from "@chakra-ui/react"
+import { Button, Group, IconButton, MenuTrigger } from "@agniflow-ui/react"
 import { MenuContent, MenuItem, MenuRoot } from "compositions/ui/menu"
 import { LuChevronDown } from "react-icons/lu"
 

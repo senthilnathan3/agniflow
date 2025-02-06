@@ -1,8 +1,8 @@
 "use client"
 
 import { Guides, guides } from "@/.velite"
+import { Box, For, Icon, Input, Text, agniflow } from "@agniflow-ui/react"
 import { Combobox, Portal, createListCollection } from "@ark-ui/react"
-import { Box, For, Icon, Input, Text, chakra } from "@chakra-ui/react"
 import { CloseButton } from "compositions/ui/close-button"
 import { InputGroup } from "compositions/ui/input-group"
 import Link from "next/link"
@@ -10,7 +10,7 @@ import { useSearchParams } from "next/navigation"
 import { useMemo } from "react"
 import { LuSearch } from "react-icons/lu"
 
-const ComboboxRoot = chakra(
+const ComboboxRoot = agniflow(
   Combobox.Root,
   {
     base: { width: "full" },
@@ -18,7 +18,7 @@ const ComboboxRoot = chakra(
   { forwardAsChild: true },
 )
 
-const ComboboxContent = chakra(
+const ComboboxContent = agniflow(
   Combobox.Content,
   {
     base: {
@@ -34,7 +34,7 @@ const ComboboxContent = chakra(
   { forwardAsChild: true },
 )
 
-const ComboboxItem = chakra(
+const ComboboxItem = agniflow(
   Combobox.Item,
   {
     base: {

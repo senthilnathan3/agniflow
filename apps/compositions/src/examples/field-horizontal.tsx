@@ -1,4 +1,4 @@
-import { Field, Input, Stack } from "@chakra-ui/react"
+import { Field, Input, Stack } from "@agniflow-ui/react"
 import { Switch } from "compositions/ui/switch"
 
 export const FieldHorizontal = () => {

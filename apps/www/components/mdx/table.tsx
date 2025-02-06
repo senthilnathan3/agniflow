@@ -1,8 +1,8 @@
-import { Table as ChakraTable } from "@chakra-ui/react"
+import { Table as AgniflowTable } from "@agniflow-ui/react"
 
-export const Table = (props: ChakraTable.RootProps) => {
+export const Table = (props: AgniflowTable.RootProps) => {
   return (
-    <ChakraTable.Root
+    <AgniflowTable.Root
       native
       size="sm"
       variant="line"

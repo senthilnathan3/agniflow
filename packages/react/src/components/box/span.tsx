@@ -1,7 +1,7 @@
 "use client"
 
-import { type HTMLChakraProps, chakra } from "../../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../../styled-system"
 
-export interface SpanProps extends HTMLChakraProps<"span"> {}
+export interface SpanProps extends HTMLAgniflowProps<"span"> {}
 
 export const Span = chakra("span")

@@ -1,8 +1,12 @@
-import { Popover as ChakraPopover, IconButton, Portal } from "@chakra-ui/react"
+import {
+  Popover as AgniflowPopover,
+  IconButton,
+  Portal,
+} from "@agniflow-ui/react"
 import * as React from "react"
 import { HiOutlineInformationCircle } from "react-icons/hi"
 
-export interface ToggleTipProps extends ChakraPopover.RootProps {
+export interface ToggleTipProps extends AgniflowPopover.RootProps {
   showArrow?: boolean
   portalled?: boolean
   portalRef?: React.RefObject<HTMLElement>
@@ -21,14 +25,14 @@ export const ToggleTip = React.forwardRef<HTMLDivElement, ToggleTipProps>(
     } = props
 
     return (
-      <ChakraPopover.Root
+      <AgniflowPopover.Root
         {...rest}
         positioning={{ ...rest.positioning, gutter: 4 }}
       >
-        <ChakraPopover.Trigger asChild>{children}</ChakraPopover.Trigger>
+        <AgniflowPopover.Trigger asChild>{children}</AgniflowPopover.Trigger>
         <Portal disabled={!portalled} container={portalRef}>
-          <ChakraPopover.Positioner>
-            <ChakraPopover.Content
+          <AgniflowPopover.Positioner>
+            <AgniflowPopover.Content
               width="auto"
               px="2"
               py="1"
@@ -37,15 +41,15 @@ export const ToggleTip = React.forwardRef<HTMLDivElement, ToggleTipProps>(
               ref={ref}
             >
               {showArrow && (
-                <ChakraPopover.Arrow>
-                  <ChakraPopover.ArrowTip />
-                </ChakraPopover.Arrow>
+                <AgniflowPopover.Arrow>
+                  <AgniflowPopover.ArrowTip />
+                </AgniflowPopover.Arrow>
               )}
               {content}
-            </ChakraPopover.Content>
-          </ChakraPopover.Positioner>
+            </AgniflowPopover.Content>
+          </AgniflowPopover.Positioner>
         </Portal>
-      </ChakraPopover.Root>
+      </AgniflowPopover.Root>
     )
   },
 )

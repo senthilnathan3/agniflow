@@ -1,4 +1,4 @@
-import { CheckboxGroup, Float, Icon, SimpleGrid } from "@chakra-ui/react"
+import { CheckboxGroup, Float, Icon, SimpleGrid } from "@agniflow-ui/react"
 import {
   CheckboxCard,
   CheckboxCardIndicator,

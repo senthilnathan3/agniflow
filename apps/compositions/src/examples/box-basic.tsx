@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react"
+import { Box } from "@agniflow-ui/react"
 
 export const BoxBasic = () => {
   return (

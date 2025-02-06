@@ -1,6 +1,6 @@
 "use client"
 
-import { Avatar, Code, Stack, useAvatar } from "@chakra-ui/react"
+import { Avatar, Code, Stack, useAvatar } from "@agniflow-ui/react"
 
 export const AvatarWithStore = () => {
   const avatar = useAvatar()

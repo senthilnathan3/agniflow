@@ -3,7 +3,7 @@
 import { forwardRef } from "react"
 import {
   EMPTY_STYLES,
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   chakra,
@@ -12,7 +12,7 @@ import {
 import { dataAttr } from "../../utils"
 
 export interface CheckmarkProps
-  extends HTMLChakraProps<"svg", RecipeProps<"checkmark">>,
+  extends HTMLAgniflowProps<"svg", RecipeProps<"checkmark">>,
     UnstyledProp {
   /**
    * Whether the checkmark is checked

@@ -7,7 +7,7 @@ import {
 } from "@ark-ui/react/checkbox"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -36,7 +36,7 @@ export interface CheckboxRootProviderBaseProps
     UnstyledProp {}
 
 export interface CheckboxRootProviderProps
-  extends HTMLChakraProps<"div", CheckboxRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", CheckboxRootProviderBaseProps> {}
 
 export const CheckboxRootProvider = withProvider<
   HTMLDivElement,
@@ -50,7 +50,7 @@ export interface CheckboxRootBaseProps
     UnstyledProp {}
 
 export interface CheckboxRootProps
-  extends HTMLChakraProps<"label", CheckboxRootBaseProps> {}
+  extends HTMLAgniflowProps<"label", CheckboxRootBaseProps> {}
 
 export const CheckboxRoot = withProvider<HTMLLabelElement, CheckboxRootProps>(
   ArkCheckbox.Root,
@@ -64,7 +64,7 @@ export const CheckboxPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface CheckboxLabelProps
-  extends HTMLChakraProps<"span", ArkCheckbox.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkCheckbox.LabelBaseProps> {}
 
 export const CheckboxLabel = withContext<HTMLElement, CheckboxLabelProps>(
   ArkCheckbox.Label,
@@ -75,7 +75,7 @@ export const CheckboxLabel = withContext<HTMLElement, CheckboxLabelProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface CheckboxControlProps
-  extends HTMLChakraProps<"div", ArkCheckbox.ControlBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkCheckbox.ControlBaseProps> {}
 
 export const CheckboxControl = withContext<HTMLElement, CheckboxControlProps>(
   ArkCheckbox.Control,
@@ -85,7 +85,7 @@ export const CheckboxControl = withContext<HTMLElement, CheckboxControlProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface CheckboxIndicatorProps extends HTMLChakraProps<"svg"> {
+export interface CheckboxIndicatorProps extends HTMLAgniflowProps<"svg"> {
   checked?: React.ReactElement
   indeterminate?: React.ReactElement
 }
@@ -141,7 +141,7 @@ export const CheckboxIndicator = forwardRef<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface CheckboxGroupProps
-  extends HTMLChakraProps<"div", ArkCheckbox.GroupBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkCheckbox.GroupBaseProps> {}
 
 export const CheckboxGroup = chakra(
   ArkCheckbox.Group,

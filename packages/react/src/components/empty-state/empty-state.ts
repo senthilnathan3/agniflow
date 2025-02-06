@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -25,7 +25,7 @@ export interface EmptyStateRootBaseProps
     UnstyledProp {}
 
 export interface EmptyStateRootProps
-  extends HTMLChakraProps<"div", EmptyStateRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", EmptyStateRootBaseProps> {}
 
 export const EmptyStateRoot = withProvider<HTMLDivElement, EmptyStateRootProps>(
   "div",
@@ -39,7 +39,7 @@ export const EmptyStatePropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface EmptyStateContentProps extends HTMLChakraProps<"div"> {}
+export interface EmptyStateContentProps extends HTMLAgniflowProps<"div"> {}
 
 export const EmptyStateContent = withContext<
   HTMLDivElement,
@@ -48,7 +48,7 @@ export const EmptyStateContent = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface EmptyStateIndicatorProps extends HTMLChakraProps<"div"> {}
+export interface EmptyStateIndicatorProps extends HTMLAgniflowProps<"div"> {}
 
 export const EmptyStateIndicator = withContext<
   HTMLDivElement,
@@ -57,7 +57,7 @@ export const EmptyStateIndicator = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface EmptyStateTitleProps extends HTMLChakraProps<"h3"> {}
+export interface EmptyStateTitleProps extends HTMLAgniflowProps<"h3"> {}
 
 export const EmptyStateTitle = withContext<
   HTMLHeadingElement,
@@ -66,7 +66,7 @@ export const EmptyStateTitle = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface EmptyStateDescriptionProps extends HTMLChakraProps<"p"> {}
+export interface EmptyStateDescriptionProps extends HTMLAgniflowProps<"p"> {}
 
 export const EmptyStateDescription = withContext<
   HTMLParagraphElement,

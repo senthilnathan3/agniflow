@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { Pagination as ArkPagination } from "@ark-ui/react/pagination"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -30,7 +30,7 @@ export interface PaginationRootProviderBaseProps
     UnstyledProp {}
 
 export interface PaginationRootProviderProps
-  extends HTMLChakraProps<"div", PaginationRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", PaginationRootProviderBaseProps> {}
 
 export const PaginationRootProvider = withProvider<
   HTMLDivElement,
@@ -47,7 +47,7 @@ export interface PaginationRootBaseProps
     UnstyledProp {}
 
 export interface PaginationRootProps
-  extends HTMLChakraProps<"div", PaginationRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", PaginationRootBaseProps> {}
 
 export const PaginationRoot = withProvider<HTMLDivElement, PaginationRootProps>(
   ArkPagination.Root,
@@ -63,7 +63,7 @@ export const PaginationPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface PaginationEllipsisProps
-  extends HTMLChakraProps<"div", ArkPagination.EllipsisBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkPagination.EllipsisBaseProps> {}
 
 export const PaginationEllipsis = withContext<
   HTMLDivElement,
@@ -73,7 +73,7 @@ export const PaginationEllipsis = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface PaginationItemProps
-  extends HTMLChakraProps<"button", ArkPagination.ItemBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkPagination.ItemBaseProps> {}
 
 export const PaginationItem = withContext<
   HTMLButtonElement,
@@ -83,7 +83,7 @@ export const PaginationItem = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface PaginationNextTriggerProps
-  extends HTMLChakraProps<"button", ArkPagination.NextTriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkPagination.NextTriggerBaseProps> {}
 
 export const PaginationNextTrigger = withContext<
   HTMLButtonElement,
@@ -93,7 +93,7 @@ export const PaginationNextTrigger = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface PaginationPrevTriggerProps
-  extends HTMLChakraProps<"button", ArkPagination.PrevTriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkPagination.PrevTriggerBaseProps> {}
 
 export const PaginationPrevTrigger = withContext<
   HTMLButtonElement,

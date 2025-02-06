@@ -1,6 +1,6 @@
 "use client"
 
-import { Card } from "@chakra-ui/react"
+import { Card } from "@agniflow-ui/react"
 import { ChartRoot, ChartTooltipContent } from "compositions/chart/chart"
 import { useChartState } from "compositions/chart/use-chart-state"
 import { StatLabel, StatRoot, StatValueText } from "compositions/ui/stat"

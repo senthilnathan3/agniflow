@@ -2,7 +2,7 @@
 
 import type { Assign } from "@ark-ui/react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   createRecipeContext,
 } from "../../styled-system"
@@ -12,7 +12,7 @@ const { withContext, PropsProvider } = createRecipeContext({
 })
 
 export interface HeadingProps
-  extends Assign<HTMLChakraProps<"h2">, RecipeProps<"heading">> {}
+  extends Assign<HTMLAgniflowProps<"h2">, RecipeProps<"heading">> {}
 
 export const Heading = withContext<HTMLHeadingElement, HeadingProps>("h2")
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Button, Group } from "@chakra-ui/react"
+import { Box, Button, Group } from "@agniflow-ui/react"
 import {
   PopoverArrow,
   PopoverBody,

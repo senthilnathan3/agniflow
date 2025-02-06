@@ -1,14 +1,14 @@
 "use client"
 
-import type { ButtonProps } from "@chakra-ui/react"
+import type { ButtonProps } from "@agniflow-ui/react"
 import {
+  Toggle as AgniflowToggle,
   Button,
-  Toggle as ChakraToggle,
   useToggleContext,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import * as React from "react"
 
-interface ToggleProps extends ChakraToggle.RootProps {
+interface ToggleProps extends AgniflowToggle.RootProps {
   variant?: keyof typeof variantMap
   size?: ButtonProps["size"]
 }
@@ -26,11 +26,11 @@ export const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(
     const variantConfig = variantMap[variant]
 
     return (
-      <ChakraToggle.Root asChild {...rest}>
+      <AgniflowToggle.Root asChild {...rest}>
         <ToggleBaseButton size={size} variant={variantConfig} ref={ref}>
           {children}
         </ToggleBaseButton>
-      </ChakraToggle.Root>
+      </AgniflowToggle.Root>
     )
   },
 )
@@ -54,4 +54,4 @@ const ToggleBaseButton = React.forwardRef<
   )
 })
 
-export const ToggleIndicator = ChakraToggle.Indicator
+export const ToggleIndicator = AgniflowToggle.Indicator

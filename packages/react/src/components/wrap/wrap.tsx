@@ -2,13 +2,13 @@
 
 import type { Assign } from "@ark-ui/react"
 import { forwardRef } from "react"
-import type { HTMLChakraProps, SystemStyleObject } from "../../styled-system"
+import type { HTMLAgniflowProps, SystemStyleObject } from "../../styled-system"
 import { chakra, defineStyle } from "../../styled-system"
 import { cx } from "../../utils"
 
 export interface WrapProps
   extends Assign<
-    HTMLChakraProps<"div">,
+    HTMLAgniflowProps<"div">,
     {
       justify?: SystemStyleObject["justifyContent"]
       align?: SystemStyleObject["alignItems"]
@@ -40,7 +40,7 @@ Wrap.displayName = "Wrap"
 
 /////////////////////////////////////////////////////////////////////////////////
 
-export interface WrapItemProps extends HTMLChakraProps<"div"> {}
+export interface WrapItemProps extends HTMLAgniflowProps<"div"> {}
 
 const itemStyle = defineStyle({
   display: "flex",

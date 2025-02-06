@@ -1,10 +1,10 @@
-import { Link } from "@chakra-ui/react"
+import { Link } from "@agniflow-ui/react"
 import { LuExternalLink } from "react-icons/lu"
 
 export const LinkWithExternal = () => {
   return (
     <Link href="#">
-      Visit Chakra UI <LuExternalLink />
+      Visit Agniflow UI <LuExternalLink />
     </Link>
   )
 }

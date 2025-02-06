@@ -1,8 +1,8 @@
 "use client"
 
-import { type HTMLChakraProps, chakra } from "../../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../../styled-system"
 
-export interface CenterProps extends HTMLChakraProps<"div"> {}
+export interface CenterProps extends HTMLAgniflowProps<"div"> {}
 
 /**
  * React component used to horizontally and vertically center its child.

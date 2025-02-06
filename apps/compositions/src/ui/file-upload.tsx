@@ -1,20 +1,20 @@
 "use client"
 
-import type { ButtonProps, RecipeProps } from "@chakra-ui/react"
+import type { ButtonProps, RecipeProps } from "@agniflow-ui/react"
 import {
+  FileUpload as AgniflowFileUpload,
   Button,
-  FileUpload as ChakraFileUpload,
   Icon,
   IconButton,
   Span,
   Text,
   useFileUploadContext,
   useRecipe,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import * as React from "react"
 import { LuFile, LuUpload, LuX } from "react-icons/lu"
 
-export interface FileUploadRootProps extends ChakraFileUpload.RootProps {
+export interface FileUploadRootProps extends AgniflowFileUpload.RootProps {
   inputProps?: React.InputHTMLAttributes<HTMLInputElement>
 }
 
@@ -24,15 +24,15 @@ export const FileUploadRoot = React.forwardRef<
 >(function FileUploadRoot(props, ref) {
   const { children, inputProps, ...rest } = props
   return (
-    <ChakraFileUpload.Root {...rest}>
-      <ChakraFileUpload.HiddenInput ref={ref} {...inputProps} />
+    <AgniflowFileUpload.Root {...rest}>
+      <AgniflowFileUpload.HiddenInput ref={ref} {...inputProps} />
       {children}
-    </ChakraFileUpload.Root>
+    </AgniflowFileUpload.Root>
   )
 })
 
 export interface FileUploadDropzoneProps
-  extends ChakraFileUpload.DropzoneProps {
+  extends AgniflowFileUpload.DropzoneProps {
   label: React.ReactNode
   description?: React.ReactNode
 }
@@ -43,16 +43,16 @@ export const FileUploadDropzone = React.forwardRef<
 >(function FileUploadDropzone(props, ref) {
   const { children, label, description, ...rest } = props
   return (
-    <ChakraFileUpload.Dropzone ref={ref} {...rest}>
+    <AgniflowFileUpload.Dropzone ref={ref} {...rest}>
       <Icon fontSize="xl" color="fg.muted">
         <LuUpload />
       </Icon>
-      <ChakraFileUpload.DropzoneContent>
+      <AgniflowFileUpload.DropzoneContent>
         <div>{label}</div>
         {description && <Text color="fg.muted">{description}</Text>}
-      </ChakraFileUpload.DropzoneContent>
+      </AgniflowFileUpload.DropzoneContent>
       {children}
-    </ChakraFileUpload.Dropzone>
+    </AgniflowFileUpload.Dropzone>
   )
 })
 
@@ -69,37 +69,37 @@ const FileUploadItem = React.forwardRef<HTMLLIElement, FileUploadItemProps>(
   function FileUploadItem(props, ref) {
     const { file, showSize, clearable } = props
     return (
-      <ChakraFileUpload.Item file={file} ref={ref}>
-        <ChakraFileUpload.ItemPreview asChild>
+      <AgniflowFileUpload.Item file={file} ref={ref}>
+        <AgniflowFileUpload.ItemPreview asChild>
           <Icon fontSize="lg" color="fg.muted">
             <LuFile />
           </Icon>
-        </ChakraFileUpload.ItemPreview>
+        </AgniflowFileUpload.ItemPreview>
 
         {showSize ? (
-          <ChakraFileUpload.ItemContent>
-            <ChakraFileUpload.ItemName />
-            <ChakraFileUpload.ItemSizeText />
-          </ChakraFileUpload.ItemContent>
+          <AgniflowFileUpload.ItemContent>
+            <AgniflowFileUpload.ItemName />
+            <AgniflowFileUpload.ItemSizeText />
+          </AgniflowFileUpload.ItemContent>
         ) : (
-          <ChakraFileUpload.ItemName flex="1" />
+          <AgniflowFileUpload.ItemName flex="1" />
         )}
 
         {clearable && (
-          <ChakraFileUpload.ItemDeleteTrigger asChild>
+          <AgniflowFileUpload.ItemDeleteTrigger asChild>
             <IconButton variant="ghost" color="fg.muted" size="xs">
               <LuX />
             </IconButton>
-          </ChakraFileUpload.ItemDeleteTrigger>
+          </AgniflowFileUpload.ItemDeleteTrigger>
         )}
-      </ChakraFileUpload.Item>
+      </AgniflowFileUpload.Item>
     )
   },
 )
 
 interface FileUploadListProps
   extends VisibilityProps,
-    ChakraFileUpload.ItemGroupProps {
+    AgniflowFileUpload.ItemGroupProps {
   files?: File[]
 }
 
@@ -115,7 +115,7 @@ export const FileUploadList = React.forwardRef<
   if (acceptedFiles.length === 0) return null
 
   return (
-    <ChakraFileUpload.ItemGroup ref={ref} {...rest}>
+    <AgniflowFileUpload.ItemGroup ref={ref} {...rest}>
       {acceptedFiles.map((file) => (
         <FileUploadItem
           key={file.name}
@@ -124,7 +124,7 @@ export const FileUploadList = React.forwardRef<
           clearable={clearable}
         />
       ))}
-    </ChakraFileUpload.ItemGroup>
+    </AgniflowFileUpload.ItemGroup>
   )
 })
 
@@ -140,7 +140,7 @@ export const FileInput = React.forwardRef<HTMLButtonElement, FileInputProps>(
     const [recipeProps, restProps] = inputRecipe.splitVariantProps(props)
     const { placeholder = "Select file(s)", ...rest } = restProps
     return (
-      <ChakraFileUpload.Trigger asChild>
+      <AgniflowFileUpload.Trigger asChild>
         <Button
           unstyled
           py="0"
@@ -148,7 +148,7 @@ export const FileInput = React.forwardRef<HTMLButtonElement, FileInputProps>(
           {...rest}
           css={[inputRecipe(recipeProps), props.css]}
         >
-          <ChakraFileUpload.Context>
+          <AgniflowFileUpload.Context>
             {({ acceptedFiles }) => {
               if (acceptedFiles.length === 1) {
                 return <span>{acceptedFiles[0].name}</span>
@@ -158,13 +158,13 @@ export const FileInput = React.forwardRef<HTMLButtonElement, FileInputProps>(
               }
               return <Span color="fg.subtle">{placeholder}</Span>
             }}
-          </ChakraFileUpload.Context>
+          </AgniflowFileUpload.Context>
         </Button>
-      </ChakraFileUpload.Trigger>
+      </AgniflowFileUpload.Trigger>
     )
   },
 )
 
-export const FileUploadLabel = ChakraFileUpload.Label
-export const FileUploadClearTrigger = ChakraFileUpload.ClearTrigger
-export const FileUploadTrigger = ChakraFileUpload.Trigger
+export const FileUploadLabel = AgniflowFileUpload.Label
+export const FileUploadClearTrigger = AgniflowFileUpload.ClearTrigger
+export const FileUploadTrigger = AgniflowFileUpload.Trigger

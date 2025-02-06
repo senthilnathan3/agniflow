@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Stack } from "@chakra-ui/react"
+import { Button, Stack } from "@agniflow-ui/react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Field } from "compositions/ui/field"
 import { Switch } from "compositions/ui/switch"
@@ -36,7 +36,7 @@ export const SwitchWithHookForm = () => {
                 onCheckedChange={({ checked }) => field.onChange(checked)}
                 inputProps={{ onBlur: field.onBlur }}
               >
-                Activate Chakra
+                Activate Agniflow
               </Switch>
             </Field>
           )}

@@ -1,4 +1,4 @@
-import { Button, LinkProps, Span } from "@chakra-ui/react"
+import { Button, LinkProps, Span } from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuItem,

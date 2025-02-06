@@ -9,7 +9,7 @@ import {
   Stack,
   Tabs,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import Link from "next/link"
 // import { DemoCode } from "../demo-code"
 import { Blob } from "./blob"
@@ -57,7 +57,7 @@ const Testimonial = () => (
     borderColor="teal.500"
   >
     <Text color="gray.400">
-      “Chakra UI is glorious. Dark mode support looks amazing and it is 100%
+      “Agniflow UI is glorious. Dark mode support looks amazing and it is 100%
       built-in. I love the consistent use of focus styling and the subtle
       animation. Great care for accessibility throughout. It is a guiding
       principle of the design system.”

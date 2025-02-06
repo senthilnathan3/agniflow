@@ -1,4 +1,4 @@
-import { Button, Portal, Tooltip } from "@chakra-ui/react"
+import { Button, Portal, Tooltip } from "@agniflow-ui/react"
 
 export const TooltipWithoutSnippet = () => {
   return (

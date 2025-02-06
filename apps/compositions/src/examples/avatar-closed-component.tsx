@@ -1,12 +1,12 @@
 import {
-  Avatar as ChakraAvatar,
-  AvatarGroup as ChakraAvatarGroup,
-} from "@chakra-ui/react"
+  Avatar as AgniflowAvatar,
+  AvatarGroup as AgniflowAvatarGroup,
+} from "@agniflow-ui/react"
 import * as React from "react"
 
 type ImageProps = React.ImgHTMLAttributes<HTMLImageElement>
 
-export interface AvatarProps extends ChakraAvatar.RootProps {
+export interface AvatarProps extends AgniflowAvatar.RootProps {
   name?: string
   src?: string
   srcSet?: string
@@ -20,15 +20,15 @@ export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
     const { name, src, srcSet, loading, icon, fallback, children, ...rest } =
       props
     return (
-      <ChakraAvatar.Root ref={ref} {...rest}>
-        <ChakraAvatar.Fallback name={name}>
+      <AgniflowAvatar.Root ref={ref} {...rest}>
+        <AgniflowAvatar.Fallback name={name}>
           {fallback || icon}
-        </ChakraAvatar.Fallback>
-        <ChakraAvatar.Image src={src} srcSet={srcSet} loading={loading} />
+        </AgniflowAvatar.Fallback>
+        <AgniflowAvatar.Image src={src} srcSet={srcSet} loading={loading} />
         {children}
-      </ChakraAvatar.Root>
+      </AgniflowAvatar.Root>
     )
   },
 )
 
-export const AvatarGroup = ChakraAvatarGroup
+export const AvatarGroup = AgniflowAvatarGroup

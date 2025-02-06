@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Stack, useSlotRecipe } from "@chakra-ui/react"
+import { For, Stack, useSlotRecipe } from "@agniflow-ui/react"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 import {
   CheckboxCard,

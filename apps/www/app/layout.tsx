@@ -41,7 +41,7 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://next.chakra-ui.com"),
+  metadataBase: new URL("https://next.agniflow-ui.com"),
   title: {
     template: docsConfig.titleTemplate,
     default: docsConfig.title,
@@ -72,7 +72,7 @@ export default function RootLayout({
       <head>
         <Script
           src="https://plausible.io/js/plausible.js"
-          data-domain="chakra-ui.com"
+          data-domain="agniflow-ui.com"
         />
       </head>
       <body>

@@ -1,4 +1,4 @@
-import { Badge, HStack } from "@chakra-ui/react"
+import { Badge, HStack } from "@agniflow-ui/react"
 import { Skeleton } from "compositions/ui/skeleton"
 
 export const SkeletonWithChildren = () => {

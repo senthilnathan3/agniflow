@@ -1,4 +1,4 @@
-import { Avatar, For, HStack } from "@chakra-ui/react"
+import { Avatar, For, HStack } from "@agniflow-ui/react"
 
 export const AvatarWithVariants = () => {
   return (

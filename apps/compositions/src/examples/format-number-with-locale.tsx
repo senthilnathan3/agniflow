@@ -1,4 +1,4 @@
-import { FormatNumber, HStack, LocaleProvider, Text } from "@chakra-ui/react"
+import { FormatNumber, HStack, LocaleProvider, Text } from "@agniflow-ui/react"
 
 export const FormatNumberWithLocale = () => {
   return (

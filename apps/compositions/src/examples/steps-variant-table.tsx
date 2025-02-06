@@ -7,7 +7,7 @@ import {
   Span,
   type StepsRootProps,
   useSlotRecipe,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 import {

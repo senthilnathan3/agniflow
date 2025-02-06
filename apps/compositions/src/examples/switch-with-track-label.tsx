@@ -1,4 +1,4 @@
-import { Icon } from "@chakra-ui/react"
+import { Icon } from "@agniflow-ui/react"
 import { Switch } from "compositions/ui/switch"
 import { FaMoon, FaSun } from "react-icons/fa"
 

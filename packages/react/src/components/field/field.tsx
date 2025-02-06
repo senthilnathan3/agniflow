@@ -4,7 +4,7 @@ import type { Assign } from "@ark-ui/react"
 import { Field as ArkField, useFieldContext } from "@ark-ui/react/field"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -32,7 +32,7 @@ export interface FieldRootBaseProps
     UnstyledProp {}
 
 export interface FieldRootProps
-  extends HTMLChakraProps<"div", FieldRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", FieldRootBaseProps> {}
 
 export const FieldRoot = withProvider<HTMLDivElement, FieldRootProps>(
   ArkField.Root,
@@ -48,7 +48,7 @@ export const FieldPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FieldLabelProps
-  extends HTMLChakraProps<"label", ArkField.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"label", ArkField.LabelBaseProps> {}
 
 export const FieldLabel = withContext<HTMLLabelElement, FieldLabelProps>(
   ArkField.Label,
@@ -59,7 +59,7 @@ export const FieldLabel = withContext<HTMLLabelElement, FieldLabelProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FieldHelperTextProps
-  extends HTMLChakraProps<"div", ArkField.HelperTextBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkField.HelperTextBaseProps> {}
 
 export const FieldHelperText = withContext<
   HTMLDivElement,
@@ -69,7 +69,7 @@ export const FieldHelperText = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FieldErrorTextProps
-  extends HTMLChakraProps<"div", ArkField.ErrorTextBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkField.ErrorTextBaseProps> {}
 
 export const FieldErrorText = withContext<HTMLDivElement, FieldErrorTextProps>(
   ArkField.ErrorText,
@@ -79,7 +79,7 @@ export const FieldErrorText = withContext<HTMLDivElement, FieldErrorTextProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface FieldErrorIconProps extends HTMLChakraProps<"svg"> {}
+export interface FieldErrorIconProps extends HTMLAgniflowProps<"svg"> {}
 
 export const FieldErrorIcon = createIcon({
   d: "M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z",
@@ -87,7 +87,7 @@ export const FieldErrorIcon = createIcon({
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface FieldRequiredIndicatorProps extends HTMLChakraProps<"span"> {
+export interface FieldRequiredIndicatorProps extends HTMLAgniflowProps<"span"> {
   fallback?: React.ReactNode
 }
 

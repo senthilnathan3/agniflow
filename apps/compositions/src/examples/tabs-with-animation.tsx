@@ -1,4 +1,4 @@
-import { Box, Flex, Tabs } from "@chakra-ui/react"
+import { Box, Flex, Tabs } from "@agniflow-ui/react"
 
 const items = [
   {

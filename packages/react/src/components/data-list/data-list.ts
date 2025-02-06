@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -25,7 +25,7 @@ export interface DataListRootBaseProps
     UnstyledProp {}
 
 export interface DataListRootProps
-  extends HTMLChakraProps<"dl", DataListRootBaseProps> {}
+  extends HTMLAgniflowProps<"dl", DataListRootBaseProps> {}
 
 export const DataListRoot = withProvider<HTMLDListElement, DataListRootProps>(
   "dl",
@@ -37,7 +37,7 @@ export const DataListPropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface DataListItemProps extends HTMLChakraProps<"div"> {}
+export interface DataListItemProps extends HTMLAgniflowProps<"div"> {}
 
 export const DataListItem = withContext<HTMLDivElement, DataListItemProps>(
   "div",
@@ -46,7 +46,7 @@ export const DataListItem = withContext<HTMLDivElement, DataListItemProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface DataListItemLabelProps extends HTMLChakraProps<"dt"> {}
+export interface DataListItemLabelProps extends HTMLAgniflowProps<"dt"> {}
 
 export const DataListItemLabel = withContext<
   HTMLDivElement,
@@ -55,7 +55,7 @@ export const DataListItemLabel = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface DataListItemValueProps extends HTMLChakraProps<"dd"> {}
+export interface DataListItemValueProps extends HTMLAgniflowProps<"dd"> {}
 
 export const DataListItemValue = withContext<
   HTMLDivElement,

@@ -1,4 +1,4 @@
-import { HStack, Textarea } from "@chakra-ui/react"
+import { HStack, Textarea } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 
 export const TextareaWithHelperText = () => {

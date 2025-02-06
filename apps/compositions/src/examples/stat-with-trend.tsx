@@ -1,4 +1,4 @@
-import { Badge, FormatNumber, HStack, Stat } from "@chakra-ui/react"
+import { Badge, FormatNumber, HStack, Stat } from "@agniflow-ui/react"
 
 export const StatWithTrend = () => {
   return (

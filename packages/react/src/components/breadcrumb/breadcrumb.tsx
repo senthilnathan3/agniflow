@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -26,7 +26,7 @@ export interface BreadcrumbRootBaseProps
     UnstyledProp {}
 
 export interface BreadcrumbRootProps
-  extends HTMLChakraProps<"nav", BreadcrumbRootBaseProps> {}
+  extends HTMLAgniflowProps<"nav", BreadcrumbRootBaseProps> {}
 
 export const BreadcrumbRoot = withProvider<HTMLElement, BreadcrumbRootProps>(
   "nav",
@@ -41,7 +41,7 @@ export const BreadcrumbPropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BreadcrumbListProps extends HTMLChakraProps<"ol"> {}
+export interface BreadcrumbListProps extends HTMLAgniflowProps<"ol"> {}
 
 export const BreadcrumbList = withContext<HTMLElement, BreadcrumbListProps>(
   "ol",
@@ -50,7 +50,7 @@ export const BreadcrumbList = withContext<HTMLElement, BreadcrumbListProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BreadcrumbItemProps extends HTMLChakraProps<"li"> {}
+export interface BreadcrumbItemProps extends HTMLAgniflowProps<"li"> {}
 
 export const BreadcrumbItem = withContext<HTMLElement, BreadcrumbItemProps>(
   "li",
@@ -59,7 +59,7 @@ export const BreadcrumbItem = withContext<HTMLElement, BreadcrumbItemProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BreadcrumbLinkProps extends HTMLChakraProps<"a"> {}
+export interface BreadcrumbLinkProps extends HTMLAgniflowProps<"a"> {}
 
 export const BreadcrumbLink = withContext<
   HTMLAnchorElement,
@@ -68,7 +68,7 @@ export const BreadcrumbLink = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BreadcrumbCurrentLinkProps extends HTMLChakraProps<"span"> {}
+export interface BreadcrumbCurrentLinkProps extends HTMLAgniflowProps<"span"> {}
 
 export const BreadcrumbCurrentLink = withContext<
   HTMLElement,
@@ -82,7 +82,7 @@ export const BreadcrumbCurrentLink = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BreadcrumbSeparatorProps extends HTMLChakraProps<"li"> {}
+export interface BreadcrumbSeparatorProps extends HTMLAgniflowProps<"li"> {}
 
 export const BreadcrumbSeparator = withContext<
   HTMLElement,
@@ -95,7 +95,7 @@ export const BreadcrumbSeparator = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface BreadcrumbEllipsisProps extends HTMLChakraProps<"span"> {}
+export interface BreadcrumbEllipsisProps extends HTMLAgniflowProps<"span"> {}
 
 export const BreadcrumbEllipsis = withContext<
   HTMLElement,

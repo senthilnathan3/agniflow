@@ -1,4 +1,4 @@
-import { For, Stack } from "@chakra-ui/react"
+import { For, Stack } from "@agniflow-ui/react"
 import { Radio, RadioGroup } from "compositions/ui/radio"
 
 export const RadioWithVariants = () => {

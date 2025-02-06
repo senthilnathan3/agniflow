@@ -5,7 +5,7 @@ import {
   LinkOverlay,
   Span,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 
 export const LinkOverlayArticle = () => {
   return (
@@ -14,10 +14,10 @@ export const LinkOverlayArticle = () => {
         <time dateTime="2021-01-15 15:30:00 +0000 UTC">13 days ago</time>
       </Span>
       <Heading size="lg" my="2">
-        <LinkOverlay href="#">Chakra V3 Workshop</LinkOverlay>
+        <LinkOverlay href="#">Agniflow V3 Workshop</LinkOverlay>
       </Heading>
       <Text mb="3" color="fg.muted">
-        Catch up on whats been cooking at Chakra UI and explore some of the
+        Catch up on whats been cooking at Agniflow UI and explore some of the
         popular community resources.
       </Text>
       <Link href="#inner-link" variant="underline" colorPalette="teal">

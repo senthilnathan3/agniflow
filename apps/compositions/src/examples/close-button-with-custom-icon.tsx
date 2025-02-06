@@ -1,4 +1,4 @@
-import { CloseButton } from "@chakra-ui/react"
+import { CloseButton } from "@agniflow-ui/react"
 import { HiX } from "react-icons/hi"
 
 export const CloseButtonWithCustomIcon = () => {

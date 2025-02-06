@@ -1,11 +1,11 @@
-import { Drawer as ChakraDrawer, Portal } from "@chakra-ui/react"
+import { Drawer as AgniflowDrawer, Portal } from "@agniflow-ui/react"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 
-interface DrawerContentProps extends ChakraDrawer.ContentProps {
+interface DrawerContentProps extends AgniflowDrawer.ContentProps {
   portalled?: boolean
   portalRef?: React.RefObject<HTMLElement>
-  offset?: ChakraDrawer.ContentProps["padding"]
+  offset?: AgniflowDrawer.ContentProps["padding"]
 }
 
 export const DrawerContent = React.forwardRef<
@@ -15,21 +15,21 @@ export const DrawerContent = React.forwardRef<
   const { children, portalled = true, portalRef, offset, ...rest } = props
   return (
     <Portal disabled={!portalled} container={portalRef}>
-      <ChakraDrawer.Positioner padding={offset}>
-        <ChakraDrawer.Content ref={ref} {...rest} asChild={false}>
+      <AgniflowDrawer.Positioner padding={offset}>
+        <AgniflowDrawer.Content ref={ref} {...rest} asChild={false}>
           {children}
-        </ChakraDrawer.Content>
-      </ChakraDrawer.Positioner>
+        </AgniflowDrawer.Content>
+      </AgniflowDrawer.Positioner>
     </Portal>
   )
 })
 
 export const DrawerCloseTrigger = React.forwardRef<
   HTMLButtonElement,
-  ChakraDrawer.CloseTriggerProps
+  AgniflowDrawer.CloseTriggerProps
 >(function DrawerCloseTrigger(props, ref) {
   return (
-    <ChakraDrawer.CloseTrigger
+    <AgniflowDrawer.CloseTrigger
       position="absolute"
       top="2"
       insetEnd="2"
@@ -37,16 +37,16 @@ export const DrawerCloseTrigger = React.forwardRef<
       asChild
     >
       <CloseButton size="sm" ref={ref} />
-    </ChakraDrawer.CloseTrigger>
+    </AgniflowDrawer.CloseTrigger>
   )
 })
 
-export const DrawerTrigger = ChakraDrawer.Trigger
-export const DrawerRoot = ChakraDrawer.Root
-export const DrawerFooter = ChakraDrawer.Footer
-export const DrawerHeader = ChakraDrawer.Header
-export const DrawerBody = ChakraDrawer.Body
-export const DrawerBackdrop = ChakraDrawer.Backdrop
-export const DrawerDescription = ChakraDrawer.Description
-export const DrawerTitle = ChakraDrawer.Title
-export const DrawerActionTrigger = ChakraDrawer.ActionTrigger
+export const DrawerTrigger = AgniflowDrawer.Trigger
+export const DrawerRoot = AgniflowDrawer.Root
+export const DrawerFooter = AgniflowDrawer.Footer
+export const DrawerHeader = AgniflowDrawer.Header
+export const DrawerBody = AgniflowDrawer.Body
+export const DrawerBackdrop = AgniflowDrawer.Backdrop
+export const DrawerDescription = AgniflowDrawer.Description
+export const DrawerTitle = AgniflowDrawer.Title
+export const DrawerActionTrigger = AgniflowDrawer.ActionTrigger

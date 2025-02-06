@@ -1,4 +1,4 @@
-import { CheckboxGroup, Flex, Text } from "@chakra-ui/react"
+import { CheckboxGroup, Flex, Text } from "@agniflow-ui/react"
 import { CheckboxCard } from "compositions/ui/checkbox-card"
 
 export const CheckboxCardWithGroup = () => {

@@ -1,4 +1,4 @@
-import { CheckboxCard } from "@chakra-ui/react"
+import { CheckboxCard } from "@agniflow-ui/react"
 
 export const CheckboxCardWithoutSnippet = () => {
   return (

@@ -1,6 +1,6 @@
 "use client"
 
-import type { StackProps, Tokens } from "@chakra-ui/react"
+import type { StackProps, Tokens } from "@agniflow-ui/react"
 import {
   Box,
   ColorSwatch,
@@ -10,7 +10,7 @@ import {
   Span,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import * as React from "react"
 import type { UseChartStateReturn } from "./use-chart-state"
 

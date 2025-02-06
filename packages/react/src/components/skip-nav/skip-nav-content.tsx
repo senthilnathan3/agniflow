@@ -1,10 +1,10 @@
 "use client"
 
 import { forwardRef } from "react"
-import { type HTMLChakraProps, chakra } from "../../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../../styled-system"
 import { fallbackId } from "./skip-nav-link"
 
-export interface SkipNavContentProps extends HTMLChakraProps<"div"> {}
+export interface SkipNavContentProps extends HTMLAgniflowProps<"div"> {}
 /**
  * Renders a div as the target for the `SkipNavLink`.
  *

@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge, For, useSlotRecipe } from "@chakra-ui/react"
+import { Badge, For, useSlotRecipe } from "@agniflow-ui/react"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 import { DataListItem, DataListRoot } from "compositions/ui/data-list"
 

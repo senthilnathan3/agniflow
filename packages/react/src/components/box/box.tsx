@@ -1,8 +1,8 @@
 "use client"
 
-import { type HTMLChakraProps, chakra } from "../../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../../styled-system"
 
-export interface BoxProps extends HTMLChakraProps<"div"> {}
+export interface BoxProps extends HTMLAgniflowProps<"div"> {}
 
 /**
  * Box is the most abstract component on top of which other chakra

@@ -1,7 +1,7 @@
-import { Slider as ChakraSlider, For, HStack } from "@chakra-ui/react"
+import { Slider as AgniflowSlider, For, HStack } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface SliderProps extends ChakraSlider.RootProps {
+export interface SliderProps extends AgniflowSlider.RootProps {
   marks?: Array<number | { value: number; label: React.ReactNode }>
   label?: React.ReactNode
   showValue?: boolean
@@ -20,24 +20,24 @@ export const Slider = React.forwardRef<HTMLDivElement, SliderProps>(
     const hasMarkLabel = !!marks?.some((mark) => mark.label)
 
     return (
-      <ChakraSlider.Root ref={ref} thumbAlignment="center" {...rest}>
+      <AgniflowSlider.Root ref={ref} thumbAlignment="center" {...rest}>
         {label && !showValue && (
-          <ChakraSlider.Label>{label}</ChakraSlider.Label>
+          <AgniflowSlider.Label>{label}</AgniflowSlider.Label>
         )}
         {label && showValue && (
           <HStack justify="space-between">
-            <ChakraSlider.Label>{label}</ChakraSlider.Label>
-            <ChakraSlider.ValueText />
+            <AgniflowSlider.Label>{label}</AgniflowSlider.Label>
+            <AgniflowSlider.ValueText />
           </HStack>
         )}
-        <ChakraSlider.Control data-has-mark-label={hasMarkLabel || undefined}>
-          <ChakraSlider.Track>
-            <ChakraSlider.Range />
-          </ChakraSlider.Track>
+        <AgniflowSlider.Control data-has-mark-label={hasMarkLabel || undefined}>
+          <AgniflowSlider.Track>
+            <AgniflowSlider.Range />
+          </AgniflowSlider.Track>
           <SliderThumbs value={value} />
           <SliderMarks marks={marks} />
-        </ChakraSlider.Control>
-      </ChakraSlider.Root>
+        </AgniflowSlider.Control>
+      </AgniflowSlider.Root>
     )
   },
 )
@@ -47,9 +47,9 @@ function SliderThumbs(props: { value?: number[] }) {
   return (
     <For each={value}>
       {(_, index) => (
-        <ChakraSlider.Thumb key={index} index={index}>
-          <ChakraSlider.HiddenInput />
-        </ChakraSlider.Thumb>
+        <AgniflowSlider.Thumb key={index} index={index}>
+          <AgniflowSlider.HiddenInput />
+        </AgniflowSlider.Thumb>
       )}
     </For>
   )
@@ -65,18 +65,18 @@ const SliderMarks = React.forwardRef<HTMLDivElement, SliderMarksProps>(
     if (!marks?.length) return null
 
     return (
-      <ChakraSlider.MarkerGroup ref={ref}>
+      <AgniflowSlider.MarkerGroup ref={ref}>
         {marks.map((mark, index) => {
           const value = typeof mark === "number" ? mark : mark.value
           const label = typeof mark === "number" ? undefined : mark.label
           return (
-            <ChakraSlider.Marker key={index} value={value}>
-              <ChakraSlider.MarkerIndicator />
+            <AgniflowSlider.Marker key={index} value={value}>
+              <AgniflowSlider.MarkerIndicator />
               {label}
-            </ChakraSlider.Marker>
+            </AgniflowSlider.Marker>
           )
         })}
-      </ChakraSlider.MarkerGroup>
+      </AgniflowSlider.MarkerGroup>
     )
   },
 )

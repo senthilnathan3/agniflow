@@ -1,7 +1,7 @@
-import { CheckboxCard as ChakraCheckboxCard } from "@chakra-ui/react"
+import { CheckboxCard as AgniflowCheckboxCard } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface CheckboxCardProps extends ChakraCheckboxCard.RootProps {
+export interface CheckboxCardProps extends AgniflowCheckboxCard.RootProps {
   icon?: React.ReactElement
   label?: React.ReactNode
   description?: React.ReactNode
@@ -21,38 +21,42 @@ export const CheckboxCard = React.forwardRef<
     description,
     icon,
     addon,
-    indicator = <ChakraCheckboxCard.Indicator />,
+    indicator = <AgniflowCheckboxCard.Indicator />,
     indicatorPlacement = "end",
     ...rest
   } = props
 
   const hasContent = label || description || icon
-  const ContentWrapper = indicator ? ChakraCheckboxCard.Content : React.Fragment
+  const ContentWrapper = indicator
+    ? AgniflowCheckboxCard.Content
+    : React.Fragment
 
   return (
-    <ChakraCheckboxCard.Root {...rest}>
-      <ChakraCheckboxCard.HiddenInput ref={ref} {...inputProps} />
-      <ChakraCheckboxCard.Control>
+    <AgniflowCheckboxCard.Root {...rest}>
+      <AgniflowCheckboxCard.HiddenInput ref={ref} {...inputProps} />
+      <AgniflowCheckboxCard.Control>
         {indicatorPlacement === "start" && indicator}
         {hasContent && (
           <ContentWrapper>
             {icon}
             {label && (
-              <ChakraCheckboxCard.Label>{label}</ChakraCheckboxCard.Label>
+              <AgniflowCheckboxCard.Label>{label}</AgniflowCheckboxCard.Label>
             )}
             {description && (
-              <ChakraCheckboxCard.Description>
+              <AgniflowCheckboxCard.Description>
                 {description}
-              </ChakraCheckboxCard.Description>
+              </AgniflowCheckboxCard.Description>
             )}
             {indicatorPlacement === "inside" && indicator}
           </ContentWrapper>
         )}
         {indicatorPlacement === "end" && indicator}
-      </ChakraCheckboxCard.Control>
-      {addon && <ChakraCheckboxCard.Addon>{addon}</ChakraCheckboxCard.Addon>}
-    </ChakraCheckboxCard.Root>
+      </AgniflowCheckboxCard.Control>
+      {addon && (
+        <AgniflowCheckboxCard.Addon>{addon}</AgniflowCheckboxCard.Addon>
+      )}
+    </AgniflowCheckboxCard.Root>
   )
 })
 
-export const CheckboxCardIndicator = ChakraCheckboxCard.Indicator
+export const CheckboxCardIndicator = AgniflowCheckboxCard.Indicator

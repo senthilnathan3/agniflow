@@ -1,4 +1,4 @@
-import { HStack, Input } from "@chakra-ui/react"
+import { HStack, Input } from "@agniflow-ui/react"
 import { InputGroup } from "compositions/ui/input-group"
 import { LuUser } from "react-icons/lu"
 

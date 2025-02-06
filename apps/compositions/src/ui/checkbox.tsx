@@ -1,7 +1,7 @@
-import { Checkbox as ChakraCheckbox } from "@chakra-ui/react"
+import { Checkbox as AgniflowCheckbox } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface CheckboxProps extends ChakraCheckbox.RootProps {
+export interface CheckboxProps extends AgniflowCheckbox.RootProps {
   icon?: React.ReactNode
   inputProps?: React.InputHTMLAttributes<HTMLInputElement>
   rootRef?: React.Ref<HTMLLabelElement>
@@ -11,15 +11,15 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   function Checkbox(props, ref) {
     const { icon, children, inputProps, rootRef, ...rest } = props
     return (
-      <ChakraCheckbox.Root ref={rootRef} {...rest}>
-        <ChakraCheckbox.HiddenInput ref={ref} {...inputProps} />
-        <ChakraCheckbox.Control>
-          {icon || <ChakraCheckbox.Indicator />}
-        </ChakraCheckbox.Control>
+      <AgniflowCheckbox.Root ref={rootRef} {...rest}>
+        <AgniflowCheckbox.HiddenInput ref={ref} {...inputProps} />
+        <AgniflowCheckbox.Control>
+          {icon || <AgniflowCheckbox.Indicator />}
+        </AgniflowCheckbox.Control>
         {children != null && (
-          <ChakraCheckbox.Label>{children}</ChakraCheckbox.Label>
+          <AgniflowCheckbox.Label>{children}</AgniflowCheckbox.Label>
         )}
-      </ChakraCheckbox.Root>
+      </AgniflowCheckbox.Root>
     )
   },
 )

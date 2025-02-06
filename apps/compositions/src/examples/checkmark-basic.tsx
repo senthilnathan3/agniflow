@@ -1,4 +1,4 @@
-import { Checkmark, Stack } from "@chakra-ui/react"
+import { Checkmark, Stack } from "@agniflow-ui/react"
 
 export const CheckmarkBasic = () => {
   return (

@@ -1,4 +1,4 @@
-import { HStack, Span } from "@chakra-ui/react"
+import { HStack, Span } from "@agniflow-ui/react"
 import Link from "next/link"
 import { LiaGithub } from "react-icons/lia"
 import { LuArrowUpRight } from "react-icons/lu"

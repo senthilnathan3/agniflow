@@ -2,7 +2,7 @@
 
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   chakra,
@@ -19,7 +19,7 @@ export interface SeparatorBaseProps
     UnstyledProp {}
 
 export interface SeparatorProps
-  extends HTMLChakraProps<"span", SeparatorBaseProps> {}
+  extends HTMLAgniflowProps<"span", SeparatorBaseProps> {}
 
 export const Separator = forwardRef<HTMLSpanElement, SeparatorProps>(
   function Separator(props, ref) {

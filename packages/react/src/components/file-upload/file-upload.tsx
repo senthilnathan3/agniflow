@@ -7,7 +7,7 @@ import {
 } from "@ark-ui/react/file-upload"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -35,7 +35,7 @@ export interface FileUploadRootProviderBaseProps
     UnstyledProp {}
 
 export interface FileUploadRootProviderProps
-  extends HTMLChakraProps<"div", FileUploadRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", FileUploadRootProviderBaseProps> {}
 
 export const FileUploadRootProvider = withProvider<
   HTMLDivElement,
@@ -49,7 +49,7 @@ export interface FileUploadRootBaseProps
     UnstyledProp {}
 
 export interface FileUploadRootProps
-  extends HTMLChakraProps<"div", FileUploadRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", FileUploadRootBaseProps> {}
 
 export const FileUploadRoot = withProvider<HTMLDivElement, FileUploadRootProps>(
   ArkFileUpload.Root,
@@ -65,7 +65,7 @@ export const FileUploadPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadClearTriggerProps
-  extends HTMLChakraProps<"button"> {}
+  extends HTMLAgniflowProps<"button"> {}
 
 export const FileUploadClearTrigger = forwardRef<
   HTMLButtonElement,
@@ -93,7 +93,7 @@ export const FileUploadClearTrigger = forwardRef<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadDropzoneProps
-  extends HTMLChakraProps<"li", ArkFileUpload.DropzoneBaseProps> {}
+  extends HTMLAgniflowProps<"li", ArkFileUpload.DropzoneBaseProps> {}
 
 export const FileUploadDropzone = withContext<
   HTMLDivElement,
@@ -103,7 +103,7 @@ export const FileUploadDropzone = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadDropzoneContentProps
-  extends HTMLChakraProps<"div"> {}
+  extends HTMLAgniflowProps<"div"> {}
 
 export const FileUploadDropzoneContent = withContext<
   HTMLDivElement,
@@ -113,7 +113,7 @@ export const FileUploadDropzoneContent = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadItemProps
-  extends HTMLChakraProps<"li", ArkFileUpload.ItemBaseProps> {}
+  extends HTMLAgniflowProps<"li", ArkFileUpload.ItemBaseProps> {}
 
 export const FileUploadItem = withContext<HTMLLIElement, FileUploadItemProps>(
   ArkFileUpload.Item,
@@ -123,7 +123,7 @@ export const FileUploadItem = withContext<HTMLLIElement, FileUploadItemProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface FileUploadItemContentProps extends HTMLChakraProps<"div"> {}
+export interface FileUploadItemContentProps extends HTMLAgniflowProps<"div"> {}
 
 export const FileUploadItemContent = withContext<
   HTMLDivElement,
@@ -133,7 +133,10 @@ export const FileUploadItemContent = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadItemDeleteTriggerProps
-  extends HTMLChakraProps<"button", ArkFileUpload.ItemDeleteTriggerBaseProps> {}
+  extends HTMLAgniflowProps<
+    "button",
+    ArkFileUpload.ItemDeleteTriggerBaseProps
+  > {}
 
 export const FileUploadItemDeleteTrigger = withContext<
   HTMLButtonElement,
@@ -145,7 +148,7 @@ export const FileUploadItemDeleteTrigger = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadItemGroupProps
-  extends HTMLChakraProps<"ul", ArkFileUpload.ItemGroupBaseProps> {}
+  extends HTMLAgniflowProps<"ul", ArkFileUpload.ItemGroupBaseProps> {}
 
 export const FileUploadItemGroup = withContext<
   HTMLUListElement,
@@ -155,7 +158,7 @@ export const FileUploadItemGroup = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadItemNameProps
-  extends HTMLChakraProps<"span", ArkFileUpload.ItemNameBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkFileUpload.ItemNameBaseProps> {}
 
 export const FileUploadItemName = withContext<
   HTMLSpanElement,
@@ -165,7 +168,7 @@ export const FileUploadItemName = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadItemPreviewProps
-  extends HTMLChakraProps<"div", ArkFileUpload.ItemPreviewBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkFileUpload.ItemPreviewBaseProps> {}
 
 export const FileUploadItemPreview = withContext<
   HTMLDivElement,
@@ -175,7 +178,7 @@ export const FileUploadItemPreview = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadItemPreviewImageProps
-  extends HTMLChakraProps<"img", ArkFileUpload.ItemPreviewImageBaseProps> {}
+  extends HTMLAgniflowProps<"img", ArkFileUpload.ItemPreviewImageBaseProps> {}
 
 export const FileUploadItemPreviewImage = withContext<
   HTMLImageElement,
@@ -185,7 +188,7 @@ export const FileUploadItemPreviewImage = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadItemSizeTextProps
-  extends HTMLChakraProps<"span", ArkFileUpload.ItemSizeTextBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkFileUpload.ItemSizeTextBaseProps> {}
 
 export const FileUploadItemSizeText = withContext<
   HTMLSpanElement,
@@ -195,7 +198,7 @@ export const FileUploadItemSizeText = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadLabelProps
-  extends HTMLChakraProps<"label", ArkFileUpload.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"label", ArkFileUpload.LabelBaseProps> {}
 
 export const FileUploadLabel = withContext<
   HTMLLabelElement,
@@ -205,7 +208,7 @@ export const FileUploadLabel = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface FileUploadTriggerProps
-  extends HTMLChakraProps<"button", ArkFileUpload.TriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkFileUpload.TriggerBaseProps> {}
 
 export const FileUploadTrigger = withContext<
   HTMLButtonElement,

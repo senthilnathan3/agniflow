@@ -1,4 +1,4 @@
-import { Button, Card, For, Stack } from "@chakra-ui/react"
+import { Button, Card, For, Stack } from "@agniflow-ui/react"
 import { Avatar } from "compositions/ui/avatar"
 
 export const CardWithVariants = () => {

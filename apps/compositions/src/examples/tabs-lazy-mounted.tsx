@@ -1,6 +1,6 @@
 "use client"
 
-import { Tabs } from "@chakra-ui/react"
+import { Tabs } from "@agniflow-ui/react"
 import { useEffect, useState } from "react"
 
 export const TabsLazyMounted = () => {

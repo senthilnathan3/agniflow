@@ -1,4 +1,4 @@
-import { IconButton } from "@chakra-ui/react"
+import { IconButton } from "@agniflow-ui/react"
 import { useTheme } from "next-themes"
 import { LuMoon, LuSun } from "react-icons/lu"
 

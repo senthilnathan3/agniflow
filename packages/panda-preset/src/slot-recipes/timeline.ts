@@ -11,7 +11,7 @@ export const timelineSlotRecipe = defineSlotRecipe({
     "title",
     "description",
   ],
-  className: "timeline",
+  className: "chakra-timeline",
   base: {
     root: {
       display: "flex",
@@ -27,7 +27,7 @@ export const timelineSlotRecipe = defineSlotRecipe({
       flexShrink: 0,
       gap: "4",
       _last: {
-        "& :where(.timeline__separator)": {
+        "& :where(.chakra-timeline__separator)": {
           display: "none",
         },
       },

@@ -1,4 +1,4 @@
-import { FormatByte, HStack, Text } from "@chakra-ui/react"
+import { FormatByte, HStack, Text } from "@agniflow-ui/react"
 import { InfoTip } from "compositions/ui/toggle-tip"
 
 export const ToggleTipInfoTip = () => {

@@ -7,7 +7,7 @@ import {
 } from "@ark-ui/react/rating-group"
 import { cloneElement, forwardRef, isValidElement } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -36,7 +36,7 @@ export interface RatingGroupRootProviderBaseProps
     UnstyledProp {}
 
 export interface RatingGroupRootProviderProps
-  extends HTMLChakraProps<"div", RatingGroupRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", RatingGroupRootProviderBaseProps> {}
 
 export const RatingGroupRootProvider = withProvider<
   HTMLDivElement,
@@ -50,7 +50,7 @@ export interface RatingGroupRootBaseProps
     UnstyledProp {}
 
 export interface RatingGroupRootProps
-  extends HTMLChakraProps<"div", RatingGroupRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", RatingGroupRootBaseProps> {}
 
 export const RatingGroupRoot = withProvider<
   HTMLDivElement,
@@ -65,7 +65,7 @@ export const RatingGroupPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RatingGroupLabelProps
-  extends HTMLChakraProps<"div", ArkRatingGroup.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRatingGroup.LabelBaseProps> {}
 
 export const RatingGroupLabel = withContext<
   HTMLDivElement,
@@ -75,7 +75,7 @@ export const RatingGroupLabel = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RatingGroupControlProps
-  extends HTMLChakraProps<"div", ArkRatingGroup.ControlBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRatingGroup.ControlBaseProps> {}
 
 export const RatingGroupControl = withContext<
   HTMLDivElement,
@@ -85,7 +85,7 @@ export const RatingGroupControl = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RatingGroupItemProps
-  extends HTMLChakraProps<"div", ArkRatingGroup.ItemBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRatingGroup.ItemBaseProps> {}
 
 export const RatingGroupItem = withContext<
   HTMLDivElement,
@@ -94,7 +94,8 @@ export const RatingGroupItem = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface RatingGroupItemIndicatorProps extends HTMLChakraProps<"span"> {
+export interface RatingGroupItemIndicatorProps
+  extends HTMLAgniflowProps<"span"> {
   icon?: React.ReactElement
 }
 

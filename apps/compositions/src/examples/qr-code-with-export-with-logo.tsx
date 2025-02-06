@@ -1,4 +1,4 @@
-import { Button, QrCode } from "@chakra-ui/react"
+import { Button, QrCode } from "@agniflow-ui/react"
 
 export const QrCodeWithExportWithLogo = () => {
   return (

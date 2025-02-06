@@ -1,4 +1,4 @@
-import { Avatar, HStack, Stack, Text } from "@chakra-ui/react"
+import { Avatar, HStack, Stack, Text } from "@agniflow-ui/react"
 
 export const AvatarPersona = () => {
   return (

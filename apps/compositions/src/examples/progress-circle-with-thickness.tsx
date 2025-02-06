@@ -1,4 +1,4 @@
-import { ProgressCircle } from "@chakra-ui/react"
+import { ProgressCircle } from "@agniflow-ui/react"
 
 export const ProgressCircleWithThickness = () => {
   return (

@@ -1,4 +1,4 @@
-import { Box, type BoxProps } from "@chakra-ui/react"
+import { Box, type BoxProps } from "@agniflow-ui/react"
 
 export const Ol = (props: BoxProps) => {
   return (

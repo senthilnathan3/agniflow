@@ -1,4 +1,4 @@
-import { Alert } from "@chakra-ui/react"
+import { Alert } from "@agniflow-ui/react"
 import { CloseButton } from "compositions/ui/close-button"
 
 export const AlertWithCloseButton = () => {

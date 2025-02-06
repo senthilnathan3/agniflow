@@ -1,41 +1,41 @@
-import type { ButtonProps, InputProps } from "@chakra-ui/react"
+import type { ButtonProps, InputProps } from "@agniflow-ui/react"
 import {
+  Clipboard as AgniflowClipboard,
   Button,
-  Clipboard as ChakraClipboard,
   IconButton,
   Input,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import * as React from "react"
 import { LuCheck, LuClipboard, LuLink } from "react-icons/lu"
 
 const ClipboardIcon = React.forwardRef<
   HTMLDivElement,
-  ChakraClipboard.IndicatorProps
+  AgniflowClipboard.IndicatorProps
 >(function ClipboardIcon(props, ref) {
   return (
-    <ChakraClipboard.Indicator copied={<LuCheck />} {...props} ref={ref}>
+    <AgniflowClipboard.Indicator copied={<LuCheck />} {...props} ref={ref}>
       <LuClipboard />
-    </ChakraClipboard.Indicator>
+    </AgniflowClipboard.Indicator>
   )
 })
 
 const ClipboardCopyText = React.forwardRef<
   HTMLDivElement,
-  ChakraClipboard.IndicatorProps
+  AgniflowClipboard.IndicatorProps
 >(function ClipboardCopyText(props, ref) {
   return (
-    <ChakraClipboard.Indicator copied="Copied" {...props} ref={ref}>
+    <AgniflowClipboard.Indicator copied="Copied" {...props} ref={ref}>
       Copy
-    </ChakraClipboard.Indicator>
+    </AgniflowClipboard.Indicator>
   )
 })
 
 export const ClipboardLabel = React.forwardRef<
   HTMLLabelElement,
-  ChakraClipboard.LabelProps
+  AgniflowClipboard.LabelProps
 >(function ClipboardLabel(props, ref) {
   return (
-    <ChakraClipboard.Label
+    <AgniflowClipboard.Label
       textStyle="sm"
       fontWeight="medium"
       display="inline-block"
@@ -49,12 +49,12 @@ export const ClipboardLabel = React.forwardRef<
 export const ClipboardButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
   function ClipboardButton(props, ref) {
     return (
-      <ChakraClipboard.Trigger asChild>
+      <AgniflowClipboard.Trigger asChild>
         <Button ref={ref} size="sm" variant="surface" {...props}>
           <ClipboardIcon />
           <ClipboardCopyText />
         </Button>
-      </ChakraClipboard.Trigger>
+      </AgniflowClipboard.Trigger>
     )
   },
 )
@@ -62,7 +62,7 @@ export const ClipboardButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
 export const ClipboardLink = React.forwardRef<HTMLButtonElement, ButtonProps>(
   function ClipboardLink(props, ref) {
     return (
-      <ChakraClipboard.Trigger asChild>
+      <AgniflowClipboard.Trigger asChild>
         <Button
           unstyled
           variant="plain"
@@ -76,7 +76,7 @@ export const ClipboardLink = React.forwardRef<HTMLButtonElement, ButtonProps>(
           <LuLink />
           <ClipboardCopyText />
         </Button>
-      </ChakraClipboard.Trigger>
+      </AgniflowClipboard.Trigger>
     )
   },
 )
@@ -86,23 +86,23 @@ export const ClipboardIconButton = React.forwardRef<
   ButtonProps
 >(function ClipboardIconButton(props, ref) {
   return (
-    <ChakraClipboard.Trigger asChild>
+    <AgniflowClipboard.Trigger asChild>
       <IconButton ref={ref} size="xs" variant="subtle" {...props}>
         <ClipboardIcon />
         <ClipboardCopyText srOnly />
       </IconButton>
-    </ChakraClipboard.Trigger>
+    </AgniflowClipboard.Trigger>
   )
 })
 
 export const ClipboardInput = React.forwardRef<HTMLInputElement, InputProps>(
   function ClipboardInputElement(props, ref) {
     return (
-      <ChakraClipboard.Input asChild>
+      <AgniflowClipboard.Input asChild>
         <Input ref={ref} {...props} />
-      </ChakraClipboard.Input>
+      </AgniflowClipboard.Input>
     )
   },
 )
 
-export const ClipboardRoot = ChakraClipboard.Root
+export const ClipboardRoot = AgniflowClipboard.Root

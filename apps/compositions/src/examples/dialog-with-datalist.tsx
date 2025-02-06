@@ -1,4 +1,4 @@
-import { Badge, Button, HStack, Textarea, VStack } from "@chakra-ui/react"
+import { Badge, Button, HStack, Textarea, VStack } from "@agniflow-ui/react"
 import { Avatar } from "compositions/ui/avatar"
 import { DataListItem, DataListRoot } from "compositions/ui/data-list"
 import {
@@ -20,7 +20,7 @@ export const DialogWithDatalist = () => {
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Prepare Chakra V3</DialogTitle>
+            <DialogTitle>Prepare Agniflow V3</DialogTitle>
           </DialogHeader>
           <DialogBody pb="8">
             <DataListRoot orientation="horizontal">

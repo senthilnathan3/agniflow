@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react"
+import { Button } from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuItem,
@@ -23,7 +23,7 @@ export const MenuWithSubmenu = () => {
           <MenuContent>
             <MenuItem value="panda">Panda</MenuItem>
             <MenuItem value="ark">Ark UI</MenuItem>
-            <MenuItem value="chakra">Chakra v3</MenuItem>
+            <MenuItem value="chakra">Agniflow v3</MenuItem>
           </MenuContent>
         </MenuRoot>
         <MenuItem value="open-file">Open File...</MenuItem>

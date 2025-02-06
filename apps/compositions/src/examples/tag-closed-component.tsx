@@ -1,7 +1,7 @@
-import { Tag as ChakraTag } from "@chakra-ui/react"
+import { Tag as AgniflowTag } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface TagProps extends ChakraTag.RootProps {
+export interface TagProps extends AgniflowTag.RootProps {
   startElement?: React.ReactNode
   endElement?: React.ReactNode
   onClose?: VoidFunction
@@ -20,20 +20,20 @@ export const Tag = React.forwardRef<HTMLSpanElement, TagProps>(
     } = props
 
     return (
-      <ChakraTag.Root ref={ref} {...rest}>
+      <AgniflowTag.Root ref={ref} {...rest}>
         {startElement && (
-          <ChakraTag.StartElement>{startElement}</ChakraTag.StartElement>
+          <AgniflowTag.StartElement>{startElement}</AgniflowTag.StartElement>
         )}
-        <ChakraTag.Label>{children}</ChakraTag.Label>
+        <AgniflowTag.Label>{children}</AgniflowTag.Label>
         {endElement && (
-          <ChakraTag.EndElement>{endElement}</ChakraTag.EndElement>
+          <AgniflowTag.EndElement>{endElement}</AgniflowTag.EndElement>
         )}
         {closable && (
-          <ChakraTag.EndElement>
-            <ChakraTag.CloseTrigger onClick={onClose} />
-          </ChakraTag.EndElement>
+          <AgniflowTag.EndElement>
+            <AgniflowTag.CloseTrigger onClick={onClose} />
+          </AgniflowTag.EndElement>
         )}
-      </ChakraTag.Root>
+      </AgniflowTag.Root>
     )
   },
 )

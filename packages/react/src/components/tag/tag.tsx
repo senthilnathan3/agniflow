@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -26,7 +26,7 @@ export interface TagRootBaseProps
     UnstyledProp {}
 
 export interface TagRootProps
-  extends HTMLChakraProps<"span", TagRootBaseProps> {}
+  extends HTMLAgniflowProps<"span", TagRootBaseProps> {}
 
 export const TagRoot = withProvider<HTMLSpanElement, TagRootProps>(
   "div",
@@ -38,7 +38,7 @@ export const TagRootPropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TagLabelProps extends HTMLChakraProps<"span"> {}
+export interface TagLabelProps extends HTMLAgniflowProps<"span"> {}
 
 export const TagLabel = withContext<HTMLSpanElement, TagLabelProps>(
   "span",
@@ -47,7 +47,7 @@ export const TagLabel = withContext<HTMLSpanElement, TagLabelProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TagCloseTriggerProps extends HTMLChakraProps<"button"> {}
+export interface TagCloseTriggerProps extends HTMLAgniflowProps<"button"> {}
 
 export const TagCloseTrigger = withContext<
   HTMLButtonElement,
@@ -56,7 +56,7 @@ export const TagCloseTrigger = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TagStartElementProps extends HTMLChakraProps<"span"> {}
+export interface TagStartElementProps extends HTMLAgniflowProps<"span"> {}
 
 export const TagStartElement = withContext<
   HTMLSpanElement,
@@ -65,7 +65,7 @@ export const TagStartElement = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TagEndElementProps extends HTMLChakraProps<"span"> {}
+export interface TagEndElementProps extends HTMLAgniflowProps<"span"> {}
 
 export const TagEndElement = withContext<HTMLSpanElement, TagEndElementProps>(
   "span",

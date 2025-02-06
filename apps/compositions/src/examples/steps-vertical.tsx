@@ -1,4 +1,4 @@
-import { Button, Group, Stack } from "@chakra-ui/react"
+import { Button, Group, Stack } from "@agniflow-ui/react"
 import {
   StepsCompletedContent,
   StepsContent,

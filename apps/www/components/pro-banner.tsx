@@ -1,7 +1,7 @@
 "use client"
 
 import { docsConfig } from "@/docs.config"
-import { Center, Flex, Text, chakra } from "@chakra-ui/react"
+import { Center, Flex, Text, agniflow } from "@agniflow-ui/react"
 
 export const ProAdBanner = () => {
   return (
@@ -16,9 +16,9 @@ export const ProAdBanner = () => {
     >
       <Flex align="center" textStyle="sm">
         <Text fontWeight="medium" maxW={{ base: "32ch", md: "unset" }}>
-          Build faster with Premium Chakra UI Components 💎
+          Build faster with Premium Agniflow UI Components 💎
         </Text>
-        <chakra.a
+        <agniflow.a
           flexShrink={0}
           href={docsConfig.proUrl}
           ms="6"
@@ -30,7 +30,7 @@ export const ProAdBanner = () => {
           rounded="l2"
         >
           Learn more
-        </chakra.a>
+        </agniflow.a>
       </Flex>
     </Center>
   )

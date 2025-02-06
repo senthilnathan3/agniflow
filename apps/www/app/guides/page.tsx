@@ -15,7 +15,7 @@ import {
   Stack,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { Metadata } from "next"
 import NextLink from "next/link"
 import { Suspense } from "react"
@@ -24,7 +24,7 @@ import { GuideSearchInput } from "./search-input"
 
 export const metadata: Metadata = {
   title: "Guides",
-  description: "Get answers to common questions about Chakra UI v3.0",
+  description: "Get answers to common questions about Agniflow UI v3.0",
   openGraph: {
     images: `/og?title=Guides`,
   },
@@ -43,7 +43,7 @@ export default function GuidePage() {
               How can we help?
             </Heading>
             <Text color="fg.muted" textStyle="lg">
-              Find answers to common questions related to Chakra UI v3.0
+              Find answers to common questions related to Agniflow UI v3.0
             </Text>
           </VStack>
 

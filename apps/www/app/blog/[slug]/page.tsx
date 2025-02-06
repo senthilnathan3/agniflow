@@ -9,7 +9,7 @@ import {
   Span,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { Avatar } from "compositions/ui/avatar"
 import { Metadata } from "next"
 import { notFound } from "next/navigation"

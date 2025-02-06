@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   createRecipeContext,
@@ -16,7 +16,7 @@ export interface ContainerBaseProps
     UnstyledProp {}
 
 export interface ContainerProps
-  extends HTMLChakraProps<"div", ContainerBaseProps> {}
+  extends HTMLAgniflowProps<"div", ContainerBaseProps> {}
 
 export const Container = withContext<HTMLDivElement, ContainerProps>("div")
 

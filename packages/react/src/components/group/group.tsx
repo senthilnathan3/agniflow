@@ -9,7 +9,7 @@ import {
   useMemo,
 } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type InferRecipeProps,
   type JsxStyleProps,
   chakra,
@@ -106,7 +106,7 @@ const StyledGroup = chakra("div", {
 
 type VariantProps = InferRecipeProps<typeof StyledGroup>
 
-export interface GroupProps extends HTMLChakraProps<"div", VariantProps> {
+export interface GroupProps extends HTMLAgniflowProps<"div", VariantProps> {
   /**
    * The `alignItems` style property
    */

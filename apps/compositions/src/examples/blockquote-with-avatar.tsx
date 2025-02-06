@@ -1,4 +1,4 @@
-import { Float, HStack, Span } from "@chakra-ui/react"
+import { Float, HStack, Span } from "@agniflow-ui/react"
 import { Avatar } from "compositions/ui/avatar"
 import { Blockquote, BlockquoteIcon } from "compositions/ui/blockquote"
 

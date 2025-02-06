@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { Accordion as ArkAccordion } from "@ark-ui/react/accordion"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -30,7 +30,7 @@ export interface AccordionRootProviderBaseProps
     UnstyledProp {}
 
 export interface AccordionRootProviderProps
-  extends HTMLChakraProps<"div", AccordionRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", AccordionRootProviderBaseProps> {}
 
 export const AccordionRootProvider = withProvider<
   HTMLDivElement,
@@ -44,7 +44,7 @@ export interface AccordionRootBaseProps
     UnstyledProp {}
 
 export interface AccordionRootProps
-  extends HTMLChakraProps<"div", AccordionRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", AccordionRootBaseProps> {}
 
 export const AccordionRoot = withProvider<HTMLDivElement, AccordionRootProps>(
   ArkAccordion.Root,
@@ -60,7 +60,7 @@ export const AccordionPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface AccordionItemProps
-  extends HTMLChakraProps<"div", ArkAccordion.ItemBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkAccordion.ItemBaseProps> {}
 
 export const AccordionItem = withContext<HTMLDivElement, AccordionItemProps>(
   ArkAccordion.Item,
@@ -71,7 +71,7 @@ export const AccordionItem = withContext<HTMLDivElement, AccordionItemProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface AccordionItemContentProps
-  extends HTMLChakraProps<"div", ArkAccordion.ItemContentBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkAccordion.ItemContentBaseProps> {}
 
 export const AccordionItemContent = withContext<
   HTMLDivElement,
@@ -80,7 +80,7 @@ export const AccordionItemContent = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface AccordionItemBodyProps extends HTMLChakraProps<"div"> {}
+export interface AccordionItemBodyProps extends HTMLAgniflowProps<"div"> {}
 
 export const AccordionItemBody = withContext<
   HTMLDivElement,
@@ -90,7 +90,7 @@ export const AccordionItemBody = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface AccordionItemTriggerProps
-  extends HTMLChakraProps<"button", ArkAccordion.ItemTriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkAccordion.ItemTriggerBaseProps> {}
 
 export const AccordionItemTrigger = withContext<
   HTMLButtonElement,
@@ -100,7 +100,7 @@ export const AccordionItemTrigger = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface AccordionItemIndicatorProps
-  extends HTMLChakraProps<"button", ArkAccordion.ItemIndicatorBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkAccordion.ItemIndicatorBaseProps> {}
 
 export const AccordionItemIndicator = withContext<
   HTMLDivElement,

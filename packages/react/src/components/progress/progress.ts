@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { Progress as ArkProgress } from "@ark-ui/react/progress"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -30,7 +30,7 @@ export interface ProgressRootProviderBaseProps
     UnstyledProp {}
 
 export interface ProgressRootProviderProps
-  extends HTMLChakraProps<"div", ProgressRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", ProgressRootProviderBaseProps> {}
 
 export const ProgressRootProvider = withProvider<
   HTMLDivElement,
@@ -44,7 +44,7 @@ export interface ProgressRootBaseProps
     UnstyledProp {}
 
 export interface ProgressRootProps
-  extends HTMLChakraProps<"div", ProgressRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", ProgressRootBaseProps> {}
 
 export const ProgressRoot = withProvider<HTMLDivElement, ProgressRootProps>(
   ArkProgress.Root,
@@ -59,7 +59,7 @@ export const ProgressPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressLabelProps
-  extends HTMLChakraProps<"div", ArkProgress.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkProgress.LabelBaseProps> {}
 
 export const ProgressLabel = withContext<HTMLDivElement, ProgressLabelProps>(
   ArkProgress.Label,
@@ -70,7 +70,7 @@ export const ProgressLabel = withContext<HTMLDivElement, ProgressLabelProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressTrackProps
-  extends HTMLChakraProps<"div", ArkProgress.TrackBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkProgress.TrackBaseProps> {}
 
 export const ProgressTrack = withContext<HTMLDivElement, ProgressTrackProps>(
   ArkProgress.Track,
@@ -81,7 +81,7 @@ export const ProgressTrack = withContext<HTMLDivElement, ProgressTrackProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressRangeProps
-  extends HTMLChakraProps<"div", ArkProgress.RangeBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkProgress.RangeBaseProps> {}
 
 export const ProgressRange = withContext<HTMLDivElement, ProgressRangeProps>(
   ArkProgress.Range,
@@ -92,7 +92,7 @@ export const ProgressRange = withContext<HTMLDivElement, ProgressRangeProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ProgressValueTextProps
-  extends HTMLChakraProps<"div", ArkProgress.ValueTextBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkProgress.ValueTextBaseProps> {}
 
 export const ProgressValueText = withContext<
   HTMLDivElement,

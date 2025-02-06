@@ -1,4 +1,4 @@
-import { Heading, LocaleProvider, Stack, Text } from "@chakra-ui/react"
+import { Heading, LocaleProvider, Stack, Text } from "@agniflow-ui/react"
 import { Slider } from "compositions/ui/slider"
 
 export const LocaleProviderBasic = () => {

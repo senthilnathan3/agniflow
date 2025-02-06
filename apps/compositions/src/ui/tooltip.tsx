@@ -1,12 +1,12 @@
-import { Tooltip as ChakraTooltip, Portal } from "@chakra-ui/react"
+import { Tooltip as AgniflowTooltip, Portal } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface TooltipProps extends ChakraTooltip.RootProps {
+export interface TooltipProps extends AgniflowTooltip.RootProps {
   showArrow?: boolean
   portalled?: boolean
   portalRef?: React.RefObject<HTMLElement>
   content: React.ReactNode
-  contentProps?: ChakraTooltip.ContentProps
+  contentProps?: AgniflowTooltip.ContentProps
   disabled?: boolean
 }
 
@@ -26,21 +26,21 @@ export const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
     if (disabled) return children
 
     return (
-      <ChakraTooltip.Root {...rest}>
-        <ChakraTooltip.Trigger asChild>{children}</ChakraTooltip.Trigger>
+      <AgniflowTooltip.Root {...rest}>
+        <AgniflowTooltip.Trigger asChild>{children}</AgniflowTooltip.Trigger>
         <Portal disabled={!portalled} container={portalRef}>
-          <ChakraTooltip.Positioner>
-            <ChakraTooltip.Content ref={ref} {...contentProps}>
+          <AgniflowTooltip.Positioner>
+            <AgniflowTooltip.Content ref={ref} {...contentProps}>
               {showArrow && (
-                <ChakraTooltip.Arrow>
-                  <ChakraTooltip.ArrowTip />
-                </ChakraTooltip.Arrow>
+                <AgniflowTooltip.Arrow>
+                  <AgniflowTooltip.ArrowTip />
+                </AgniflowTooltip.Arrow>
               )}
               {content}
-            </ChakraTooltip.Content>
-          </ChakraTooltip.Positioner>
+            </AgniflowTooltip.Content>
+          </AgniflowTooltip.Positioner>
         </Portal>
-      </ChakraTooltip.Root>
+      </AgniflowTooltip.Root>
     )
   },
 )

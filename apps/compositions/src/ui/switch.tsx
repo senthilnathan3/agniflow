@@ -1,7 +1,7 @@
-import { Switch as ChakraSwitch } from "@chakra-ui/react"
+import { Switch as AgniflowSwitch } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface SwitchProps extends ChakraSwitch.RootProps {
+export interface SwitchProps extends AgniflowSwitch.RootProps {
   inputProps?: React.InputHTMLAttributes<HTMLInputElement>
   rootRef?: React.Ref<HTMLLabelElement>
   trackLabel?: { on: React.ReactNode; off: React.ReactNode }
@@ -14,26 +14,26 @@ export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       props
 
     return (
-      <ChakraSwitch.Root ref={rootRef} {...rest}>
-        <ChakraSwitch.HiddenInput ref={ref} {...inputProps} />
-        <ChakraSwitch.Control>
-          <ChakraSwitch.Thumb>
+      <AgniflowSwitch.Root ref={rootRef} {...rest}>
+        <AgniflowSwitch.HiddenInput ref={ref} {...inputProps} />
+        <AgniflowSwitch.Control>
+          <AgniflowSwitch.Thumb>
             {thumbLabel && (
-              <ChakraSwitch.ThumbIndicator fallback={thumbLabel?.off}>
+              <AgniflowSwitch.ThumbIndicator fallback={thumbLabel?.off}>
                 {thumbLabel?.on}
-              </ChakraSwitch.ThumbIndicator>
+              </AgniflowSwitch.ThumbIndicator>
             )}
-          </ChakraSwitch.Thumb>
+          </AgniflowSwitch.Thumb>
           {trackLabel && (
-            <ChakraSwitch.Indicator fallback={trackLabel.off}>
+            <AgniflowSwitch.Indicator fallback={trackLabel.off}>
               {trackLabel.on}
-            </ChakraSwitch.Indicator>
+            </AgniflowSwitch.Indicator>
           )}
-        </ChakraSwitch.Control>
+        </AgniflowSwitch.Control>
         {children != null && (
-          <ChakraSwitch.Label>{children}</ChakraSwitch.Label>
+          <AgniflowSwitch.Label>{children}</AgniflowSwitch.Label>
         )}
-      </ChakraSwitch.Root>
+      </AgniflowSwitch.Root>
     )
   },
 )

@@ -1,4 +1,4 @@
-import type { SystemContext } from "@chakra-ui/react"
+import type { SystemContext } from "@agniflow-ui/react"
 
 function toLiteralStringType(strings: string[]) {
   return (

@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { Toggle as ArkToggle } from "@ark-ui/react/toggle"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -27,7 +27,7 @@ export interface ToggleRootProviderBaseProps
     UnstyledProp {}
 
 export interface ToggleRootProviderProps
-  extends HTMLChakraProps<"button", ToggleRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"button", ToggleRootProviderBaseProps> {}
 
 export const ToggleRootProvider = withProvider<
   HTMLButtonElement,
@@ -41,7 +41,7 @@ export interface ToggleRootBaseProps
     UnstyledProp {}
 
 export interface ToggleRootProps
-  extends HTMLChakraProps<"button", ToggleRootBaseProps> {}
+  extends HTMLAgniflowProps<"button", ToggleRootBaseProps> {}
 
 export const ToggleRoot = withProvider<HTMLButtonElement, ToggleRootProps>(
   ArkToggle.Root,
@@ -57,7 +57,7 @@ export const TogglePropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ToggleIndicatorProps
-  extends HTMLChakraProps<"div", ArkToggle.IndicatorBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkToggle.IndicatorBaseProps> {}
 
 export const ToggleIndicator = withContext<
   HTMLButtonElement,

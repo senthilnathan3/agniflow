@@ -9,7 +9,7 @@ import {
 import type { JSX } from "react"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -37,7 +37,7 @@ export interface RadioGroupRootProviderBaseProps
     UnstyledProp {}
 
 export interface RadioGroupRootProviderProps
-  extends HTMLChakraProps<"div", RadioGroupRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", RadioGroupRootProviderBaseProps> {}
 
 export const RadioGroupRootProvider = withProvider<
   HTMLDivElement,
@@ -51,7 +51,7 @@ export interface RadioGroupRootBaseProps
     UnstyledProp {}
 
 export interface RadioGroupRootProps
-  extends HTMLChakraProps<"div", RadioGroupRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", RadioGroupRootBaseProps> {}
 
 export const RadioGroupRoot = withProvider<HTMLDivElement, RadioGroupRootProps>(
   ArkRadioGroup.Root,
@@ -67,7 +67,7 @@ export const RadioGroupPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RadioGroupLabelProps
-  extends HTMLChakraProps<"div", ArkRadioGroup.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRadioGroup.LabelBaseProps> {}
 
 export const RadioGroupLabel = withContext<
   HTMLDivElement,
@@ -77,7 +77,7 @@ export const RadioGroupLabel = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RadioGroupItemProps
-  extends HTMLChakraProps<"div", ArkRadioGroup.ItemBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRadioGroup.ItemBaseProps> {}
 
 export const RadioGroupItem = withContext<HTMLDivElement, RadioGroupItemProps>(
   ArkRadioGroup.Item,
@@ -88,7 +88,7 @@ export const RadioGroupItem = withContext<HTMLDivElement, RadioGroupItemProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RadioGroupItemTextProps
-  extends HTMLChakraProps<"span", ArkRadioGroup.ItemTextBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkRadioGroup.ItemTextBaseProps> {}
 
 export const RadioGroupItemText = withContext<
   HTMLSpanElement,
@@ -98,7 +98,7 @@ export const RadioGroupItemText = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RadioGroupItemControlProps
-  extends HTMLChakraProps<"div", ArkRadioGroup.ItemControlBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRadioGroup.ItemControlBaseProps> {}
 
 export const RadioGroupItemControl = withContext<
   HTMLDivElement,
@@ -107,7 +107,8 @@ export const RadioGroupItemControl = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface RadioGroupItemIndicatorProps extends HTMLChakraProps<"span"> {}
+export interface RadioGroupItemIndicatorProps
+  extends HTMLAgniflowProps<"span"> {}
 
 export const RadioGroupItemIndicator = forwardRef<
   HTMLSpanElement,

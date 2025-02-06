@@ -1,4 +1,4 @@
-import { HStack, Heading, Stack, Table } from "@chakra-ui/react"
+import { HStack, Heading, Stack, Table } from "@agniflow-ui/react"
 import {
   PaginationItems,
   PaginationNextTrigger,

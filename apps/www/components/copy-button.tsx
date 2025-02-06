@@ -1,5 +1,5 @@
+import { IconButton } from "@agniflow-ui/react"
 import { Clipboard } from "@ark-ui/react/clipboard"
-import { IconButton } from "@chakra-ui/react"
 import { LuCheck, LuClipboard } from "react-icons/lu"
 
 interface Props {

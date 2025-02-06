@@ -1,11 +1,11 @@
-import type { SystemStyleObject } from "@chakra-ui/react"
+import type { SystemStyleObject } from "@agniflow-ui/react"
 import {
   AbsoluteCenter,
-  ProgressCircle as ChakraProgressCircle,
-} from "@chakra-ui/react"
+  ProgressCircle as AgniflowProgressCircle,
+} from "@agniflow-ui/react"
 import * as React from "react"
 
-interface ProgressCircleProps extends ChakraProgressCircle.RootProps {
+interface ProgressCircleProps extends AgniflowProgressCircle.RootProps {
   showValueText?: boolean
   valueText?: React.ReactNode
   trackColor?: SystemStyleObject["stroke"]
@@ -28,18 +28,18 @@ export const ProgressCircle = React.forwardRef<
   } = props
 
   return (
-    <ChakraProgressCircle.Root {...rest} ref={ref}>
-      <ChakraProgressCircle.Circle css={{ "--thickness": thickness }}>
-        <ChakraProgressCircle.Track stroke={trackColor} />
-        <ChakraProgressCircle.Range stroke={color} strokeLinecap={cap} />
-      </ChakraProgressCircle.Circle>
+    <AgniflowProgressCircle.Root {...rest} ref={ref}>
+      <AgniflowProgressCircle.Circle css={{ "--thickness": thickness }}>
+        <AgniflowProgressCircle.Track stroke={trackColor} />
+        <AgniflowProgressCircle.Range stroke={color} strokeLinecap={cap} />
+      </AgniflowProgressCircle.Circle>
       {showValueText && (
         <AbsoluteCenter>
-          <ChakraProgressCircle.ValueText>
+          <AgniflowProgressCircle.ValueText>
             {valueText}
-          </ChakraProgressCircle.ValueText>
+          </AgniflowProgressCircle.ValueText>
         </AbsoluteCenter>
       )}
-    </ChakraProgressCircle.Root>
+    </AgniflowProgressCircle.Root>
   )
 })

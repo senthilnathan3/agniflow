@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Box } from "@chakra-ui/react"
+import { Box } from "@agniflow-ui/react"
 import Image, { type ImageProps } from "next/image"
 
 export const Img = (props: ImageProps) => {

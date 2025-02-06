@@ -10,8 +10,8 @@ import {
   Stack,
   Text,
   VStack,
-  useChakraContext,
-} from "@chakra-ui/react"
+  useAgniflowContext,
+} from "@agniflow-ui/react"
 import { Global } from "@emotion/react"
 import { ColorModeButton } from "compositions/ui/color-mode"
 import { RadioCardItem, RadioCardRoot } from "compositions/ui/radio-card"
@@ -82,7 +82,7 @@ interface ThemePanelProps {
 }
 
 export function ThemePanel(props: ThemePanelProps) {
-  const system = useChakraContext()
+  const system = useAgniflowContext()
   const [accentColor, setAccentColor] = useState(props.accentColor)
   const [fontFamily, setFontFamily] = useState(
     props.fontFamily ?? "--font-inter",
@@ -102,11 +102,11 @@ export function ThemePanel(props: ThemePanelProps) {
         styles={{
           body: system.css({ colorPalette: accentColor }) as any,
           html: {
-            "--chakra-fonts-heading": `var(${fontFamily})`,
-            "--chakra-fonts-body": `var(${fontFamily})`,
-            "--chakra-radii-l1": radii.l1,
-            "--chakra-radii-l2": radii.l2,
-            "--chakra-radii-l3": radii.l3,
+            "--agniflow-fonts-heading": `var(${fontFamily})`,
+            "--agniflow-fonts-body": `var(${fontFamily})`,
+            "--agniflow-radii-l1": radii.l1,
+            "--agniflow-radii-l2": radii.l2,
+            "--agniflow-radii-l3": radii.l3,
           },
         }}
       />
@@ -128,7 +128,7 @@ export function ThemePanel(props: ThemePanelProps) {
               size="sm"
               defaultValue={accentColor}
               onValueChange={(details) => {
-                document.cookie = `chakra-accent-color=${details.value}`
+                document.cookie = `agniflow-accent-color=${details.value}`
                 setAccentColor(details.value)
               }}
             >
@@ -166,7 +166,7 @@ export function ThemePanel(props: ThemePanelProps) {
                   }
                   outlineStyle="solid"
                   onClick={() => {
-                    document.cookie = `chakra-font=${item.value}`
+                    document.cookie = `agniflow-font=${item.value}`
                     setFontFamily(item.value)
                   }}
                   px="4"
@@ -195,7 +195,7 @@ export function ThemePanel(props: ThemePanelProps) {
               align="center"
               defaultValue={radius}
               onValueChange={(details) => {
-                document.cookie = `chakra-radius=${details.value}`
+                document.cookie = `agniflow-radius=${details.value}`
                 setRadius(details.value)
               }}
             >

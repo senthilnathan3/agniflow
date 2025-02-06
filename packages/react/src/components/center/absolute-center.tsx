@@ -1,8 +1,8 @@
 "use client"
 
-import { type HTMLChakraProps, chakra } from "../../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../../styled-system"
 
-export interface AbsoluteCenterProps extends HTMLChakraProps<"div"> {
+export interface AbsoluteCenterProps extends HTMLAgniflowProps<"div"> {
   axis?: "horizontal" | "vertical" | "both"
 }
 

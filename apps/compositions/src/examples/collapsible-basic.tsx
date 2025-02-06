@@ -1,4 +1,4 @@
-import { Box, Collapsible } from "@chakra-ui/react"
+import { Box, Collapsible } from "@agniflow-ui/react"
 
 export const CollapsibleBasic = () => (
   <Collapsible.Root>

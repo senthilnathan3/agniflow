@@ -1,6 +1,6 @@
 "use client"
 
-import { chakra } from "@chakra-ui/react"
+import { chakra } from "@agniflow-ui/react"
 
 const Badge = chakra("div", {
   base: {

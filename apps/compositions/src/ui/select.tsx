@@ -1,11 +1,11 @@
 "use client"
 
-import type { CollectionItem } from "@chakra-ui/react"
-import { Select as ChakraSelect, Portal } from "@chakra-ui/react"
+import type { CollectionItem } from "@agniflow-ui/react"
+import { Select as AgniflowSelect, Portal } from "@agniflow-ui/react"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 
-interface SelectTriggerProps extends ChakraSelect.ControlProps {
+interface SelectTriggerProps extends AgniflowSelect.ControlProps {
   clearable?: boolean
 }
 
@@ -15,22 +15,22 @@ export const SelectTrigger = React.forwardRef<
 >(function SelectTrigger(props, ref) {
   const { children, clearable, ...rest } = props
   return (
-    <ChakraSelect.Control {...rest}>
-      <ChakraSelect.Trigger ref={ref}>{children}</ChakraSelect.Trigger>
-      <ChakraSelect.IndicatorGroup>
+    <AgniflowSelect.Control {...rest}>
+      <AgniflowSelect.Trigger ref={ref}>{children}</AgniflowSelect.Trigger>
+      <AgniflowSelect.IndicatorGroup>
         {clearable && <SelectClearTrigger />}
-        <ChakraSelect.Indicator />
-      </ChakraSelect.IndicatorGroup>
-    </ChakraSelect.Control>
+        <AgniflowSelect.Indicator />
+      </AgniflowSelect.IndicatorGroup>
+    </AgniflowSelect.Control>
   )
 })
 
 const SelectClearTrigger = React.forwardRef<
   HTMLButtonElement,
-  ChakraSelect.ClearTriggerProps
+  AgniflowSelect.ClearTriggerProps
 >(function SelectClearTrigger(props, ref) {
   return (
-    <ChakraSelect.ClearTrigger asChild {...props} ref={ref}>
+    <AgniflowSelect.ClearTrigger asChild {...props} ref={ref}>
       <CloseButton
         size="xs"
         variant="plain"
@@ -38,11 +38,11 @@ const SelectClearTrigger = React.forwardRef<
         focusRingWidth="2px"
         pointerEvents="auto"
       />
-    </ChakraSelect.ClearTrigger>
+    </AgniflowSelect.ClearTrigger>
   )
 })
 
-interface SelectContentProps extends ChakraSelect.ContentProps {
+interface SelectContentProps extends AgniflowSelect.ContentProps {
   portalled?: boolean
   portalRef?: React.RefObject<HTMLElement>
 }
@@ -54,28 +54,28 @@ export const SelectContent = React.forwardRef<
   const { portalled = true, portalRef, ...rest } = props
   return (
     <Portal disabled={!portalled} container={portalRef}>
-      <ChakraSelect.Positioner>
-        <ChakraSelect.Content {...rest} ref={ref} />
-      </ChakraSelect.Positioner>
+      <AgniflowSelect.Positioner>
+        <AgniflowSelect.Content {...rest} ref={ref} />
+      </AgniflowSelect.Positioner>
     </Portal>
   )
 })
 
 export const SelectItem = React.forwardRef<
   HTMLDivElement,
-  ChakraSelect.ItemProps
+  AgniflowSelect.ItemProps
 >(function SelectItem(props, ref) {
   const { item, children, ...rest } = props
   return (
-    <ChakraSelect.Item key={item.value} item={item} {...rest} ref={ref}>
+    <AgniflowSelect.Item key={item.value} item={item} {...rest} ref={ref}>
       {children}
-      <ChakraSelect.ItemIndicator />
-    </ChakraSelect.Item>
+      <AgniflowSelect.ItemIndicator />
+    </AgniflowSelect.Item>
   )
 })
 
 interface SelectValueTextProps
-  extends Omit<ChakraSelect.ValueTextProps, "children"> {
+  extends Omit<AgniflowSelect.ValueTextProps, "children"> {
   children?(items: CollectionItem[]): React.ReactNode
 }
 
@@ -85,8 +85,8 @@ export const SelectValueText = React.forwardRef<
 >(function SelectValueText(props, ref) {
   const { children, ...rest } = props
   return (
-    <ChakraSelect.ValueText {...rest} ref={ref}>
-      <ChakraSelect.Context>
+    <AgniflowSelect.ValueText {...rest} ref={ref}>
+      <AgniflowSelect.Context>
         {(select) => {
           const items = select.selectedItems
           if (items.length === 0) return props.placeholder
@@ -95,17 +95,17 @@ export const SelectValueText = React.forwardRef<
             return select.collection.stringifyItem(items[0])
           return `${items.length} selected`
         }}
-      </ChakraSelect.Context>
-    </ChakraSelect.ValueText>
+      </AgniflowSelect.Context>
+    </AgniflowSelect.ValueText>
   )
 })
 
 export const SelectRoot = React.forwardRef<
   HTMLDivElement,
-  ChakraSelect.RootProps
+  AgniflowSelect.RootProps
 >(function SelectRoot(props, ref) {
   return (
-    <ChakraSelect.Root
+    <AgniflowSelect.Root
       {...props}
       ref={ref}
       positioning={{ sameWidth: true, ...props.positioning }}
@@ -114,15 +114,15 @@ export const SelectRoot = React.forwardRef<
         props.children
       ) : (
         <>
-          <ChakraSelect.HiddenSelect />
+          <AgniflowSelect.HiddenSelect />
           {props.children}
         </>
       )}
-    </ChakraSelect.Root>
+    </AgniflowSelect.Root>
   )
-}) as ChakraSelect.RootComponent
+}) as AgniflowSelect.RootComponent
 
-interface SelectItemGroupProps extends ChakraSelect.ItemGroupProps {
+interface SelectItemGroupProps extends AgniflowSelect.ItemGroupProps {
   label: React.ReactNode
 }
 
@@ -132,12 +132,12 @@ export const SelectItemGroup = React.forwardRef<
 >(function SelectItemGroup(props, ref) {
   const { children, label, ...rest } = props
   return (
-    <ChakraSelect.ItemGroup {...rest} ref={ref}>
-      <ChakraSelect.ItemGroupLabel>{label}</ChakraSelect.ItemGroupLabel>
+    <AgniflowSelect.ItemGroup {...rest} ref={ref}>
+      <AgniflowSelect.ItemGroupLabel>{label}</AgniflowSelect.ItemGroupLabel>
       {children}
-    </ChakraSelect.ItemGroup>
+    </AgniflowSelect.ItemGroup>
   )
 })
 
-export const SelectLabel = ChakraSelect.Label
-export const SelectItemText = ChakraSelect.ItemText
+export const SelectLabel = AgniflowSelect.Label
+export const SelectItemText = AgniflowSelect.ItemText

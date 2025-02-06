@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   createRecipeContext,
@@ -12,7 +12,7 @@ const { withContext, PropsProvider } = createRecipeContext({
 })
 
 export interface SpinnerProps
-  extends HTMLChakraProps<"span">,
+  extends HTMLAgniflowProps<"span">,
     UnstyledProp,
     RecipeProps<"spinner"> {}
 

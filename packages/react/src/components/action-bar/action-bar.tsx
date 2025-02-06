@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { Popover as ArkPopover } from "@ark-ui/react/popover"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -69,7 +69,7 @@ export const ActionBarPropsProvider =
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface ActionBarPositionerProps extends HTMLChakraProps<"div"> {}
+export interface ActionBarPositionerProps extends HTMLAgniflowProps<"div"> {}
 
 export const ActionBarPositioner = withContext<
   HTMLDivElement,
@@ -79,7 +79,7 @@ export const ActionBarPositioner = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ActionBarContentProps
-  extends HTMLChakraProps<"div", ArkPopover.ContentBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkPopover.ContentBaseProps> {}
 
 export const ActionBarContent = withContext<
   HTMLDivElement,
@@ -88,7 +88,7 @@ export const ActionBarContent = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface ActionBarSeparatorProps extends HTMLChakraProps<"div"> {}
+export interface ActionBarSeparatorProps extends HTMLAgniflowProps<"div"> {}
 
 export const ActionBarSeparator = withContext<
   HTMLDivElement,
@@ -98,7 +98,7 @@ export const ActionBarSeparator = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ActionBarSelectionTriggerProps
-  extends HTMLChakraProps<"button"> {}
+  extends HTMLAgniflowProps<"button"> {}
 
 export const ActionBarSelectionTrigger = withContext<
   HTMLButtonElement,
@@ -108,7 +108,7 @@ export const ActionBarSelectionTrigger = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ActionBarCloseTriggerProps
-  extends HTMLChakraProps<"button", ArkPopover.CloseTriggerProps> {}
+  extends HTMLAgniflowProps<"button", ArkPopover.CloseTriggerProps> {}
 
 export const ActionBarCloseTrigger = withContext<
   HTMLButtonElement,

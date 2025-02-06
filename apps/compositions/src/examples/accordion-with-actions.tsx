@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box, Button } from "@chakra-ui/react"
+import { AbsoluteCenter, Box, Button } from "@agniflow-ui/react"
 import {
   AccordionItem,
   AccordionItemContent,

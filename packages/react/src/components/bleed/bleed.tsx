@@ -2,13 +2,13 @@
 
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SystemStyleObject,
   chakra,
 } from "../../styled-system"
 import { isCssUnit, isCssVar, mapObject } from "../../utils"
 
-export interface BleedProps extends HTMLChakraProps<"div"> {
+export interface BleedProps extends HTMLAgniflowProps<"div"> {
   /**
    * The negative margin on the x-axis
    */

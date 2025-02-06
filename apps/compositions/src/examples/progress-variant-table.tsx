@@ -6,7 +6,7 @@ import {
   Span,
   Stack,
   useSlotRecipe,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 import { ProgressBar, ProgressRoot } from "compositions/ui/progress"

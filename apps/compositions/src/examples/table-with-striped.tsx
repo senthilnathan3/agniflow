@@ -1,4 +1,4 @@
-import { Table } from "@chakra-ui/react"
+import { Table } from "@agniflow-ui/react"
 
 export const TableWithStriped = () => {
   return (

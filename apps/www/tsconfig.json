@@ -23,7 +23,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@chakra-ui/react": ["../../packages/react/src"],
+      "@agniflow-ui/react": ["../../packages/react/src"],
       "compositions/*": ["../compositions/src/*"]
     }
   },

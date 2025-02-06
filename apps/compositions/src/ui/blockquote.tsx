@@ -1,7 +1,7 @@
-import { Blockquote as ChakraBlockquote } from "@chakra-ui/react"
+import { Blockquote as AgniflowBlockquote } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface BlockquoteProps extends ChakraBlockquote.RootProps {
+export interface BlockquoteProps extends AgniflowBlockquote.RootProps {
   cite?: React.ReactNode
   citeUrl?: string
   icon?: React.ReactNode
@@ -13,19 +13,19 @@ export const Blockquote = React.forwardRef<HTMLDivElement, BlockquoteProps>(
     const { children, cite, citeUrl, showDash, icon, ...rest } = props
 
     return (
-      <ChakraBlockquote.Root ref={ref} {...rest}>
+      <AgniflowBlockquote.Root ref={ref} {...rest}>
         {icon}
-        <ChakraBlockquote.Content cite={citeUrl}>
+        <AgniflowBlockquote.Content cite={citeUrl}>
           {children}
-        </ChakraBlockquote.Content>
+        </AgniflowBlockquote.Content>
         {cite && (
-          <ChakraBlockquote.Caption>
+          <AgniflowBlockquote.Caption>
             {showDash ? <>&mdash;</> : null} <cite>{cite}</cite>
-          </ChakraBlockquote.Caption>
+          </AgniflowBlockquote.Caption>
         )}
-      </ChakraBlockquote.Root>
+      </AgniflowBlockquote.Root>
     )
   },
 )
 
-export const BlockquoteIcon = ChakraBlockquote.Icon
+export const BlockquoteIcon = AgniflowBlockquote.Icon

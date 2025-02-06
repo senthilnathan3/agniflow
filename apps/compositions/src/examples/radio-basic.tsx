@@ -1,4 +1,4 @@
-import { HStack } from "@chakra-ui/react"
+import { HStack } from "@agniflow-ui/react"
 import { Radio, RadioGroup } from "compositions/ui/radio"
 
 export const RadioBasic = () => {

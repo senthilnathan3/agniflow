@@ -8,7 +8,7 @@ export const ProseWithReactMarkdown = () => {
         {`
   ## Heading
   
-  Based on your Chakra package. So [click here](http://chakra-ui.com) to confirm your plan.
+  Based on your Agniflow package. So [click here](http://chakra-ui.com) to confirm your plan.
   
   - first item
   - second item

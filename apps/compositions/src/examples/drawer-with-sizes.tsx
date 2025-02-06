@@ -1,4 +1,4 @@
-import { Button, For, HStack, Kbd } from "@chakra-ui/react"
+import { Button, For, HStack, Kbd } from "@agniflow-ui/react"
 import {
   DrawerActionTrigger,
   DrawerBackdrop,

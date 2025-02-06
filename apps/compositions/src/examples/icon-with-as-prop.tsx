@@ -1,4 +1,4 @@
-import { Icon } from "@chakra-ui/react"
+import { Icon } from "@agniflow-ui/react"
 import { HiHeart } from "react-icons/hi"
 
 export const IconWithAsProp = () => (

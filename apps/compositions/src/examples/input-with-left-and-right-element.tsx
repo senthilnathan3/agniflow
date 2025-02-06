@@ -1,4 +1,4 @@
-import { HStack, Input, Kbd } from "@chakra-ui/react"
+import { HStack, Input, Kbd } from "@agniflow-ui/react"
 import { InputGroup } from "compositions/ui/input-group"
 import {
   NativeSelectField,

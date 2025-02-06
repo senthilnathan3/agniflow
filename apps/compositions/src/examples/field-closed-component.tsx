@@ -1,7 +1,7 @@
-import { Field as ChakraField } from "@chakra-ui/react"
+import { Field as AgniflowField } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface FieldProps extends Omit<ChakraField.RootProps, "label"> {
+export interface FieldProps extends Omit<AgniflowField.RootProps, "label"> {
   label?: React.ReactNode
   helperText?: React.ReactNode
   errorText?: React.ReactNode
@@ -13,21 +13,21 @@ export const Field = React.forwardRef<HTMLDivElement, FieldProps>(
     const { label, children, helperText, errorText, optionalText, ...rest } =
       props
     return (
-      <ChakraField.Root ref={ref} {...rest}>
+      <AgniflowField.Root ref={ref} {...rest}>
         {label && (
-          <ChakraField.Label>
+          <AgniflowField.Label>
             {label}
-            <ChakraField.RequiredIndicator fallback={optionalText} />
-          </ChakraField.Label>
+            <AgniflowField.RequiredIndicator fallback={optionalText} />
+          </AgniflowField.Label>
         )}
         {children}
         {helperText && (
-          <ChakraField.HelperText>{helperText}</ChakraField.HelperText>
+          <AgniflowField.HelperText>{helperText}</AgniflowField.HelperText>
         )}
         {errorText && (
-          <ChakraField.ErrorText>{errorText}</ChakraField.ErrorText>
+          <AgniflowField.ErrorText>{errorText}</AgniflowField.ErrorText>
         )}
-      </ChakraField.Root>
+      </AgniflowField.Root>
     )
   },
 )

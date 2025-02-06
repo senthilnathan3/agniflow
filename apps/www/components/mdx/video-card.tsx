@@ -1,4 +1,4 @@
-import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react"
+import { Box, Flex, SimpleGrid, Text } from "@agniflow-ui/react"
 import NextImage from "next/image"
 
 interface VideoCardProps {

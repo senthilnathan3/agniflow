@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, HStack } from "@chakra-ui/react"
+import { Button, HStack } from "@agniflow-ui/react"
 import { toaster } from "compositions/ui/toaster"
 
 export const ToasterWithUpdate = () => {

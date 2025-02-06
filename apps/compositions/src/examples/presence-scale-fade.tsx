@@ -6,7 +6,7 @@ import {
   Presence,
   Stack,
   useDisclosure,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 
 export const PresenceScaleFade = () => {
   const { open, onToggle } = useDisclosure()

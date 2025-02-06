@@ -7,7 +7,7 @@ import {
   FileUploadRootProvider,
   Stack,
   useFileUpload,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { FileUploadList, FileUploadTrigger } from "compositions/ui/file-upload"
 import { HiUpload } from "react-icons/hi"
 

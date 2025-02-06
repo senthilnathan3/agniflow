@@ -1,4 +1,4 @@
-import { Tabs } from "@chakra-ui/react"
+import { Tabs } from "@agniflow-ui/react"
 import { Children } from "react"
 
 interface CodeGroupProps {

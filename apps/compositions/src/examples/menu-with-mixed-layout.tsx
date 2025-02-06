@@ -1,4 +1,4 @@
-import { Box, Button, Group } from "@chakra-ui/react"
+import { Box, Button, Group } from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuItem,

@@ -1,10 +1,10 @@
 "use client"
 
 import { forwardRef } from "react"
-import { type HTMLChakraProps, chakra } from "../../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../../styled-system"
 import { cx } from "../../utils"
 
-export interface LinkOverlayProps extends HTMLChakraProps<"a"> {}
+export interface LinkOverlayProps extends HTMLAgniflowProps<"a"> {}
 
 export const LinkOverlay = forwardRef<HTMLAnchorElement, LinkOverlayProps>(
   function LinkOverlay(props, ref) {
@@ -36,7 +36,7 @@ export const LinkOverlay = forwardRef<HTMLAnchorElement, LinkOverlayProps>(
   },
 )
 
-export interface LinkBoxProps extends HTMLChakraProps<"div"> {}
+export interface LinkBoxProps extends HTMLAgniflowProps<"div"> {}
 
 /**
  * `LinkBox` is used to wrap content areas within a link while ensuring semantic html

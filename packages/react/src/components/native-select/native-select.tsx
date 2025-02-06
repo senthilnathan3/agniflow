@@ -4,7 +4,7 @@ import { Field as ArkField, useFieldContext } from "@ark-ui/react/field"
 import { forwardRef } from "react"
 import { createContext } from "../../create-context"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -45,7 +45,7 @@ export interface NativeSelectRootBaseProps
     NativeSelectBaseProps {}
 
 export interface NativeSelectRootProps
-  extends HTMLChakraProps<"div", NativeSelectRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", NativeSelectRootBaseProps> {}
 
 export const NativeSelectRoot = withProvider<
   HTMLDivElement,
@@ -76,7 +76,7 @@ export const NativeSelectPropsProvider =
 type Omitted = "disabled" | "required" | "readOnly" | "size"
 
 export interface NativeSelectFieldProps
-  extends Omit<HTMLChakraProps<"select">, Omitted> {
+  extends Omit<HTMLAgniflowProps<"select">, Omitted> {
   placeholder?: string
 }
 
@@ -109,7 +109,7 @@ export const NativeSelectField = forwardRef<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface NativeSelectIndicatorProps extends HTMLChakraProps<"div"> {}
+export interface NativeSelectIndicatorProps extends HTMLAgniflowProps<"div"> {}
 
 export function NativeSelectIndicator(props: NativeSelectIndicatorProps) {
   const styles = useNativeSelectStyles()

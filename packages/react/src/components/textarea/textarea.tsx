@@ -2,7 +2,7 @@
 
 import { Field } from "@ark-ui/react/field"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   createRecipeContext,
@@ -18,7 +18,7 @@ export interface TextareaBaseProps
     UnstyledProp {}
 
 export interface TextareaProps
-  extends HTMLChakraProps<"textarea", TextareaBaseProps> {}
+  extends HTMLAgniflowProps<"textarea", TextareaBaseProps> {}
 
 export const Textarea = withContext<HTMLTextAreaElement, TextareaProps>(
   Field.Textarea,

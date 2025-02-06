@@ -1,4 +1,4 @@
-import { For, Stack, Text } from "@chakra-ui/react"
+import { For, Stack, Text } from "@agniflow-ui/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { Checkbox } from "compositions/ui/checkbox"
 

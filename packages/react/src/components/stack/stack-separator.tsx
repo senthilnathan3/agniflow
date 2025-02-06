@@ -1,8 +1,8 @@
 "use client"
 
-import { type HTMLChakraProps, chakra } from "../../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../../styled-system"
 
-export interface StackSeparatorProps extends HTMLChakraProps<"div"> {}
+export interface StackSeparatorProps extends HTMLAgniflowProps<"div"> {}
 
 export const StackSeparator = chakra("div", {
   base: {

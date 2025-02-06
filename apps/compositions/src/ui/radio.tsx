@@ -1,7 +1,7 @@
-import { RadioGroup as ChakraRadioGroup } from "@chakra-ui/react"
+import { RadioGroup as AgniflowRadioGroup } from "@agniflow-ui/react"
 import * as React from "react"
 
-export interface RadioProps extends ChakraRadioGroup.ItemProps {
+export interface RadioProps extends AgniflowRadioGroup.ItemProps {
   rootRef?: React.Ref<HTMLDivElement>
   inputProps?: React.InputHTMLAttributes<HTMLInputElement>
 }
@@ -10,15 +10,15 @@ export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
   function Radio(props, ref) {
     const { children, inputProps, rootRef, ...rest } = props
     return (
-      <ChakraRadioGroup.Item ref={rootRef} {...rest}>
-        <ChakraRadioGroup.ItemHiddenInput ref={ref} {...inputProps} />
-        <ChakraRadioGroup.ItemIndicator />
+      <AgniflowRadioGroup.Item ref={rootRef} {...rest}>
+        <AgniflowRadioGroup.ItemHiddenInput ref={ref} {...inputProps} />
+        <AgniflowRadioGroup.ItemIndicator />
         {children && (
-          <ChakraRadioGroup.ItemText>{children}</ChakraRadioGroup.ItemText>
+          <AgniflowRadioGroup.ItemText>{children}</AgniflowRadioGroup.ItemText>
         )}
-      </ChakraRadioGroup.Item>
+      </AgniflowRadioGroup.Item>
     )
   },
 )
 
-export const RadioGroup = ChakraRadioGroup.Root
+export const RadioGroup = AgniflowRadioGroup.Root

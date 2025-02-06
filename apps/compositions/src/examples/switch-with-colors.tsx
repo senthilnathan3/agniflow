@@ -1,4 +1,4 @@
-import { Stack, Text } from "@chakra-ui/react"
+import { Stack, Text } from "@agniflow-ui/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { Switch } from "compositions/ui/switch"
 

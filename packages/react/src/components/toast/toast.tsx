@@ -12,7 +12,7 @@ import {
 } from "@ark-ui/react/toast"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -33,7 +33,7 @@ export { useToastStyles }
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ToasterProps
-  extends HTMLChakraProps<"div", ToasterBaseProps> {}
+  extends HTMLAgniflowProps<"div", ToasterBaseProps> {}
 
 export const Toaster = chakra(
   ArkToaster,
@@ -48,7 +48,7 @@ export interface ToastRootBaseProps
     UnstyledProp {}
 
 export interface ToastRootProps
-  extends HTMLChakraProps<"div", ToastRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", ToastRootBaseProps> {}
 
 export const ToastRoot = withProvider<HTMLDivElement, ToastRootProps>(
   ArkToast.Root,
@@ -59,7 +59,7 @@ export const ToastRoot = withProvider<HTMLDivElement, ToastRootProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ToastCloseTriggerProps
-  extends HTMLChakraProps<"button", ArkToast.CloseTriggerProps> {}
+  extends HTMLAgniflowProps<"button", ArkToast.CloseTriggerProps> {}
 
 export const ToastCloseTrigger = withContext<
   HTMLButtonElement,
@@ -74,7 +74,7 @@ export const ToastCloseTrigger = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ToastTitleProps
-  extends HTMLChakraProps<"div", ArkToast.TitleProps> {}
+  extends HTMLAgniflowProps<"div", ArkToast.TitleProps> {}
 
 export const ToastTitle = withContext<HTMLDivElement, ToastTitleProps>(
   ArkToast.Title,
@@ -85,7 +85,7 @@ export const ToastTitle = withContext<HTMLDivElement, ToastTitleProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ToastDescriptionProps
-  extends HTMLChakraProps<"div", ArkToast.DescriptionProps> {}
+  extends HTMLAgniflowProps<"div", ArkToast.DescriptionProps> {}
 
 export const ToastDescription = withContext<
   HTMLDivElement,
@@ -95,7 +95,7 @@ export const ToastDescription = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ToastActionTriggerProps
-  extends HTMLChakraProps<"button", ArkToast.ActionTriggerProps> {}
+  extends HTMLAgniflowProps<"button", ArkToast.ActionTriggerProps> {}
 
 export const ToastActionTrigger = withContext<
   HTMLButtonElement,
@@ -110,7 +110,7 @@ const iconMap: Record<string, React.ElementType> = {
   error: WarningIcon,
 }
 
-export interface ToastIndicatorProps extends HTMLChakraProps<"span"> {}
+export interface ToastIndicatorProps extends HTMLAgniflowProps<"span"> {}
 
 export const ToastIndicator = forwardRef<HTMLSpanElement, ToastIndicatorProps>(
   function ToastIndicator(props, ref) {

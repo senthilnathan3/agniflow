@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, createListCollection } from "@chakra-ui/react"
+import { Button, createListCollection } from "@agniflow-ui/react"
 import {
   DialogBackdrop,
   DialogBody,

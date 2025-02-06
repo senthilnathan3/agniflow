@@ -1,8 +1,8 @@
-import { Popover as ChakraPopover, Portal } from "@chakra-ui/react"
+import { Popover as AgniflowPopover, Portal } from "@agniflow-ui/react"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 
-interface PopoverContentProps extends ChakraPopover.ContentProps {
+interface PopoverContentProps extends AgniflowPopover.ContentProps {
   portalled?: boolean
   portalRef?: React.RefObject<HTMLElement>
 }
@@ -14,30 +14,30 @@ export const PopoverContent = React.forwardRef<
   const { portalled = true, portalRef, ...rest } = props
   return (
     <Portal disabled={!portalled} container={portalRef}>
-      <ChakraPopover.Positioner>
-        <ChakraPopover.Content ref={ref} {...rest} />
-      </ChakraPopover.Positioner>
+      <AgniflowPopover.Positioner>
+        <AgniflowPopover.Content ref={ref} {...rest} />
+      </AgniflowPopover.Positioner>
     </Portal>
   )
 })
 
 export const PopoverArrow = React.forwardRef<
   HTMLDivElement,
-  ChakraPopover.ArrowProps
+  AgniflowPopover.ArrowProps
 >(function PopoverArrow(props, ref) {
   return (
-    <ChakraPopover.Arrow {...props} ref={ref}>
-      <ChakraPopover.ArrowTip />
-    </ChakraPopover.Arrow>
+    <AgniflowPopover.Arrow {...props} ref={ref}>
+      <AgniflowPopover.ArrowTip />
+    </AgniflowPopover.Arrow>
   )
 })
 
 export const PopoverCloseTrigger = React.forwardRef<
   HTMLButtonElement,
-  ChakraPopover.CloseTriggerProps
+  AgniflowPopover.CloseTriggerProps
 >(function PopoverCloseTrigger(props, ref) {
   return (
-    <ChakraPopover.CloseTrigger
+    <AgniflowPopover.CloseTrigger
       position="absolute"
       top="1"
       insetEnd="1"
@@ -46,14 +46,14 @@ export const PopoverCloseTrigger = React.forwardRef<
       ref={ref}
     >
       <CloseButton size="sm" />
-    </ChakraPopover.CloseTrigger>
+    </AgniflowPopover.CloseTrigger>
   )
 })
 
-export const PopoverTitle = ChakraPopover.Title
-export const PopoverDescription = ChakraPopover.Description
-export const PopoverFooter = ChakraPopover.Footer
-export const PopoverHeader = ChakraPopover.Header
-export const PopoverRoot = ChakraPopover.Root
-export const PopoverBody = ChakraPopover.Body
-export const PopoverTrigger = ChakraPopover.Trigger
+export const PopoverTitle = AgniflowPopover.Title
+export const PopoverDescription = AgniflowPopover.Description
+export const PopoverFooter = AgniflowPopover.Footer
+export const PopoverHeader = AgniflowPopover.Header
+export const PopoverRoot = AgniflowPopover.Root
+export const PopoverBody = AgniflowPopover.Body
+export const PopoverTrigger = AgniflowPopover.Trigger

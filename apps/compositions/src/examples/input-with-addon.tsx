@@ -1,4 +1,4 @@
-import { Group, Input, InputAddon, Stack } from "@chakra-ui/react"
+import { Group, Input, InputAddon, Stack } from "@agniflow-ui/react"
 
 export const InputWithAddon = () => (
   <Stack gap="10">

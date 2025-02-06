@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Input, Stack } from "@chakra-ui/react"
+import { Button, Input, Stack } from "@agniflow-ui/react"
 import { Checkbox } from "compositions/ui/checkbox"
 import { Field } from "compositions/ui/field"
 

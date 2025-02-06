@@ -6,7 +6,7 @@ import {
   SimpleGrid,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import Link from "next/link"
 
 const linkTree = [
@@ -22,8 +22,8 @@ const linkTree = [
   {
     title: "Projects",
     items: [
-      { label: "Chakra UI Pro", href: "https://pro.chakra-ui.com" },
-      { label: "FigPilot", href: "https://figma.chakra-ui.com" },
+      { label: "Agniflow UI Pro", href: "https://pro.agniflow-ui.com" },
+      { label: "FigPilot", href: "https://figma.agniflow-ui.com" },
       { label: "Zag.js", href: "https://zagjs.com" },
       { label: "Ark UI", href: "https://ark-ui.com" },
     ],
@@ -32,9 +32,9 @@ const linkTree = [
     title: "Community",
     items: [
       { label: "Team", href: "/team" },
-      { label: "Discord", href: "https://discord.gg/chakra-ui" },
-      { label: "Twitter", href: "https://x.com/chakra_ui" },
-      { label: "GitHub", href: "https://github.com/chakra-ui/chakra-ui" },
+      { label: "Discord", href: "https://discord.gg/agniflow-ui" },
+      { label: "Twitter", href: "https://x.com/agniflow_ui" },
+      { label: "GitHub", href: "https://github.com/agniflow-ui/agniflow-ui" },
     ],
   },
 ]
@@ -52,7 +52,7 @@ export const FooterSection = () => {
           <Stack align="flex-start">
             <Logo />
             <Text color="fg.muted">
-              Project by Chakra Systems &copy; {new Date().getFullYear()}
+              Project by Agniflow Systems &copy; {new Date().getFullYear()}
             </Text>
             <VercelCredit />
             <Text

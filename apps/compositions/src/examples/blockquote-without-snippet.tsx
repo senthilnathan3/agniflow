@@ -1,4 +1,4 @@
-import { Blockquote } from "@chakra-ui/react"
+import { Blockquote } from "@agniflow-ui/react"
 
 export const BlockquoteWithoutSnippet = () => {
   return (

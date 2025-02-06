@@ -1,6 +1,6 @@
 "use client"
 
-import { HStack, createListCollection } from "@chakra-ui/react"
+import { HStack, createListCollection } from "@agniflow-ui/react"
 import { Avatar } from "compositions/ui/avatar"
 import {
   SelectContent,

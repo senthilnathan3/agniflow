@@ -3,7 +3,7 @@ import {
   HighlightHeading,
   Subheading,
 } from "@/components/site/typography"
-import { Box, Container, List, Span, Stack, Tabs } from "@chakra-ui/react"
+import { Box, Container, List, Span, Stack, Tabs } from "@agniflow-ui/react"
 import { LuBox, LuPaintBucket, LuType } from "react-icons/lu"
 import { ExampleCode, ExampleCodeWrapper } from "../example"
 
@@ -38,8 +38,8 @@ export const DesignSystemSection = () => {
         >
           <Stack align="flex-start" gap="4" flex="1" maxW="576px">
             <BlitzHeading my="4">Design System</BlitzHeading>
-            <HighlightHeading query="Chakra UI" as="h2">
-              Build your design system on top of Chakra UI
+            <HighlightHeading query="Agniflow UI" as="h2">
+              Build your design system on top of Agniflow UI
             </HighlightHeading>
             <Subheading textStyle="lg">
               Spend less time writing UI code and more time building a great

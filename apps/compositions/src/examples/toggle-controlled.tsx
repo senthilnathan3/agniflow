@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, Stack } from "@chakra-ui/react"
+import { Code, Stack } from "@agniflow-ui/react"
 import { Toggle } from "compositions/ui/toggle"
 import { useState } from "react"
 

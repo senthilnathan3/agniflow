@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   createRecipeContext,
@@ -13,7 +13,7 @@ export const { PropsProvider, withContext } = createRecipeContext({
 
 export interface BadgeBaseProps extends RecipeProps<"badge">, UnstyledProp {}
 
-export interface BadgeProps extends HTMLChakraProps<"span", BadgeBaseProps> {}
+export interface BadgeProps extends HTMLAgniflowProps<"span", BadgeBaseProps> {}
 
 export const Badge = withContext<HTMLSpanElement, BadgeProps>("span")
 

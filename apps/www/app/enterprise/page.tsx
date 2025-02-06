@@ -1,5 +1,5 @@
 import { HighlightHeading, Subheading } from "@/components/site/typography"
-import { Box, Card, Container, Flex, Span, Stack } from "@chakra-ui/react"
+import { Box, Card, Container, Flex, Span, Stack } from "@agniflow-ui/react"
 import { Metadata } from "next"
 import { LuArrowRightLeft, LuAtom, LuCode, LuLightbulb } from "react-icons/lu"
 import { EnterpriseForm } from "./enterprise-form"
@@ -7,7 +7,7 @@ import { EnterpriseForm } from "./enterprise-form"
 export const metadata: Metadata = {
   title: "Enterprise Services",
   description:
-    "Get professional support by the Chakra UI creators to optimize and ship your site faster and improve performance.",
+    "Get professional support by the Agniflow UI creators to optimize and ship your site faster and improve performance.",
   openGraph: {
     images: `/og?title=Enterprise Services`,
   },
@@ -17,7 +17,7 @@ const items = [
   {
     icon: <LuArrowRightLeft />,
     title: "Migration",
-    description: "Migrate your website or application to Chakra v3.x",
+    description: "Migrate your website or application to Agniflow v3.x",
   },
   {
     icon: <LuAtom />,
@@ -32,7 +32,7 @@ const items = [
   {
     icon: <LuLightbulb />,
     title: "Consulting",
-    description: "Get professional support by the Chakra UI experts",
+    description: "Get professional support by the Agniflow UI experts",
   },
 ]
 
@@ -52,8 +52,8 @@ export default function EnterprisePage() {
                   Enterprise Services
                 </HighlightHeading>
                 <Subheading>
-                  Get professional support by the Chakra UI creators to optimize
-                  and ship your site faster and improve performance.
+                  Get professional support by the Agniflow UI creators to
+                  optimize and ship your site faster and improve performance.
                 </Subheading>
               </Stack>
             </Stack>

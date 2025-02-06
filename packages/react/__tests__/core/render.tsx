@@ -1,10 +1,10 @@
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react"
+import { AgniflowProvider, defaultSystem } from "@agniflow-ui/react"
 import "@testing-library/jest-dom/vitest"
 import { type RenderOptions, render as rtlRender } from "@testing-library/react"
 import user from "@testing-library/user-event"
 
 const Provider = (props: any) => (
-  <ChakraProvider {...props} value={defaultSystem} />
+  <AgniflowProvider {...props} value={defaultSystem} />
 )
 
 export interface ChakraRenderOptions extends RenderOptions {

@@ -1,4 +1,4 @@
-import { For, Stack } from "@chakra-ui/react"
+import { For, Stack } from "@agniflow-ui/react"
 import { Checkbox } from "compositions/ui/checkbox"
 
 export const CheckboxWithSizes = () => {

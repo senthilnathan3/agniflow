@@ -15,9 +15,9 @@ import {
   Portal,
   Spacer,
   VStack,
-  chakra,
-} from "@chakra-ui/react"
-import packageJson from "@chakra-ui/react/package.json"
+  agniflow,
+} from "@agniflow-ui/react"
+import packageJson from "@agniflow-ui/react/package.json"
 import {
   DrawerBackdrop,
   DrawerBody,
@@ -34,7 +34,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 import { SponsorButton } from "../sponsor-button"
 import { CommandMenu } from "./command-menu"
 
-const HeaderRoot = chakra("header", {
+const HeaderRoot = agniflow("header", {
   base: {
     bg: "bg",
     position: "sticky",
@@ -49,7 +49,7 @@ const HeaderRoot = chakra("header", {
   },
 })
 
-const TopNavLink = chakra(Link, {
+const TopNavLink = agniflow(Link, {
   base: {
     fontSize: "sm",
     color: "fg.muted",
@@ -75,7 +75,7 @@ const TopNavLink = chakra(Link, {
   },
 })
 
-const TopNavMobileLink = chakra(Link, {
+const TopNavMobileLink = agniflow(Link, {
   base: {
     display: "block",
     py: "2",
@@ -94,7 +94,7 @@ const TopNavMobileLink = chakra(Link, {
 
 const HeaderLogoLink = () => {
   return (
-    <Link href="/" aria-label="Chakra UI, Back to homepage">
+    <Link href="/" aria-label="Agniflow UI, Back to homepage">
       <Logo />
     </Link>
   )
@@ -146,8 +146,8 @@ const HeaderVersionMenu = ({ containerRef }: HeaderVersionMenuProps) => (
   <VersionMenu
     items={[
       { title: "v3", value: packageJson.version, url: "#" },
-      { title: "v2", value: "2.10.x", url: "https://v2.chakra-ui.com" },
-      { title: "v1", value: "1.5.x", url: "https://v1.chakra-ui.com" },
+      { title: "v2", value: "2.10.x", url: "https://v2.agniflow-ui.com" },
+      { title: "v1", value: "1.5.x", url: "https://v1.agniflow-ui.com" },
     ]}
     portalRef={containerRef}
   />

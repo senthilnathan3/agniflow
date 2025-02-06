@@ -1,4 +1,4 @@
-import { Stack } from "@chakra-ui/react"
+import { Stack } from "@agniflow-ui/react"
 import { Slider } from "compositions/ui/slider"
 
 export const SliderWithColors = () => {

@@ -1,4 +1,4 @@
-import { Avatar } from "@chakra-ui/react"
+import { Avatar } from "@agniflow-ui/react"
 
 export const AvatarWithoutSnippet = () => {
   return (

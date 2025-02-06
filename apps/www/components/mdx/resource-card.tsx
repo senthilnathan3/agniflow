@@ -1,4 +1,4 @@
-import { HStack, Icon, Stack, Text } from "@chakra-ui/react"
+import { HStack, Icon, Stack, Text } from "@agniflow-ui/react"
 import { LuArrowUpRight } from "react-icons/lu"
 import { ResourceIcon } from "../resource-icon"
 

@@ -1,4 +1,4 @@
-import { Group } from "@chakra-ui/react"
+import { Group } from "@agniflow-ui/react"
 import {
   RadioCardItem,
   RadioCardLabel,

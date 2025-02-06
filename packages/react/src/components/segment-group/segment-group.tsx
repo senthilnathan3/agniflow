@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { SegmentGroup as ArkSegmentGroup } from "@ark-ui/react/segment-group"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -30,7 +30,7 @@ export interface SegmentGroupRootProviderBaseProps
     UnstyledProp {}
 
 export interface SegmentGroupRootProviderProps
-  extends HTMLChakraProps<"div", SegmentGroupRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", SegmentGroupRootProviderBaseProps> {}
 
 export const SegmentGroupRootProvider = withProvider<
   HTMLDivElement,
@@ -47,7 +47,7 @@ export interface SegmentGroupRootBaseProps
     UnstyledProp {}
 
 export interface SegmentGroupRootProps
-  extends HTMLChakraProps<"div", SegmentGroupRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", SegmentGroupRootBaseProps> {}
 
 export const SegmentGroupRoot = withProvider<
   HTMLDivElement,
@@ -62,7 +62,7 @@ export const SegmentGroupPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface SegmentGroupItemProps
-  extends HTMLChakraProps<"label", ArkSegmentGroup.ItemBaseProps> {}
+  extends HTMLAgniflowProps<"label", ArkSegmentGroup.ItemBaseProps> {}
 
 export const SegmentGroupItem = withContext<
   HTMLLabelElement,
@@ -72,7 +72,7 @@ export const SegmentGroupItem = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface SegmentGroupItemTextProps
-  extends HTMLChakraProps<"span", ArkSegmentGroup.ItemTextBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkSegmentGroup.ItemTextBaseProps> {}
 
 export const SegmentGroupItemText = withContext<
   HTMLSpanElement,
@@ -82,7 +82,7 @@ export const SegmentGroupItemText = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface SegmentGroupIndicatorProps
-  extends HTMLChakraProps<"div", ArkSegmentGroup.IndicatorBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkSegmentGroup.IndicatorBaseProps> {}
 
 export const SegmentGroupIndicator = withContext<
   HTMLSpanElement,

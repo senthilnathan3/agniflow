@@ -1,6 +1,6 @@
 "use client"
 
-import { For, ProgressRoot, Span, useSlotRecipe } from "@chakra-ui/react"
+import { For, ProgressRoot, Span, useSlotRecipe } from "@agniflow-ui/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 import { ProgressBar } from "compositions/ui/progress"

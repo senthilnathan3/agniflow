@@ -1,6 +1,13 @@
 "use client"
 
-import { Flex, Link, Stack, StackProps, Text, chakra } from "@chakra-ui/react"
+import {
+  Flex,
+  Link,
+  Stack,
+  StackProps,
+  Text,
+  agniflow,
+} from "@agniflow-ui/react"
 import NextLink from "next/link"
 import type { JSX } from "react"
 
@@ -41,19 +48,19 @@ const SectionTitle = ({ children, id }: SectionTitleProps) => {
   )
 }
 
-const Table = chakra("table", {
+const Table = agniflow("table", {
   base: {
     marginBottom: "32px",
     borderCollapse: "collapse",
-    "& td:not(.chakra-table__cell)": {
+    "& td:not(.agniflow-table__cell)": {
       paddingRight: "8",
       paddingBottom: "8",
     },
-    "& th:not(.chakra-table__column-header)": {
+    "& th:not(.agniflow-table__column-header)": {
       fontSize: "sm",
       color: "fg.muted",
     },
-    "& thead td:not(.chakra-table__cell)": {
+    "& thead td:not(.agniflow-table__cell)": {
       fontSize: "sm",
       color: "fg.muted",
     },

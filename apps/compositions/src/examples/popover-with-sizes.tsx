@@ -1,4 +1,4 @@
-import { Button, For, Input, Stack, Text } from "@chakra-ui/react"
+import { Button, For, Input, Stack, Text } from "@agniflow-ui/react"
 import {
   PopoverArrow,
   PopoverBody,

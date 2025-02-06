@@ -7,7 +7,7 @@ import {
   Stack,
   StepsRootProvider,
   useSteps,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import {
   StepsCompletedContent,
   StepsContent,

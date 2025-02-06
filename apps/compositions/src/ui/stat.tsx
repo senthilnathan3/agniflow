@@ -1,13 +1,13 @@
 import {
+  Stat as AgniflowStat,
   Badge,
   type BadgeProps,
-  Stat as ChakraStat,
   FormatNumber,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { InfoTip } from "compositions/ui/toggle-tip"
 import * as React from "react"
 
-interface StatLabelProps extends ChakraStat.LabelProps {
+interface StatLabelProps extends AgniflowStat.LabelProps {
   info?: React.ReactNode
 }
 
@@ -15,15 +15,15 @@ export const StatLabel = React.forwardRef<HTMLDivElement, StatLabelProps>(
   function StatLabel(props, ref) {
     const { info, children, ...rest } = props
     return (
-      <ChakraStat.Label {...rest} ref={ref}>
+      <AgniflowStat.Label {...rest} ref={ref}>
         {children}
         {info && <InfoTip>{info}</InfoTip>}
-      </ChakraStat.Label>
+      </AgniflowStat.Label>
     )
   },
 )
 
-interface StatValueTextProps extends ChakraStat.ValueTextProps {
+interface StatValueTextProps extends AgniflowStat.ValueTextProps {
   value?: number
   formatOptions?: Intl.NumberFormatOptions
 }
@@ -34,10 +34,10 @@ export const StatValueText = React.forwardRef<
 >(function StatValueText(props, ref) {
   const { value, formatOptions, children, ...rest } = props
   return (
-    <ChakraStat.ValueText {...rest} ref={ref}>
+    <AgniflowStat.ValueText {...rest} ref={ref}>
       {children ||
         (value != null && <FormatNumber value={value} {...formatOptions} />)}
-    </ChakraStat.ValueText>
+    </AgniflowStat.ValueText>
   )
 })
 
@@ -45,7 +45,7 @@ export const StatUpTrend = React.forwardRef<HTMLDivElement, BadgeProps>(
   function StatUpTrend(props, ref) {
     return (
       <Badge colorPalette="green" gap="0" {...props} ref={ref}>
-        <ChakraStat.UpIndicator />
+        <AgniflowStat.UpIndicator />
         {props.children}
       </Badge>
     )
@@ -56,13 +56,13 @@ export const StatDownTrend = React.forwardRef<HTMLDivElement, BadgeProps>(
   function StatDownTrend(props, ref) {
     return (
       <Badge colorPalette="red" gap="0" {...props} ref={ref}>
-        <ChakraStat.DownIndicator />
+        <AgniflowStat.DownIndicator />
         {props.children}
       </Badge>
     )
   },
 )
 
-export const StatRoot = ChakraStat.Root
-export const StatHelpText = ChakraStat.HelpText
-export const StatValueUnit = ChakraStat.ValueUnit
+export const StatRoot = AgniflowStat.Root
+export const StatHelpText = AgniflowStat.HelpText
+export const StatValueUnit = AgniflowStat.ValueUnit

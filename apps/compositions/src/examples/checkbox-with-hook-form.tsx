@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Code, HStack, Stack } from "@chakra-ui/react"
+import { Button, Code, HStack, Stack } from "@agniflow-ui/react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Checkbox } from "compositions/ui/checkbox"
 import { Field } from "compositions/ui/field"

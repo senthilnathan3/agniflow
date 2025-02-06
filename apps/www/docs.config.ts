@@ -179,7 +179,7 @@ const docsLinks: NavItem = {
           title: "Concepts",
           items: [
             { title: "Overview", url: "overview" },
-            { title: "Chakra Factory", url: "chakra-factory" },
+            { title: "Agniflow Factory", url: "agniflow-factory" },
             { title: "Responsive Design", url: "responsive-design" },
             { title: "CSS Variables", url: "css-variables" },
             { title: "Dark Mode", url: "dark-mode" },
@@ -282,27 +282,27 @@ const docsLinks: NavItem = {
 }
 
 export const docsConfig: DocsConfig = {
-  storybookUrl: "https://storybook.chakra-ui.com",
+  storybookUrl: "https://storybook.agniflow-ui.com",
   copyright: "Copyright © {{date}} Segun Adebayo. All Rights Reserved.",
-  title: "Chakra UI",
-  titleTemplate: "%s | Chakra UI",
+  title: "Agniflow UI",
+  titleTemplate: "%s | Agniflow UI",
   description:
     "Simple, Modular & Accessible UI Components for your React Applications",
-  url: "https://chakra-ui.com",
-  xHandle: "@chakra-ui",
-  repoUrl: "https://github.com/chakra-ui/chakra-ui",
+  url: "https://agniflow-ui.com",
+  xHandle: "@agniflow-ui",
+  repoUrl: "https://github.com/agniflow-ui/agniflow-ui",
   repoBranch: "main",
   get editUrl() {
     return `${this.repoUrl}/tree/${this.repoBranch}/apps/www/content`
   },
-  donationUrl: "https://opencollective.com/chakra-ui",
+  donationUrl: "https://opencollective.com/agniflow-ui",
   navigation: [
     docsLinks,
     { title: "Playground", url: "playground" },
     { title: "Guides", url: "guides" },
     { title: "Blog", url: "blog" },
   ],
-  proUrl: "https://pro.chakra-ui.com?utm_source=chakra-ui.com",
+  proUrl: "https://pro.agniflow-ui.com?utm_source=agniflow-ui.com",
 }
 
 interface DocsConfig {

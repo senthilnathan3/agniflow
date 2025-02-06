@@ -1,4 +1,4 @@
-import { For, QrCode, Stack } from "@chakra-ui/react"
+import { For, QrCode, Stack } from "@agniflow-ui/react"
 
 export const QrCodeWithSizes = () => {
   return (

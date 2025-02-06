@@ -1,4 +1,4 @@
-import { Float } from "@chakra-ui/react"
+import { Float } from "@agniflow-ui/react"
 import { Blockquote, BlockquoteIcon } from "compositions/ui/blockquote"
 
 export const BlockquoteWithIcon = () => {

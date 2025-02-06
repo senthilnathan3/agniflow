@@ -1,4 +1,4 @@
-import { Stat } from "@chakra-ui/react"
+import { Stat } from "@agniflow-ui/react"
 
 export const StatBasic = () => {
   return (

@@ -1,4 +1,4 @@
-import { EmptyState, List, VStack } from "@chakra-ui/react"
+import { EmptyState, List, VStack } from "@agniflow-ui/react"
 import { HiColorSwatch } from "react-icons/hi"
 
 export const EmptyStateWithList = () => {

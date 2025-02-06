@@ -1,4 +1,4 @@
-import { AspectRatio, Button } from "@chakra-ui/react"
+import { AspectRatio, Button } from "@agniflow-ui/react"
 import {
   DialogBody,
   DialogCloseTrigger,

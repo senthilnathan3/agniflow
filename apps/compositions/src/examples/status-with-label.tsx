@@ -1,4 +1,4 @@
-import { HStack, Status } from "@chakra-ui/react"
+import { HStack, Status } from "@agniflow-ui/react"
 
 export const StatusWithLabel = () => {
   return (

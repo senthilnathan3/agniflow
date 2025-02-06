@@ -1,4 +1,4 @@
-import { Badge, Group } from "@chakra-ui/react"
+import { Badge, Group } from "@agniflow-ui/react"
 
 export const BadgeWithGroup = () => {
   return (

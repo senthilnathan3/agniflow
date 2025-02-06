@@ -12,12 +12,12 @@ import {
   IconButton,
   Spacer,
   Stack,
-  chakra,
-} from "@chakra-ui/react"
+  agniflow,
+} from "@agniflow-ui/react"
 import Link from "next/link"
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 
-const HeaderRoot = chakra(Container, {
+const HeaderRoot = agniflow(Container, {
   base: {
     minH: "64px",
     display: "flex",
@@ -29,7 +29,7 @@ const HeaderRoot = chakra(Container, {
 
 const LogoLink = () => (
   <HStack asChild focusRing="outside">
-    <Link href="/" aria-label="Chakra UI, Back to homepage">
+    <Link href="/" aria-label="Agniflow UI, Back to homepage">
       <Logo color="fg" />
     </Link>
   </HStack>

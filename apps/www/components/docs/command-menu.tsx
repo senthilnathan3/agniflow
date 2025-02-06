@@ -1,38 +1,38 @@
 "use client"
 
 import { data } from "@/lib/search"
-import { Combobox, createListCollection } from "@ark-ui/react"
-import { useEnvironmentContext } from "@ark-ui/react/environment"
 import {
   Center,
   DialogTrigger,
   Input,
   Stack,
   Text,
-  chakra,
-} from "@chakra-ui/react"
+  agniflow,
+} from "@agniflow-ui/react"
+import { Combobox, createListCollection } from "@ark-ui/react"
+import { useEnvironmentContext } from "@ark-ui/react/environment"
 import { DialogContent, DialogRoot } from "compositions/ui/dialog"
 import { matchSorter } from "match-sorter"
 import { useRouter } from "next/navigation"
 import { ReactNode, useCallback, useEffect, useMemo, useState } from "react"
 
-const ComboboxRoot = chakra(Combobox.Root, {
+const ComboboxRoot = agniflow(Combobox.Root, {
   base: {
     display: "flex",
     flexDirection: "column",
     gap: "1",
   },
 })
-const ComboboxControl = chakra(Combobox.Control)
-const ComboboxInput = chakra(Combobox.Input, {}, { forwardAsChild: true })
-const ComboboxContent = chakra(Combobox.Content, {
+const ComboboxControl = agniflow(Combobox.Control)
+const ComboboxInput = agniflow(Combobox.Input, {}, { forwardAsChild: true })
+const ComboboxContent = agniflow(Combobox.Content, {
   base: {
     borderRadius: "md",
   },
 })
-const ComboboxList = chakra(Combobox.List)
-const ComboboxItemGroup = chakra(Combobox.ItemGroup)
-const ComboboxItem = chakra(Combobox.Item, {
+const ComboboxList = agniflow(Combobox.List)
+const ComboboxItemGroup = agniflow(Combobox.ItemGroup)
+const ComboboxItem = agniflow(Combobox.Item, {
   base: {
     borderRadius: "md",
     _hover: {

@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react"
+import { Button } from "@agniflow-ui/react"
 
 export const ButtonBasic = () => {
   return <Button>Button</Button>

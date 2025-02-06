@@ -8,7 +8,7 @@ import {
   Stack,
   Table,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import NextLink from "next/link"
 import { existsSync, readFileSync } from "node:fs"
 import { join } from "node:path"

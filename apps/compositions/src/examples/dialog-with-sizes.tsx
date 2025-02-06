@@ -1,4 +1,4 @@
-import { Button, For, HStack } from "@chakra-ui/react"
+import { Button, For, HStack } from "@agniflow-ui/react"
 import {
   DialogActionTrigger,
   DialogBody,

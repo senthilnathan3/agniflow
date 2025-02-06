@@ -7,7 +7,7 @@ import {
 } from "@ark-ui/react/checkbox"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -35,7 +35,7 @@ export interface CheckboxCardRootProviderBaseProps
     UnstyledProp {}
 
 export interface CheckboxCardRootProviderProps
-  extends HTMLChakraProps<"label", CheckboxCardRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"label", CheckboxCardRootProviderBaseProps> {}
 
 export const CheckboxCardRootProvider = withProvider<
   HTMLLabelElement,
@@ -49,7 +49,7 @@ export interface CheckboxCardRootBaseProps
     UnstyledProp {}
 
 export interface CheckboxCardRootProps
-  extends HTMLChakraProps<"label", CheckboxCardRootBaseProps> {}
+  extends HTMLAgniflowProps<"label", CheckboxCardRootBaseProps> {}
 
 export const CheckboxCardRoot = withProvider<
   HTMLLabelElement,
@@ -64,7 +64,7 @@ export const CheckboxCardRootPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface CheckboxCardLabelProps
-  extends HTMLChakraProps<"span", ArkCheckbox.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkCheckbox.LabelBaseProps> {}
 
 export const CheckboxCardLabel = withContext<
   HTMLElement,
@@ -73,7 +73,8 @@ export const CheckboxCardLabel = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface CheckboxCardDescriptionProps extends HTMLChakraProps<"div"> {}
+export interface CheckboxCardDescriptionProps
+  extends HTMLAgniflowProps<"div"> {}
 
 export const CheckboxCardDescription = withContext<
   HTMLDivElement,
@@ -83,7 +84,7 @@ export const CheckboxCardDescription = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface CheckboxCardControlProps
-  extends HTMLChakraProps<"div", ArkCheckbox.ControlBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkCheckbox.ControlBaseProps> {}
 
 export const CheckboxCardControl = withContext<
   HTMLDivElement,
@@ -92,7 +93,7 @@ export const CheckboxCardControl = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface CheckboxCardContentProps extends HTMLChakraProps<"div"> {}
+export interface CheckboxCardContentProps extends HTMLAgniflowProps<"div"> {}
 
 export const CheckboxCardContent = withContext<
   HTMLDivElement,
@@ -101,7 +102,7 @@ export const CheckboxCardContent = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface CheckboxCardIndicatorProps extends HTMLChakraProps<"svg"> {}
+export interface CheckboxCardIndicatorProps extends HTMLAgniflowProps<"svg"> {}
 
 export const CheckboxCardIndicator = forwardRef<
   SVGSVGElement,
@@ -124,7 +125,7 @@ export const CheckboxCardIndicator = forwardRef<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface CheckboxCardAddonProps extends HTMLChakraProps<"div"> {}
+export interface CheckboxCardAddonProps extends HTMLAgniflowProps<"div"> {}
 
 export const CheckboxCardAddon = withContext<
   HTMLElement,

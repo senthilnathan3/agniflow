@@ -1,4 +1,4 @@
-import { DataList, Stack } from "@chakra-ui/react"
+import { DataList, Stack } from "@agniflow-ui/react"
 
 export const DataListWithSizes = () => {
   return (

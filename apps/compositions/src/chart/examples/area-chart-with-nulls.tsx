@@ -1,6 +1,6 @@
 "use client"
 
-import { For, SimpleGrid } from "@chakra-ui/react"
+import { For, SimpleGrid } from "@agniflow-ui/react"
 import {
   ChartLegendContent,
   ChartRoot,

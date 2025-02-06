@@ -10,7 +10,7 @@ const content = html`
     <li>Milk</li>
     <li>Eggs</li>
     <li>Bread</li>
-    <li>Chakra UI Pro license</li>
+    <li>Agniflow UI Pro license</li>
   </ul>
   <p>And some ordered lists. Things to do:</p>
   <ol>

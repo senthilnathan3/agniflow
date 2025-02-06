@@ -13,7 +13,7 @@ import {
   TabsList,
   TabsRoot,
   TabsTrigger,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { PaginationBasic } from "compositions/examples/pagination-basic"
 import { StepsBasic } from "compositions/examples/steps-basic"
 import { TimelineBasic } from "compositions/examples/timeline-basic"
@@ -50,9 +50,9 @@ const buttonVariants = [
 ] as const
 
 export default async function Page() {
-  const accentColor = cookies().get("chakra-accent-color")
-  const fontFamily = cookies().get("chakra-font")
-  const radius = cookies().get("chakra-radius")
+  const accentColor = cookies().get("agniflow-accent-color")
+  const fontFamily = cookies().get("agniflow-font")
+  const radius = cookies().get("agniflow-radius")
 
   return (
     <Container display="flex" gap="10" maxW="8xl">

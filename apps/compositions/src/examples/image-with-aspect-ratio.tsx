@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react"
+import { Image } from "@agniflow-ui/react"
 
 export const ImageWithAspectRatio = () => {
   return (

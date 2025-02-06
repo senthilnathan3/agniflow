@@ -5,7 +5,7 @@ import {
   HStack,
   parseColor,
   useColorPicker,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import {
   ColorPickerArea,
   ColorPickerContent,

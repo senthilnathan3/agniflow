@@ -1,6 +1,6 @@
-import type { IconButtonProps, StackProps } from "@chakra-ui/react"
+import type { IconButtonProps, StackProps } from "@agniflow-ui/react"
 import {
-  ColorPicker as ChakraColorPicker,
+  ColorPicker as AgniflowColorPicker,
   For,
   IconButton,
   Portal,
@@ -8,34 +8,34 @@ import {
   Stack,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import * as React from "react"
 import { LuCheck, LuPipette } from "react-icons/lu"
 
 export const ColorPickerTrigger = React.forwardRef<
   HTMLButtonElement,
-  ChakraColorPicker.TriggerProps & { fitContent?: boolean }
+  AgniflowColorPicker.TriggerProps & { fitContent?: boolean }
 >(function ColorPickerTrigger(props, ref) {
   const { fitContent, ...rest } = props
   return (
-    <ChakraColorPicker.Trigger
+    <AgniflowColorPicker.Trigger
       data-fit-content={fitContent || undefined}
       ref={ref}
       {...rest}
     >
-      {props.children || <ChakraColorPicker.ValueSwatch />}
-    </ChakraColorPicker.Trigger>
+      {props.children || <AgniflowColorPicker.ValueSwatch />}
+    </AgniflowColorPicker.Trigger>
   )
 })
 
 export const ColorPickerInput = React.forwardRef<
   HTMLInputElement,
-  Omit<ChakraColorPicker.ChannelInputProps, "channel">
+  Omit<AgniflowColorPicker.ChannelInputProps, "channel">
 >(function ColorHexInput(props, ref) {
-  return <ChakraColorPicker.ChannelInput channel="hex" ref={ref} {...props} />
+  return <AgniflowColorPicker.ChannelInput channel="hex" ref={ref} {...props} />
 })
 
-interface ColorPickerContentProps extends ChakraColorPicker.ContentProps {
+interface ColorPickerContentProps extends AgniflowColorPicker.ContentProps {
   portalled?: boolean
   portalRef?: React.RefObject<HTMLElement>
 }
@@ -47,19 +47,19 @@ export const ColorPickerContent = React.forwardRef<
   const { portalled = true, portalRef, ...rest } = props
   return (
     <Portal disabled={!portalled} container={portalRef}>
-      <ChakraColorPicker.Positioner>
-        <ChakraColorPicker.Content ref={ref} {...rest} />
-      </ChakraColorPicker.Positioner>
+      <AgniflowColorPicker.Positioner>
+        <AgniflowColorPicker.Content ref={ref} {...rest} />
+      </AgniflowColorPicker.Positioner>
     </Portal>
   )
 })
 
 export const ColorPickerInlineContent = React.forwardRef<
   HTMLDivElement,
-  ChakraColorPicker.ContentProps
+  AgniflowColorPicker.ContentProps
 >(function ColorPickerInlineContent(props, ref) {
   return (
-    <ChakraColorPicker.Content
+    <AgniflowColorPicker.Content
       animation="none"
       shadow="none"
       padding="0"
@@ -82,13 +82,13 @@ export const ColorPickerSliders = React.forwardRef<HTMLDivElement, StackProps>(
 
 export const ColorPickerArea = React.forwardRef<
   HTMLDivElement,
-  ChakraColorPicker.AreaProps
+  AgniflowColorPicker.AreaProps
 >(function ColorPickerArea(props, ref) {
   return (
-    <ChakraColorPicker.Area ref={ref} {...props}>
-      <ChakraColorPicker.AreaBackground />
-      <ChakraColorPicker.AreaThumb />
-    </ChakraColorPicker.Area>
+    <AgniflowColorPicker.Area ref={ref} {...props}>
+      <AgniflowColorPicker.AreaBackground />
+      <AgniflowColorPicker.AreaThumb />
+    </AgniflowColorPicker.Area>
   )
 })
 
@@ -97,60 +97,60 @@ export const ColorPickerEyeDropper = React.forwardRef<
   IconButtonProps
 >(function ColorPickerEyeDropper(props, ref) {
   return (
-    <ChakraColorPicker.EyeDropperTrigger asChild>
+    <AgniflowColorPicker.EyeDropperTrigger asChild>
       <IconButton size="xs" variant="outline" ref={ref} {...props}>
         <LuPipette />
       </IconButton>
-    </ChakraColorPicker.EyeDropperTrigger>
+    </AgniflowColorPicker.EyeDropperTrigger>
   )
 })
 
 export const ColorPickerChannelSlider = React.forwardRef<
   HTMLDivElement,
-  ChakraColorPicker.ChannelSliderProps
+  AgniflowColorPicker.ChannelSliderProps
 >(function ColorPickerSlider(props, ref) {
   return (
-    <ChakraColorPicker.ChannelSlider ref={ref} {...props}>
-      <ChakraColorPicker.TransparencyGrid size="0.6rem" />
-      <ChakraColorPicker.ChannelSliderTrack />
-      <ChakraColorPicker.ChannelSliderThumb />
-    </ChakraColorPicker.ChannelSlider>
+    <AgniflowColorPicker.ChannelSlider ref={ref} {...props}>
+      <AgniflowColorPicker.TransparencyGrid size="0.6rem" />
+      <AgniflowColorPicker.ChannelSliderTrack />
+      <AgniflowColorPicker.ChannelSliderThumb />
+    </AgniflowColorPicker.ChannelSlider>
   )
 })
 
 export const ColorPickerSwatchTrigger = React.forwardRef<
   HTMLButtonElement,
-  ChakraColorPicker.SwatchTriggerProps & {
-    swatchSize?: ChakraColorPicker.SwatchTriggerProps["boxSize"]
+  AgniflowColorPicker.SwatchTriggerProps & {
+    swatchSize?: AgniflowColorPicker.SwatchTriggerProps["boxSize"]
   }
 >(function ColorPickerSwatchTrigger(props, ref) {
   const { swatchSize, children, ...rest } = props
   return (
-    <ChakraColorPicker.SwatchTrigger
+    <AgniflowColorPicker.SwatchTrigger
       ref={ref}
       style={{ ["--color" as string]: props.value }}
       {...rest}
     >
       {children || (
-        <ChakraColorPicker.Swatch boxSize={swatchSize} value={props.value}>
-          <ChakraColorPicker.SwatchIndicator>
+        <AgniflowColorPicker.Swatch boxSize={swatchSize} value={props.value}>
+          <AgniflowColorPicker.SwatchIndicator>
             <LuCheck />
-          </ChakraColorPicker.SwatchIndicator>
-        </ChakraColorPicker.Swatch>
+          </AgniflowColorPicker.SwatchIndicator>
+        </AgniflowColorPicker.Swatch>
       )}
-    </ChakraColorPicker.SwatchTrigger>
+    </AgniflowColorPicker.SwatchTrigger>
   )
 })
 
 export const ColorPickerRoot = React.forwardRef<
   HTMLDivElement,
-  ChakraColorPicker.RootProps
+  AgniflowColorPicker.RootProps
 >(function ColorPickerRoot(props, ref) {
   return (
-    <ChakraColorPicker.Root ref={ref} {...props}>
+    <AgniflowColorPicker.Root ref={ref} {...props}>
       {props.children}
-      <ChakraColorPicker.HiddenInput tabIndex={-1} />
-    </ChakraColorPicker.Root>
+      <AgniflowColorPicker.HiddenInput tabIndex={-1} />
+    </AgniflowColorPicker.Root>
   )
 })
 
@@ -163,11 +163,11 @@ const formatMap = {
 
 export const ColorPickerChannelInputs = React.forwardRef<
   HTMLDivElement,
-  ChakraColorPicker.ViewProps
+  AgniflowColorPicker.ViewProps
 >(function ColorPickerChannelInputs(props, ref) {
   const channels = formatMap[props.format]
   return (
-    <ChakraColorPicker.View flexDirection="row" ref={ref} {...props}>
+    <AgniflowColorPicker.View flexDirection="row" ref={ref} {...props}>
       {channels.map((channel) => (
         <VStack gap="1" key={channel} flex="1">
           <ColorPickerChannelInput
@@ -182,17 +182,17 @@ export const ColorPickerChannelInputs = React.forwardRef<
           </Text>
         </VStack>
       ))}
-    </ChakraColorPicker.View>
+    </AgniflowColorPicker.View>
   )
 })
 
 export const ColorPickerChannelSliders = React.forwardRef<
   HTMLDivElement,
-  ChakraColorPicker.ViewProps
+  AgniflowColorPicker.ViewProps
 >(function ColorPickerChannelSliders(props, ref) {
   const channels = formatMap[props.format]
   return (
-    <ChakraColorPicker.View {...props} ref={ref}>
+    <AgniflowColorPicker.View {...props} ref={ref}>
       <For each={channels}>
         {(channel) => (
           <Stack gap="1" key={channel}>
@@ -208,13 +208,13 @@ export const ColorPickerChannelSliders = React.forwardRef<
           </Stack>
         )}
       </For>
-    </ChakraColorPicker.View>
+    </AgniflowColorPicker.View>
   )
 })
 
-export const ColorPickerLabel = ChakraColorPicker.Label
-export const ColorPickerControl = ChakraColorPicker.Control
-export const ColorPickerValueText = ChakraColorPicker.ValueText
-export const ColorPickerValueSwatch = ChakraColorPicker.ValueSwatch
-export const ColorPickerChannelInput = ChakraColorPicker.ChannelInput
-export const ColorPickerSwatchGroup = ChakraColorPicker.SwatchGroup
+export const ColorPickerLabel = AgniflowColorPicker.Label
+export const ColorPickerControl = AgniflowColorPicker.Control
+export const ColorPickerValueText = AgniflowColorPicker.ValueText
+export const ColorPickerValueSwatch = AgniflowColorPicker.ValueSwatch
+export const ColorPickerChannelInput = AgniflowColorPicker.ChannelInput
+export const ColorPickerSwatchGroup = AgniflowColorPicker.SwatchGroup

@@ -10,7 +10,7 @@ import {
   LinkOverlay,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { Avatar, AvatarGroup } from "compositions/ui/avatar"
 import Link from "next/link"
 import { Logo, LogoIcon } from "./logo"

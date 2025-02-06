@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, VStack } from "@chakra-ui/react"
+import { Button, VStack } from "@agniflow-ui/react"
 import { Checkbox } from "compositions/ui/checkbox"
 import { useState } from "react"
 

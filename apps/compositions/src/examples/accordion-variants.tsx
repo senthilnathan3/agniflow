@@ -1,4 +1,4 @@
-import { For, Stack, Text } from "@chakra-ui/react"
+import { For, Stack, Text } from "@agniflow-ui/react"
 import {
   AccordionItem,
   AccordionItemContent,

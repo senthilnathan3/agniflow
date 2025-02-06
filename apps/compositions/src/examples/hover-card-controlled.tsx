@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Link, Strong } from "@chakra-ui/react"
+import { Box, Link, Strong } from "@agniflow-ui/react"
 import {
   HoverCardArrow,
   HoverCardContent,
@@ -14,12 +14,12 @@ export const HoverCardControlled = () => {
   return (
     <HoverCardRoot size="sm" open={open} onOpenChange={(e) => setOpen(e.open)}>
       <HoverCardTrigger asChild>
-        <Link href="#">@chakra_ui</Link>
+        <Link href="#">@agniflow_ui</Link>
       </HoverCardTrigger>
       <HoverCardContent maxWidth="240px">
         <HoverCardArrow />
         <Box>
-          <Strong>Chakra</Strong> is a Sanskrit word that means disk or wheel,
+          <Strong>Agniflow</Strong> is a Sanskrit word that means disk or wheel,
           referring to energy centers in the body
         </Box>
       </HoverCardContent>

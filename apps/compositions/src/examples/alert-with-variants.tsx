@@ -1,4 +1,4 @@
-import { Alert, Stack } from "@chakra-ui/react"
+import { Alert, Stack } from "@agniflow-ui/react"
 
 export const AlertWithVariants = () => {
   return (

@@ -59,9 +59,9 @@ export type JsxHtmlProps<T extends Dict, P extends Dict = {}> = Assign<
 export type ChakraComponent<
   T extends ElementType,
   P extends Dict = {},
-> = FunctionComponent<HTMLChakraProps<T, P> & { ref?: any }>
+> = FunctionComponent<HTMLAgniflowProps<T, P> & { ref?: any }>
 
-export type HTMLChakraProps<
+export type HTMLAgniflowProps<
   T extends ElementType,
   P extends Dict = {},
 > = JsxHtmlProps<

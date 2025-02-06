@@ -1,7 +1,7 @@
 "use client"
 
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   createRecipeContext,
@@ -13,7 +13,7 @@ const { withContext, PropsProvider } = createRecipeContext({
 
 export interface CodeBaseProps extends RecipeProps<"code">, UnstyledProp {}
 
-export interface CodeProps extends HTMLChakraProps<"code", CodeBaseProps> {}
+export interface CodeProps extends HTMLAgniflowProps<"code", CodeBaseProps> {}
 
 export const Code = withContext<HTMLElement, CodeProps>("code")
 

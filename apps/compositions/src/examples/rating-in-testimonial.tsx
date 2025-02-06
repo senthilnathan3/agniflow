@@ -1,4 +1,4 @@
-import { HStack, Stack, Text } from "@chakra-ui/react"
+import { HStack, Stack, Text } from "@agniflow-ui/react"
 import { Avatar } from "compositions/ui/avatar"
 import { Rating } from "compositions/ui/rating"
 

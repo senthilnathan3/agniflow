@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { Tabs as ArkTabs } from "@ark-ui/react/tabs"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -27,7 +27,7 @@ export interface TabsRootProviderBaseProps
     UnstyledProp {}
 
 export interface TabsRootProviderProps
-  extends HTMLChakraProps<"div", TabsRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", TabsRootProviderBaseProps> {}
 
 export const TabsRootProvider = withProvider<
   HTMLDivElement,
@@ -41,7 +41,7 @@ export interface TabsRootBaseProps
     UnstyledProp {}
 
 export interface TabsRootProps
-  extends HTMLChakraProps<"div", TabsRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", TabsRootBaseProps> {}
 
 export const TabsRoot = withProvider<HTMLDivElement, TabsRootProps>(
   ArkTabs.Root,
@@ -57,7 +57,7 @@ export const TabsPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface TabsTriggerProps
-  extends HTMLChakraProps<"button", ArkTabs.TriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkTabs.TriggerBaseProps> {}
 
 export const TabsTrigger = withContext<HTMLButtonElement, TabsTriggerProps>(
   ArkTabs.Trigger,
@@ -68,7 +68,7 @@ export const TabsTrigger = withContext<HTMLButtonElement, TabsTriggerProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface TabsContentProps
-  extends HTMLChakraProps<"div", ArkTabs.ContentBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkTabs.ContentBaseProps> {}
 
 export const TabsContent = withContext<HTMLDivElement, TabsContentProps>(
   ArkTabs.Content,
@@ -78,7 +78,7 @@ export const TabsContent = withContext<HTMLDivElement, TabsContentProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface TabsContentGroupProps extends HTMLChakraProps<"div"> {}
+export interface TabsContentGroupProps extends HTMLAgniflowProps<"div"> {}
 
 export const TabsContentGroup = withContext<
   HTMLDivElement,
@@ -88,7 +88,7 @@ export const TabsContentGroup = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface TabsListProps
-  extends HTMLChakraProps<"div", ArkTabs.ListBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkTabs.ListBaseProps> {}
 
 export const TabsList = withContext<HTMLDivElement, TabsListProps>(
   ArkTabs.List,
@@ -99,7 +99,7 @@ export const TabsList = withContext<HTMLDivElement, TabsListProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface TabsIndicatorProps
-  extends HTMLChakraProps<"div", ArkTabs.ListBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkTabs.ListBaseProps> {}
 
 export const TabsIndicator = withContext<HTMLDivElement, TabsIndicatorProps>(
   ArkTabs.Indicator,

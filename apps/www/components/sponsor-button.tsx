@@ -6,7 +6,7 @@ export const SponsorButton = (props: LinkButtonProps) => (
   <LinkButton
     href={docsConfig.donationUrl}
     target="_blank"
-    aria-label="Sponsor Chakra UI on Open Collective"
+    aria-label="Sponsor Agniflow UI on Open Collective"
     rel="noopener noreferrer"
     variant="ghost"
     size="sm"

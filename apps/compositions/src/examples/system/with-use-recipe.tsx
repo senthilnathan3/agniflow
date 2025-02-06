@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, useRecipe } from "@chakra-ui/react"
+import { Box, useRecipe } from "@agniflow-ui/react"
 
 export const SystemWithUseRecipe = () => {
   const button = useRecipe({ key: "button" })

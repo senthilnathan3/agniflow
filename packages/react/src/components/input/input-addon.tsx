@@ -3,7 +3,7 @@
 import { forwardRef } from "react"
 import {
   EMPTY_SLOT_STYLES,
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   chakra,
@@ -11,7 +11,7 @@ import {
 } from "../../styled-system"
 
 export interface InputAddonProps
-  extends HTMLChakraProps<"div">,
+  extends HTMLAgniflowProps<"div">,
     RecipeProps<"inputAddon">,
     UnstyledProp {}
 

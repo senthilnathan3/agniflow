@@ -1,4 +1,4 @@
-import type { SystemContext } from "@chakra-ui/react"
+import type { SystemContext } from "@agniflow-ui/react"
 import * as p from "@clack/prompts"
 import { Command } from "commander"
 import createDebug from "debug"
@@ -21,7 +21,7 @@ const getDefaultBasePath = () => {
   const cwd = process.cwd()
 
   if (!process.env.LOCAL) {
-    const root = req.resolve("@chakra-ui/react", { paths: [cwd] })
+    const root = req.resolve("@agniflow-ui/react", { paths: [cwd] })
     return resolve(root, "..", "..", "types", "styled-system", "generated")
   }
 

@@ -1,4 +1,4 @@
-import { HStack, Kbd } from "@chakra-ui/react"
+import { HStack, Kbd } from "@agniflow-ui/react"
 
 export const KbdWithVariants = () => {
   return (

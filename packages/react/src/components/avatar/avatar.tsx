@@ -4,7 +4,7 @@ import type { Assign } from "@ark-ui/react"
 import { Avatar as ArkAvatar } from "@ark-ui/react/avatar"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -33,7 +33,7 @@ export interface AvatarRootProviderBaseProps
     UnstyledProp {}
 
 export interface AvatarRootProviderProps
-  extends HTMLChakraProps<"div", AvatarRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", AvatarRootProviderBaseProps> {}
 
 export const AvatarRootProvider = withProvider<
   HTMLDivElement,
@@ -47,7 +47,7 @@ export interface AvatarRootBaseProps
     UnstyledProp {}
 
 export interface AvatarRootProps
-  extends HTMLChakraProps<"div", AvatarRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", AvatarRootBaseProps> {}
 
 export const AvatarRoot = withProvider<HTMLDivElement, AvatarRootProps>(
   ArkAvatar.Root,
@@ -63,7 +63,7 @@ export const AvatarPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface AvatarFallbackProps
-  extends HTMLChakraProps<"div", ArkAvatar.FallbackProps> {
+  extends HTMLAgniflowProps<"div", ArkAvatar.FallbackProps> {
   /**
    * The name to derive the initials from.
    * If not provided, the fallback will display a generic icon.
@@ -108,7 +108,7 @@ export const AvatarFallback = forwardRef<HTMLDivElement, AvatarFallbackProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface AvatarImageProps
-  extends HTMLChakraProps<"img", ArkAvatar.ImageProps> {}
+  extends HTMLAgniflowProps<"img", ArkAvatar.ImageProps> {}
 
 export const AvatarImage = withContext<HTMLImageElement, AvatarImageProps>(
   ArkAvatar.Image,
@@ -124,7 +124,7 @@ export const AvatarImage = withContext<HTMLImageElement, AvatarImageProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface AvatarIconProps extends HTMLChakraProps<"svg"> {}
+export interface AvatarIconProps extends HTMLAgniflowProps<"svg"> {}
 
 export const AvatarIcon = forwardRef<SVGElement, AvatarIconProps>(
   function AvatarIcon(props, ref) {

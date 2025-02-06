@@ -3,7 +3,7 @@
 import { forwardRef, useMemo } from "react"
 import {
   type ConditionalValue,
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SystemStyleObject,
   chakra,
 } from "../../styled-system"
@@ -42,7 +42,7 @@ export interface FloatOptions {
 }
 
 export interface FloatProps
-  extends Omit<HTMLChakraProps<"div">, keyof FloatOptions>,
+  extends Omit<HTMLAgniflowProps<"div">, keyof FloatOptions>,
     FloatOptions {}
 
 export const Float = forwardRef<HTMLDivElement, FloatProps>(

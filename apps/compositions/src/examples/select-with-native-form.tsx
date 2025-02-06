@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Stack, createListCollection } from "@chakra-ui/react"
+import { Button, Stack, createListCollection } from "@agniflow-ui/react"
 import {
   SelectContent,
   SelectItem,

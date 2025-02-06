@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@chakra-ui/react"
+import { Button } from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuItem,

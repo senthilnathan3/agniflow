@@ -2,14 +2,14 @@
 
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   chakra,
   useRecipe,
 } from "../../styled-system"
 
 export interface SkipNavLinkProps
-  extends HTMLChakraProps<"a">,
+  extends HTMLAgniflowProps<"a">,
     RecipeProps<"skipNavLink"> {}
 
 export const fallbackId = "chakra-skip-nav"

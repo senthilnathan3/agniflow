@@ -3,7 +3,7 @@
 import { forwardRef, useMemo } from "react"
 import { mergeProps } from "../../merge-props"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type RecipeProps,
   type UnstyledProp,
   chakra,
@@ -43,7 +43,7 @@ export interface ButtonBaseProps
     ButtonLoadingProps {}
 
 export interface ButtonProps
-  extends HTMLChakraProps<"button", ButtonBaseProps> {}
+  extends HTMLAgniflowProps<"button", ButtonBaseProps> {}
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   function Button(inProps, ref) {

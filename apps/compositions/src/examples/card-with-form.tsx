@@ -1,4 +1,4 @@
-import { Button, Card, Input, Stack } from "@chakra-ui/react"
+import { Button, Card, Input, Stack } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 
 export const CardWithForm = () => (

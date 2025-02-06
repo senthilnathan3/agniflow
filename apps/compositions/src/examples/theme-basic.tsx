@@ -1,4 +1,4 @@
-import { Button, Stack, Theme } from "@chakra-ui/react"
+import { Button, Stack, Theme } from "@agniflow-ui/react"
 
 export const ThemeBasic = () => {
   return (

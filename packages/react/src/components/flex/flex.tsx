@@ -2,7 +2,7 @@
 
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SystemStyleObject,
   chakra,
 } from "../../styled-system"
@@ -18,7 +18,7 @@ export interface FlexOptions {
   inline?: boolean
 }
 
-export interface FlexProps extends HTMLChakraProps<"div", FlexOptions> {}
+export interface FlexProps extends HTMLAgniflowProps<"div", FlexOptions> {}
 
 export const Flex = forwardRef<HTMLDivElement, FlexProps>(
   function Flex(props, ref) {

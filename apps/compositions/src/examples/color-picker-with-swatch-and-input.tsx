@@ -1,6 +1,6 @@
 "use client"
 
-import { ColorPickerChannelInput, parseColor } from "@chakra-ui/react"
+import { ColorPickerChannelInput, parseColor } from "@agniflow-ui/react"
 import {
   ColorPickerContent,
   ColorPickerControl,

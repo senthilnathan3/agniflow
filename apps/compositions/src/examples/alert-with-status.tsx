@@ -1,4 +1,4 @@
-import { Alert, Stack } from "@chakra-ui/react"
+import { Alert, Stack } from "@agniflow-ui/react"
 
 export const AlertWithStatus = () => {
   return (
@@ -11,7 +11,7 @@ export const AlertWithStatus = () => {
       <Alert.Root status="info">
         <Alert.Indicator />
         <Alert.Title>
-          Chakra is going live on August 30th. Get ready!
+          Agniflow is going live on August 30th. Get ready!
         </Alert.Title>
       </Alert.Root>
 

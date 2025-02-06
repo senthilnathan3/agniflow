@@ -1,7 +1,7 @@
 {
-  "name": "@chakra-ui/panda-preset",
-  "version": "3.7.0",
-  "description": "Panda preset for Chakra UI",
+  "name": "@agniflow-ui/panda-preset",
+  "version": "0.0.1",
+  "description": "Panda preset for agniflow UI",
   "type": "module",
   "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.js",
@@ -13,26 +13,15 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Segun Adebayo <sage@adebayosegun.com>",
   "license": "MIT",
-  "homepage": "https://chakra-ui.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chakra-ui/chakra-ui",
-    "directory": "packages/panda-preset"
-  },
   "keywords": [
     "ui",
     "panda",
     "pandacss",
     "preset"
   ],
-  "storybook": {
-    "title": "Chakra UI",
-    "url": "https://storybook.chakra-ui.com"
-  },
   "scripts": {
-    "theme:eject": "chakra eject --outdir=src",
+    "theme:eject": "agniflow eject --outdir=src",
     "theme:sync": "tsx scripts/sync.ts",
     "theme": "pnpm theme:eject && pnpm theme:sync",
     "prepack": "tsx ../../scripts/conditions.ts",
@@ -62,7 +51,7 @@
     "@pandacss/types": "^0.51.1"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "workspace:*",
+    "@agniflow-ui/cli": "workspace:*",
     "globby": "14.0.2"
   }
 }

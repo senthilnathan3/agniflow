@@ -1,4 +1,4 @@
-import { Box, BoxProps } from "@chakra-ui/react"
+import { Box, BoxProps } from "@agniflow-ui/react"
 
 export function Blob(props: BoxProps) {
   return (

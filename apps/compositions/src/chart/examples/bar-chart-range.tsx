@@ -1,6 +1,6 @@
 "use client"
 
-import { HStack, Span } from "@chakra-ui/react"
+import { HStack, Span } from "@agniflow-ui/react"
 import { ChartRoot, ChartTooltipContent } from "compositions/chart/chart"
 import { useChartState } from "compositions/chart/use-chart-state"
 import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from "recharts"

@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/compositions",
+  "name": "@agniflow-ui/compositions",
   "version": "1.0.0",
   "private": "true",
   "description": "Registry for component compositions",
@@ -7,7 +7,7 @@
     "typecheck": "tsc --noEmit"
   },
   "keywords": [
-    "chakra",
+    "agniflow",
     "ui",
     "registry",
     "components",
@@ -16,7 +16,7 @@
   "author": "Segun Adebayo <sage@adebayosegun.com>",
   "license": "ISC",
   "dependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@agniflow-ui/react": "workspace:*",
     "@hookform/resolvers": "3.10.0",
     "@tanstack/react-table": "8.19.3",
     "react-spinners": "0.15.0",

@@ -7,8 +7,8 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  chakra,
-} from "@chakra-ui/react"
+  agniflow,
+} from "@agniflow-ui/react"
 import Image from "next/image"
 import { HighlightHeading } from "./typography"
 
@@ -19,14 +19,14 @@ const TESTIMONIALS = [
     handle: "@rauchg",
     url: "https://twitter.com/rauchg/status/1169632334389248000",
     content:
-      "Chakra UI is glorious. Dark mode support looks amazing and it is 100% built-in. I love the consistent use of focus styling and the subtle animation. Great care for accessibility throughout. It is a guiding principle of the design system.",
+      "Agniflow UI is glorious. Dark mode support looks amazing and it is 100% built-in. I love the consistent use of focus styling and the subtle animation. Great care for accessibility throughout. It is a guiding principle of the design system.",
   },
   {
     name: "Aayush Iyer",
     role: "Engineer / Twillio",
     handle: "@aayush",
     url: "https://twitter.com/aayush/status/1264251538735632384",
-    content: `Chakra is a fantastic component library that helps shape and accelerate the work we're doing with Twilio Paste. \n\nThank you @thesegunadebayo!`,
+    content: `Agniflow is a fantastic component library that helps shape and accelerate the work we're doing with Twilio Paste. \n\nThank you @thesegunadebayo!`,
   },
   {
     name: "Colm Tuite",
@@ -42,11 +42,11 @@ const TESTIMONIALS = [
     handle: "@echobind",
     url: "https://twitter.com/echobind/status/1272895730299154438",
     content:
-      "Chakra UI has become part of our default stack for React apps, Chakra saves our team tons of time, is well designed and documented, has solid accessibility defaults, and looks great out of the box.",
+      "Agniflow UI has become part of our default stack for React apps, Agniflow saves our team tons of time, is well designed and documented, has solid accessibility defaults, and looks great out of the box.",
   },
 ]
 
-const Testimonial = chakra("a", {
+const Testimonial = agniflow("a", {
   base: {
     display: "flex",
     flexDir: "column",
@@ -95,8 +95,8 @@ export const TestimonialSection = () => {
     <Box as="section" py="20">
       <Container>
         <Stack gap="14" align="center" overflowX="hidden">
-          <HighlightHeading as="h2" textStyle="3xl" query="love Chakra">
-            Top-tier teams use and love Chakra
+          <HighlightHeading as="h2" textStyle="3xl" query="love Agniflow">
+            Top-tier teams use and love Agniflow
           </HighlightHeading>
           <TestimonialsList />
         </Stack>

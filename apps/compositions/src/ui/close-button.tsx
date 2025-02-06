@@ -1,5 +1,5 @@
-import type { ButtonProps } from "@chakra-ui/react"
-import { IconButton as ChakraIconButton } from "@chakra-ui/react"
+import type { ButtonProps } from "@agniflow-ui/react"
+import { IconButton as AgniflowIconButton } from "@agniflow-ui/react"
 import * as React from "react"
 import { LuX } from "react-icons/lu"
 
@@ -10,8 +10,8 @@ export const CloseButton = React.forwardRef<
   CloseButtonProps
 >(function CloseButton(props, ref) {
   return (
-    <ChakraIconButton variant="ghost" aria-label="Close" ref={ref} {...props}>
+    <AgniflowIconButton variant="ghost" aria-label="Close" ref={ref} {...props}>
       {props.children ?? <LuX />}
-    </ChakraIconButton>
+    </AgniflowIconButton>
   )
 })

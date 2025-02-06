@@ -1,11 +1,11 @@
 import {
+  Blockquote as AgniflowBlockquote,
   type BlockquoteRootProps,
-  Blockquote as ChakraBlockquote,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 
 export const Blockquote = (props: BlockquoteRootProps) => {
   return (
-    <ChakraBlockquote.Root
+    <AgniflowBlockquote.Root
       {...props}
       css={{
         marginTop: "1.285em",

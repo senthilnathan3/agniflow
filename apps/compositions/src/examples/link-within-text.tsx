@@ -1,4 +1,4 @@
-import { Link, Text } from "@chakra-ui/react"
+import { Link, Text } from "@agniflow-ui/react"
 
 export const LinkWithinText = () => {
   return (
@@ -9,7 +9,7 @@ export const LinkWithinText = () => {
         href="https://chakra-ui.com"
         colorPalette="teal"
       >
-        Chakra UI
+        Agniflow UI
       </Link>{" "}
       website
     </Text>

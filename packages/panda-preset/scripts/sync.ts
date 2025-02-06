@@ -25,8 +25,8 @@ async function main() {
     relativePath = relativePath === "def.ts" ? "./def.ts" : relativePath
 
     let updatedContent = content
-      .replaceAll("@chakra-ui/react", relativePath.replace(".ts", ""))
-      .replaceAll("chakra-", "")
+      .replaceAll("@agniflow-ui/react", relativePath.replace(".ts", ""))
+      .replaceAll("agniflow-", "")
       .replaceAll("switch:", "swittch:")
 
     updatedContent = await format(updatedContent, {
@@ -54,7 +54,7 @@ import { tokens } from "./tokens"
 import { utilities } from "./utilities"
 
 export default definePreset({
-  name: "@chakra-ui/panda-preset",
+  name: "@agniflow-ui/panda-preset",
   globalCss,
   theme: {
     breakpoints,

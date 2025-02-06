@@ -2,7 +2,7 @@
 
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SystemStyleObject,
   chakra,
 } from "../../styled-system"
@@ -23,7 +23,7 @@ interface ImageOptions {
   align?: SystemStyleObject["objectPosition"]
 }
 
-export interface ImageProps extends HTMLChakraProps<"img", ImageOptions> {}
+export interface ImageProps extends HTMLAgniflowProps<"img", ImageOptions> {}
 
 /**
  * React component that renders an image with support

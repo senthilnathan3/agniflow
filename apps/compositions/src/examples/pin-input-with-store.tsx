@@ -6,7 +6,7 @@ import {
   PinInput,
   Stack,
   usePinInput,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 
 export const PinInputWithStore = () => {
   const store = usePinInput()

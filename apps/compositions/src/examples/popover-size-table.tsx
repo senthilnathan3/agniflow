@@ -7,7 +7,7 @@ import {
   Textarea,
   chakra,
   useSlotRecipe,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 import {
   PopoverArrow,

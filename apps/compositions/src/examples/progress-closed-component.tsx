@@ -1,8 +1,8 @@
-import { Progress as ChakraProgress } from "@chakra-ui/react"
+import { Progress as AgniflowProgress } from "@agniflow-ui/react"
 import { InfoTip } from "compositions/ui/toggle-tip"
 import * as React from "react"
 
-interface ProgressProps extends ChakraProgress.RootProps {
+interface ProgressProps extends AgniflowProgress.RootProps {
   showValueText?: boolean
   valueText?: React.ReactNode
   label?: React.ReactNode
@@ -13,19 +13,19 @@ export const Progress = React.forwardRef<HTMLDivElement, ProgressProps>(
   function Progress(props, ref) {
     const { showValueText, valueText, label, info, ...rest } = props
     return (
-      <ChakraProgress.Root {...rest} ref={ref}>
+      <AgniflowProgress.Root {...rest} ref={ref}>
         {label && (
-          <ChakraProgress.Label>
+          <AgniflowProgress.Label>
             {label} {info && <InfoTip>{info}</InfoTip>}
-          </ChakraProgress.Label>
+          </AgniflowProgress.Label>
         )}
-        <ChakraProgress.Track>
-          <ChakraProgress.Range />
-        </ChakraProgress.Track>
+        <AgniflowProgress.Track>
+          <AgniflowProgress.Range />
+        </AgniflowProgress.Track>
         {showValueText && (
-          <ChakraProgress.ValueText>{valueText}</ChakraProgress.ValueText>
+          <AgniflowProgress.ValueText>{valueText}</AgniflowProgress.ValueText>
         )}
-      </ChakraProgress.Root>
+      </AgniflowProgress.Root>
     )
   },
 )

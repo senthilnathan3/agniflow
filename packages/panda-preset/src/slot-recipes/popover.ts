@@ -1,7 +1,7 @@
 import { defineSlotRecipe } from "../def"
 
 export const popoverSlotRecipe = defineSlotRecipe({
-  className: "popover",
+  className: "chakra-popover",
   slots: [
     "arrow",
     "arrowTip",
@@ -37,6 +37,7 @@ export const popoverSlotRecipe = defineSlotRecipe({
       zIndex: "calc(var(--popover-z-index) + var(--layer-index, 0))",
       outline: "0",
       transformOrigin: "var(--transform-origin)",
+      maxHeight: "var(--available-height)",
       _open: {
         animationStyle: "scale-fade-in",
         animationDuration: "fast",

@@ -2,7 +2,7 @@
   {
     "id": "overview",
     "title": "Overview",
-    "description": "High-level questions about Chakra UI v3.0"
+    "description": "High-level questions about Agniflow UI v3.0"
   },
   {
     "id": "snippets",
@@ -22,12 +22,12 @@
   {
     "id": "next-js",
     "title": "Next.js",
-    "description": "Using Chakra UI with Next.js App or Pages Router"
+    "description": "Using Agniflow UI with Next.js App or Pages Router"
   },
   {
     "id": "styling",
     "title": "Styling",
-    "description": "Styling Chakra UI components"
+    "description": "Styling Agniflow UI components"
   },
   {
     "id": "theming",

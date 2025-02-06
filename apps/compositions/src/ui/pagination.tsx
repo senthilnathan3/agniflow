@@ -1,14 +1,14 @@
 "use client"
 
-import type { ButtonProps, TextProps } from "@chakra-ui/react"
+import type { ButtonProps, TextProps } from "@agniflow-ui/react"
 import {
+  Pagination as AgniflowPagination,
   Button,
-  Pagination as ChakraPagination,
   IconButton,
   Text,
   createContext,
   usePaginationContext,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import * as React from "react"
 import {
   HiChevronLeft,
@@ -36,7 +36,7 @@ const [RootPropsProvider, useRootProps] = createContext<ButtonVariantContext>({
 })
 
 export interface PaginationRootProps
-  extends Omit<ChakraPagination.RootProps, "type"> {
+  extends Omit<AgniflowPagination.RootProps, "type"> {
   size?: ButtonProps["size"]
   variant?: PaginationVariant
   getHref?: (page: number) => string
@@ -57,7 +57,7 @@ export const PaginationRoot = React.forwardRef<
     <RootPropsProvider
       value={{ size, variantMap: variantMap[variant], getHref }}
     >
-      <ChakraPagination.Root
+      <AgniflowPagination.Root
         ref={ref}
         type={getHref ? "link" : "button"}
         {...rest}
@@ -68,21 +68,21 @@ export const PaginationRoot = React.forwardRef<
 
 export const PaginationEllipsis = React.forwardRef<
   HTMLDivElement,
-  ChakraPagination.EllipsisProps
+  AgniflowPagination.EllipsisProps
 >(function PaginationEllipsis(props, ref) {
   const { size, variantMap } = useRootProps()
   return (
-    <ChakraPagination.Ellipsis ref={ref} {...props} asChild>
+    <AgniflowPagination.Ellipsis ref={ref} {...props} asChild>
       <Button as="span" variant={variantMap.ellipsis} size={size}>
         <HiMiniEllipsisHorizontal />
       </Button>
-    </ChakraPagination.Ellipsis>
+    </AgniflowPagination.Ellipsis>
   )
 })
 
 export const PaginationItem = React.forwardRef<
   HTMLButtonElement,
-  ChakraPagination.ItemProps
+  AgniflowPagination.ItemProps
 >(function PaginationItem(props, ref) {
   const { page } = usePaginationContext()
   const { size, variantMap, getHref } = useRootProps()
@@ -99,17 +99,17 @@ export const PaginationItem = React.forwardRef<
   }
 
   return (
-    <ChakraPagination.Item ref={ref} {...props} asChild>
+    <AgniflowPagination.Item ref={ref} {...props} asChild>
       <Button variant={variant} size={size}>
         {props.value}
       </Button>
-    </ChakraPagination.Item>
+    </AgniflowPagination.Item>
   )
 })
 
 export const PaginationPrevTrigger = React.forwardRef<
   HTMLButtonElement,
-  ChakraPagination.PrevTriggerProps
+  AgniflowPagination.PrevTriggerProps
 >(function PaginationPrevTrigger(props, ref) {
   const { size, variantMap, getHref } = useRootProps()
   const { previousPage } = usePaginationContext()
@@ -127,17 +127,17 @@ export const PaginationPrevTrigger = React.forwardRef<
   }
 
   return (
-    <ChakraPagination.PrevTrigger ref={ref} asChild {...props}>
+    <AgniflowPagination.PrevTrigger ref={ref} asChild {...props}>
       <IconButton variant={variantMap.default} size={size}>
         <HiChevronLeft />
       </IconButton>
-    </ChakraPagination.PrevTrigger>
+    </AgniflowPagination.PrevTrigger>
   )
 })
 
 export const PaginationNextTrigger = React.forwardRef<
   HTMLButtonElement,
-  ChakraPagination.NextTriggerProps
+  AgniflowPagination.NextTriggerProps
 >(function PaginationNextTrigger(props, ref) {
   const { size, variantMap, getHref } = useRootProps()
   const { nextPage } = usePaginationContext()
@@ -155,17 +155,17 @@ export const PaginationNextTrigger = React.forwardRef<
   }
 
   return (
-    <ChakraPagination.NextTrigger ref={ref} asChild {...props}>
+    <AgniflowPagination.NextTrigger ref={ref} asChild {...props}>
       <IconButton variant={variantMap.default} size={size}>
         <HiChevronRight />
       </IconButton>
-    </ChakraPagination.NextTrigger>
+    </AgniflowPagination.NextTrigger>
   )
 })
 
 export const PaginationItems = (props: React.HTMLAttributes<HTMLElement>) => {
   return (
-    <ChakraPagination.Context>
+    <AgniflowPagination.Context>
       {({ pages }) =>
         pages.map((page, index) => {
           return page.type === "ellipsis" ? (
@@ -180,7 +180,7 @@ export const PaginationItems = (props: React.HTMLAttributes<HTMLElement>) => {
           )
         })
       }
-    </ChakraPagination.Context>
+    </AgniflowPagination.Context>
   )
 }
 

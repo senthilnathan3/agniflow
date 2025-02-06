@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, For, Span, useRecipe } from "@chakra-ui/react"
+import { Code, For, Span, useRecipe } from "@agniflow-ui/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 
@@ -27,7 +27,7 @@ export const CodeSizeTable = () => {
                 {(v) => (
                   <td>
                     <Code size={v} colorPalette={c}>
-                      console.log("Chakra v3!")
+                      console.log("Agniflow v3!")
                     </Code>
                   </td>
                 )}

@@ -1,38 +1,34 @@
 import { defineRecipe } from "../def"
 
 export const iconRecipe = defineRecipe({
-  className: "icon",
+  className: "chakra-icon",
   base: {
     display: "inline-block",
     lineHeight: "1em",
     flexShrink: "0",
     color: "currentcolor",
     verticalAlign: "middle",
-    width: "var(--icon-size)",
-    height: "var(--icon-size)",
   },
   variants: {
     size: {
-      inherit: {
-        "--icon-size": "1em",
-      },
+      inherit: {},
       xs: {
-        "--icon-size": "sizes.3",
+        boxSize: "3",
       },
       sm: {
-        "--icon-size": "sizes.4",
+        boxSize: "4",
       },
       md: {
-        "--icon-size": "sizes.5",
+        boxSize: "5",
       },
       lg: {
-        "--icon-size": "sizes.6",
+        boxSize: "6",
       },
       xl: {
-        "--icon-size": "sizes.7",
+        boxSize: "7",
       },
       "2xl": {
-        "--icon-size": "sizes.8",
+        boxSize: "8",
       },
     },
   },

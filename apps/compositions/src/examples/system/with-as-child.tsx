@@ -1,4 +1,4 @@
-import { chakra } from "@chakra-ui/react"
+import { chakra } from "@agniflow-ui/react"
 
 export const SystemWithAsChild = () => {
   return (

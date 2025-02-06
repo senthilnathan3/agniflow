@@ -1,4 +1,4 @@
-import { Textarea } from "@chakra-ui/react"
+import { Textarea } from "@agniflow-ui/react"
 
 export const TextareaWithAutoresize = () => {
   return <Textarea autoresize />

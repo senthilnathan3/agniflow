@@ -1,4 +1,4 @@
-import { Input } from "@chakra-ui/react"
+import { Input } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 
 export const InputWithHelperText = () => {

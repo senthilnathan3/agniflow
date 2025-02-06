@@ -9,7 +9,7 @@ import { ark } from "@ark-ui/react/factory"
 import { forwardRef } from "react"
 import { mergeProps } from "../../merge-props"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -36,7 +36,7 @@ export interface EditableRootProviderBaseProps
     UnstyledProp {}
 
 export interface EditableRootProviderProps
-  extends HTMLChakraProps<"div", EditableRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", EditableRootProviderBaseProps> {}
 
 export const EditableRootProvider = withProvider<
   HTMLDivElement,
@@ -50,7 +50,7 @@ export interface EditableRootBaseProps
     UnstyledProp {}
 
 export interface EditableRootProps
-  extends HTMLChakraProps<"div", EditableRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", EditableRootBaseProps> {}
 
 export const EditableRoot = withProvider<HTMLDivElement, EditableRootProps>(
   ArkEditable.Root,
@@ -66,7 +66,7 @@ export const EditablePropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface EditablePreviewProps
-  extends HTMLChakraProps<"span", ArkEditable.PreviewBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkEditable.PreviewBaseProps> {}
 
 export const EditablePreview = withContext<
   HTMLSpanElement,
@@ -76,7 +76,7 @@ export const EditablePreview = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface EditableInputProps
-  extends HTMLChakraProps<"input", ArkEditable.InputBaseProps> {}
+  extends HTMLAgniflowProps<"input", ArkEditable.InputBaseProps> {}
 
 export const EditableInput = withContext<HTMLInputElement, EditableInputProps>(
   ArkEditable.Input,
@@ -87,7 +87,7 @@ export const EditableInput = withContext<HTMLInputElement, EditableInputProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface EditableTextareaProps
-  extends HTMLChakraProps<"textarea", ArkEditable.InputBaseProps> {}
+  extends HTMLAgniflowProps<"textarea", ArkEditable.InputBaseProps> {}
 
 const ArkEditableTextarea = forwardRef<
   HTMLTextAreaElement,
@@ -106,7 +106,7 @@ export const EditableTextarea = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface EditableControlProps
-  extends HTMLChakraProps<"div", ArkEditable.ControlBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkEditable.ControlBaseProps> {}
 
 export const EditableControl = withContext<
   HTMLDivElement,
@@ -116,7 +116,7 @@ export const EditableControl = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface EditableAreaProps
-  extends HTMLChakraProps<"div", ArkEditable.AreaBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkEditable.AreaBaseProps> {}
 
 export const EditableArea = withContext<HTMLDivElement, EditableAreaProps>(
   ArkEditable.Area,
@@ -127,7 +127,7 @@ export const EditableArea = withContext<HTMLDivElement, EditableAreaProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface EditableEditTriggerProps
-  extends HTMLChakraProps<"button", ArkEditable.EditTriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkEditable.EditTriggerBaseProps> {}
 
 export const EditableEditTrigger = withContext<
   HTMLButtonElement,
@@ -137,7 +137,7 @@ export const EditableEditTrigger = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface EditableSubmitTriggerProps
-  extends HTMLChakraProps<"button", ArkEditable.SubmitTriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkEditable.SubmitTriggerBaseProps> {}
 
 export const EditableSubmitTrigger = withContext<
   HTMLButtonElement,
@@ -147,7 +147,7 @@ export const EditableSubmitTrigger = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface EditableCancelTriggerProps
-  extends HTMLChakraProps<"button", ArkEditable.CancelTriggerBaseProps> {}
+  extends HTMLAgniflowProps<"button", ArkEditable.CancelTriggerBaseProps> {}
 
 export const EditableCancelTrigger = withContext<
   HTMLButtonElement,

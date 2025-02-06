@@ -1,4 +1,4 @@
-import { Breadcrumb } from "@chakra-ui/react"
+import { Breadcrumb } from "@agniflow-ui/react"
 
 export const BreadcrumbWithoutSnippet = () => {
   return (

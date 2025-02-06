@@ -7,7 +7,7 @@ import {
   Loader,
   LoaderOverlay,
   Stack,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 import { useState } from "react"
 

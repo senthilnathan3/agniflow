@@ -1,4 +1,4 @@
-import { Kbd } from "@chakra-ui/react"
+import { Kbd } from "@agniflow-ui/react"
 import { AspectRatioTokenDoc } from "compositions/lib/aspect-ratio-token-doc"
 import { BorderRadiusTokenDoc } from "compositions/lib/border-radius-token-doc"
 import { BreakpointDoc } from "compositions/lib/breakpoint-doc"

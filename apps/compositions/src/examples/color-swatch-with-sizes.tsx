@@ -1,6 +1,6 @@
-import { HStack } from "@chakra-ui/react"
-import { ColorSwatch } from "@chakra-ui/react"
-import { For } from "@chakra-ui/react"
+import { HStack } from "@agniflow-ui/react"
+import { ColorSwatch } from "@agniflow-ui/react"
+import { For } from "@agniflow-ui/react"
 
 export const ColorSwatchWithSizes = () => {
   return (

@@ -1,4 +1,4 @@
-import { FormatNumber, Progress, Stat } from "@chakra-ui/react"
+import { FormatNumber, Progress, Stat } from "@agniflow-ui/react"
 
 export const StatWithProgressBar = () => {
   return (

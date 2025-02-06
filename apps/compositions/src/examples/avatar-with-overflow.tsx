@@ -1,4 +1,4 @@
-import { Avatar, Group } from "@chakra-ui/react"
+import { Avatar, Group } from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuItem,

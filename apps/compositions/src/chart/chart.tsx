@@ -1,6 +1,6 @@
 "use client"
 
-import type { BoxProps } from "@chakra-ui/react"
+import type { BoxProps } from "@agniflow-ui/react"
 import {
   Box,
   ColorSwatch,
@@ -10,8 +10,8 @@ import {
   Span,
   Stack,
   Text,
-  useChakraContext,
-} from "@chakra-ui/react"
+  useAgniflowContext,
+} from "@agniflow-ui/react"
 import * as React from "react"
 import type { LegendProps, TooltipProps } from "recharts"
 import { ResponsiveContainer } from "recharts"
@@ -72,7 +72,7 @@ export const ChartGradient = React.forwardRef<
   SVGLinearGradientElement,
   ChartGradientProps
 >(function ChartGradient(props, ref) {
-  const sys = useChakraContext()
+  const sys = useAgniflowContext()
   const token = (key: string | undefined) => sys.token("colors", key)
   const { id, fillOpacity, stops } = props
   return (

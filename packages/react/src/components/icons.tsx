@@ -1,6 +1,6 @@
 "use client"
 
-import { type HTMLChakraProps, chakra } from "../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../styled-system"
 
 /**
    
@@ -13,7 +13,7 @@ import { type HTMLChakraProps, chakra } from "../styled-system"
 
  */
 
-interface SvgProps extends HTMLChakraProps<"svg"> {}
+interface SvgProps extends HTMLAgniflowProps<"svg"> {}
 
 export const CheckIcon = (props: SvgProps) => {
   return (

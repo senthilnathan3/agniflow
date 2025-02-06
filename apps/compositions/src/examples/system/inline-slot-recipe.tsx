@@ -1,5 +1,5 @@
-import type { HTMLChakraProps, RecipeVariantProps } from "@chakra-ui/react"
-import { createSlotRecipeContext, defineSlotRecipe } from "@chakra-ui/react"
+import type { HTMLAgniflowProps, RecipeVariantProps } from "@agniflow-ui/react"
+import { createSlotRecipeContext, defineSlotRecipe } from "@agniflow-ui/react"
 
 // 1. Define the recipe
 
@@ -42,20 +42,20 @@ const { withProvider, withContext } = createSlotRecipeContext({
 // 2. Create the components
 
 interface CheckboxRootProps
-  extends HTMLChakraProps<"div", RecipeVariantProps<typeof checkbox>> {}
+  extends HTMLAgniflowProps<"div", RecipeVariantProps<typeof checkbox>> {}
 
 const CheckboxRoot = withProvider<HTMLDivElement, CheckboxRootProps>(
   "div",
   "root",
 )
 
-interface CheckboxLabelProps extends HTMLChakraProps<"label"> {}
+interface CheckboxLabelProps extends HTMLAgniflowProps<"label"> {}
 const CheckboxLabel = withContext<HTMLLabelElement, CheckboxLabelProps>(
   "label",
   "label",
 )
 
-interface CheckboxControlProps extends HTMLChakraProps<"input"> {}
+interface CheckboxControlProps extends HTMLAgniflowProps<"input"> {}
 const CheckboxControl = withContext<HTMLInputElement, CheckboxControlProps>(
   "input",
   "control",

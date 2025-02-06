@@ -1,4 +1,4 @@
-import { For, Stack, Text, VStack } from "@chakra-ui/react"
+import { For, Stack, Text, VStack } from "@agniflow-ui/react"
 import { Slider } from "compositions/ui/slider"
 
 export const SliderWithMarks = () => {

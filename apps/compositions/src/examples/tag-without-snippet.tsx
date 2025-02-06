@@ -1,4 +1,4 @@
-import { HStack, Tag } from "@chakra-ui/react"
+import { HStack, Tag } from "@agniflow-ui/react"
 import { LuArrowRight } from "react-icons/lu"
 
 export const TagWithoutSnippet = () => {

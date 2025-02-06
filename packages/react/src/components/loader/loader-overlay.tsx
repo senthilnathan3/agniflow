@@ -1,6 +1,6 @@
-import { type HTMLChakraProps, chakra } from "../../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../../styled-system"
 
-export interface LoaderOverlayProps extends HTMLChakraProps<"div"> {}
+export interface LoaderOverlayProps extends HTMLAgniflowProps<"div"> {}
 
 export const LoaderOverlay = chakra("div", {
   base: {

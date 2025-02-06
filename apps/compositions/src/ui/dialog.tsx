@@ -1,8 +1,8 @@
-import { Dialog as ChakraDialog, Portal } from "@chakra-ui/react"
+import { Dialog as AgniflowDialog, Portal } from "@agniflow-ui/react"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 
-interface DialogContentProps extends ChakraDialog.ContentProps {
+interface DialogContentProps extends AgniflowDialog.ContentProps {
   portalled?: boolean
   portalRef?: React.RefObject<HTMLElement>
   backdrop?: boolean
@@ -22,22 +22,22 @@ export const DialogContent = React.forwardRef<
 
   return (
     <Portal disabled={!portalled} container={portalRef}>
-      {backdrop && <ChakraDialog.Backdrop />}
-      <ChakraDialog.Positioner>
-        <ChakraDialog.Content ref={ref} {...rest} asChild={false}>
+      {backdrop && <AgniflowDialog.Backdrop />}
+      <AgniflowDialog.Positioner>
+        <AgniflowDialog.Content ref={ref} {...rest} asChild={false}>
           {children}
-        </ChakraDialog.Content>
-      </ChakraDialog.Positioner>
+        </AgniflowDialog.Content>
+      </AgniflowDialog.Positioner>
     </Portal>
   )
 })
 
 export const DialogCloseTrigger = React.forwardRef<
   HTMLButtonElement,
-  ChakraDialog.CloseTriggerProps
+  AgniflowDialog.CloseTriggerProps
 >(function DialogCloseTrigger(props, ref) {
   return (
-    <ChakraDialog.CloseTrigger
+    <AgniflowDialog.CloseTrigger
       position="absolute"
       top="2"
       insetEnd="2"
@@ -47,16 +47,16 @@ export const DialogCloseTrigger = React.forwardRef<
       <CloseButton size="sm" ref={ref}>
         {props.children}
       </CloseButton>
-    </ChakraDialog.CloseTrigger>
+    </AgniflowDialog.CloseTrigger>
   )
 })
 
-export const DialogRoot = ChakraDialog.Root
-export const DialogFooter = ChakraDialog.Footer
-export const DialogHeader = ChakraDialog.Header
-export const DialogBody = ChakraDialog.Body
-export const DialogBackdrop = ChakraDialog.Backdrop
-export const DialogTitle = ChakraDialog.Title
-export const DialogDescription = ChakraDialog.Description
-export const DialogTrigger = ChakraDialog.Trigger
-export const DialogActionTrigger = ChakraDialog.ActionTrigger
+export const DialogRoot = AgniflowDialog.Root
+export const DialogFooter = AgniflowDialog.Footer
+export const DialogHeader = AgniflowDialog.Header
+export const DialogBody = AgniflowDialog.Body
+export const DialogBackdrop = AgniflowDialog.Backdrop
+export const DialogTitle = AgniflowDialog.Title
+export const DialogDescription = AgniflowDialog.Description
+export const DialogTrigger = AgniflowDialog.Trigger
+export const DialogActionTrigger = AgniflowDialog.ActionTrigger

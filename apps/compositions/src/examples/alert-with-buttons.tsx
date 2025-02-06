@@ -1,4 +1,4 @@
-import { Alert, Button } from "@chakra-ui/react"
+import { Alert, Button } from "@agniflow-ui/react"
 
 export const AlertWithButtons = () => {
   return (

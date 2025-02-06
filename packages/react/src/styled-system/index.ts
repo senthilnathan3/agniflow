@@ -25,7 +25,7 @@ export * from "./empty"
 export { chakra } from "./factory"
 export type {
   ChakraComponent,
-  HTMLChakraProps,
+  HTMLAgniflowProps,
   InferRecipeProps,
   UnstyledProp,
   JsxStyleProps,

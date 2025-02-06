@@ -1,7 +1,7 @@
 "use client"
 
 import { useUpdateEffect } from "@/lib/use-update-effect"
-import { Button, Card, Input, Textarea } from "@chakra-ui/react"
+import { Button, Card, Input, Textarea } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 import {
   NativeSelectField,

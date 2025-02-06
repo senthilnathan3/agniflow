@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { Clipboard as ArkClipboard } from "@ark-ui/react/clipboard"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -30,7 +30,7 @@ export interface ClipboardRootProviderBaseProps
     UnstyledProp {}
 
 export interface ClipboardRootProviderProps
-  extends HTMLChakraProps<"div", ClipboardRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", ClipboardRootProviderBaseProps> {}
 
 export const ClipboardRootProvider = withProvider<
   HTMLDivElement,
@@ -44,7 +44,7 @@ export interface ClipboardRootBaseProps
     UnstyledProp {}
 
 export interface ClipboardRootProps
-  extends HTMLChakraProps<"div", ClipboardRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", ClipboardRootBaseProps> {}
 
 export const ClipboardRoot = withProvider<HTMLDivElement, ClipboardRootProps>(
   ArkClipboard.Root,
@@ -60,7 +60,7 @@ export const ClipboardPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ClipboardTriggerProps
-  extends HTMLChakraProps<"button", ArkClipboard.TriggerProps> {}
+  extends HTMLAgniflowProps<"button", ArkClipboard.TriggerProps> {}
 
 export const ClipboardTrigger = withContext<
   HTMLButtonElement,
@@ -70,7 +70,7 @@ export const ClipboardTrigger = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ClipboardControlProps
-  extends HTMLChakraProps<"div", ArkClipboard.ControlProps> {}
+  extends HTMLAgniflowProps<"div", ArkClipboard.ControlProps> {}
 
 export const ClipboardControl = withContext<
   HTMLDivElement,
@@ -80,7 +80,7 @@ export const ClipboardControl = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ClipboardIndicatorProps
-  extends HTMLChakraProps<"div", ArkClipboard.IndicatorProps> {}
+  extends HTMLAgniflowProps<"div", ArkClipboard.IndicatorProps> {}
 
 export const ClipboardIndicator = withContext<
   HTMLDivElement,
@@ -90,7 +90,7 @@ export const ClipboardIndicator = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ClipboardInputProps
-  extends HTMLChakraProps<"input", ArkClipboard.InputProps> {}
+  extends HTMLAgniflowProps<"input", ArkClipboard.InputProps> {}
 
 export const ClipboardInput = withContext<
   HTMLInputElement,
@@ -100,7 +100,7 @@ export const ClipboardInput = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ClipboardLabelProps
-  extends HTMLChakraProps<"label", ArkClipboard.LabelProps> {}
+  extends HTMLAgniflowProps<"label", ArkClipboard.LabelProps> {}
 
 export const ClipboardLabel = withContext<
   HTMLLabelElement,
@@ -117,7 +117,7 @@ export interface ClipboardCopyStatusDetails
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface ClipboardValueTextProps
-  extends HTMLChakraProps<"div", ArkClipboard.ValueTextProps> {}
+  extends HTMLAgniflowProps<"div", ArkClipboard.ValueTextProps> {}
 
 export const ClipboardValueText = withContext<
   HTMLDivElement,

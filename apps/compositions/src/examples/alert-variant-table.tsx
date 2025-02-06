@@ -1,6 +1,6 @@
 "use client"
 
-import { Alert, For, Span, useSlotRecipe } from "@chakra-ui/react"
+import { Alert, For, Span, useSlotRecipe } from "@agniflow-ui/react"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 
@@ -47,7 +47,7 @@ const AlertDemo = (props: Alert.RootProps) => {
       <Alert.Content>
         <Alert.Title>Alert Title</Alert.Title>
         <Alert.Description>
-          Chakra UI v3 is the greatest! Check it out.
+          Agniflow UI v3 is the greatest! Check it out.
         </Alert.Description>
       </Alert.Content>
     </Alert.Root>

@@ -1,4 +1,4 @@
-import { Heading, Highlight, Stack, Text } from "@chakra-ui/react"
+import { Heading, Highlight, Stack, Text } from "@agniflow-ui/react"
 
 export const HeadingWithHighlight = () => {
   return (
@@ -9,7 +9,7 @@ export const HeadingWithHighlight = () => {
         </Highlight>
       </Heading>
       <Text fontSize="md" color="fg.muted">
-        Chakra UI is a simple, modular and accessible component library that
+        Agniflow UI is a simple, modular and accessible component library that
         gives you the building blocks you need.
       </Text>
     </Stack>

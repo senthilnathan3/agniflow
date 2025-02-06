@@ -1,10 +1,10 @@
 import * as React from "react"
-import type { HTMLChakraProps } from "../../styled-system"
+import type { HTMLAgniflowProps } from "../../styled-system"
 import { Span } from "../box"
 import { AbsoluteCenter } from "../center"
 import { Spinner } from "../spinner"
 
-export interface LoaderProps extends HTMLChakraProps<"span"> {
+export interface LoaderProps extends HTMLAgniflowProps<"span"> {
   /**
    * Whether the loader is visible
    * @default true

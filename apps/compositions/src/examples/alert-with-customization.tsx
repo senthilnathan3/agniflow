@@ -1,4 +1,4 @@
-import { Alert, Link, Stack } from "@chakra-ui/react"
+import { Alert, Link, Stack } from "@agniflow-ui/react"
 import { LuPercent } from "react-icons/lu"
 
 export const AlertWithCustomization = () => {

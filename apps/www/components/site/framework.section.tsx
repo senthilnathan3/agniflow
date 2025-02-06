@@ -7,7 +7,7 @@ import {
   Square,
   Stack,
   VStack,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { Blob } from "./blob"
 import {
   BlitzIcon,
@@ -76,8 +76,8 @@ export const FrameworkSection = () => {
               Works with your favorite application framework
             </HighlightHeading>
             <Subheading maxW="md">
-              Chakra provides a consistent developer experience for most modern
-              frameworks
+              Agniflow provides a consistent developer experience for most
+              modern frameworks
             </Subheading>
           </VStack>
           <FrameworksList />

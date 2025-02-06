@@ -1,4 +1,4 @@
-import { Highlight } from "@chakra-ui/react"
+import { Highlight } from "@agniflow-ui/react"
 
 export const HighlightBasic = () => {
   return (

@@ -7,15 +7,15 @@ import type { SystemContext } from "./types"
 const [ChakraContextProvider, useChakraContext] = createContext<SystemContext>({
   name: "ChakraContext",
   strict: true,
-  providerName: "<ChakraProvider />",
+  providerName: "<AgniflowProvider />",
 })
 
-export interface ChakraProviderProps {
+export interface AgniflowProviderProps {
   value: SystemContext
   children: React.ReactNode
 }
 
-function ChakraProvider(props: ChakraProviderProps) {
+function AgniflowProvider(props: AgniflowProviderProps) {
   const { value: sys, children } = props
   return (
     <ChakraContextProvider value={sys}>
@@ -26,4 +26,4 @@ function ChakraProvider(props: ChakraProviderProps) {
   )
 }
 
-export { ChakraProvider, useChakraContext }
+export { AgniflowProvider, useChakraContext }

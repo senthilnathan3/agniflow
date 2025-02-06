@@ -1,4 +1,4 @@
-import { For, HStack, Tag } from "@chakra-ui/react"
+import { For, HStack, Tag } from "@agniflow-ui/react"
 import { Avatar } from "compositions/ui/avatar"
 
 export const TagWithAvatar = () => {

@@ -1,7 +1,7 @@
 "use client"
 
-import type { Tokens } from "@chakra-ui/react"
-import { useChakraContext, useLocaleContext } from "@chakra-ui/react"
+import type { Tokens } from "@agniflow-ui/react"
+import { useAgniflowContext, useLocaleContext } from "@agniflow-ui/react"
 import * as React from "react"
 
 export type ChartColor = Tokens["colors"] | React.CSSProperties["color"]
@@ -39,7 +39,7 @@ export function useChartState<T>(props: UseChartStateProps<T>) {
   >(null)
 
   const env = useLocaleContext()
-  const sys = useChakraContext()
+  const sys = useAgniflowContext()
 
   const color = (key: string | undefined) => sys.token(`colors.${key}`, key)
   const size = (key: string | undefined) => sys.token(`sizes.${key}`, key)

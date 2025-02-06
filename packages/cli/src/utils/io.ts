@@ -1,4 +1,4 @@
-import type { SystemContext } from "@chakra-ui/react"
+import type { SystemContext } from "@agniflow-ui/react"
 import { log } from "@clack/prompts"
 import { bundleNRequire } from "bundle-n-require"
 import chokidar from "chokidar"

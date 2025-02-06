@@ -1,8 +1,8 @@
 "use client"
 
-import { Center, CenterProps, chakra } from "@chakra-ui/react"
+import { Center, CenterProps, agniflow } from "@agniflow-ui/react"
 
-export const DemoFrame = chakra(
+export const DemoFrame = agniflow(
   "div",
   {
     base: {
@@ -33,7 +33,7 @@ export const DemoFrame = chakra(
   },
 )
 
-export const DemoFrameText = chakra("div", {
+export const DemoFrameText = agniflow("div", {
   base: {
     textStyle: "sm",
     color: "fg.muted",

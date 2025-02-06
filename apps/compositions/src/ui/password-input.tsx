@@ -5,7 +5,7 @@ import type {
   GroupProps,
   InputProps,
   StackProps,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import {
   Box,
   HStack,
@@ -14,7 +14,7 @@ import {
   Stack,
   mergeRefs,
   useControllableState,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import * as React from "react"
 import { LuEye, LuEyeOff } from "react-icons/lu"
 import { InputGroup } from "./input-group"

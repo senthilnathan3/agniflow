@@ -1,4 +1,4 @@
-import { HStack, Tag } from "@chakra-ui/react"
+import { HStack, Tag } from "@agniflow-ui/react"
 
 export const TagBasic = () => {
   return (

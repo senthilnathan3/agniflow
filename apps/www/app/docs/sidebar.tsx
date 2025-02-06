@@ -10,8 +10,8 @@ import {
   Portal,
   Stack,
   Text,
-  chakra,
-} from "@chakra-ui/react"
+  agniflow,
+} from "@agniflow-ui/react"
 import { BreadcrumbRoot } from "compositions/ui/breadcrumb"
 import {
   DrawerBackdrop,
@@ -93,7 +93,7 @@ export const SidebarEnd = (props: BoxProps) => {
   )
 }
 
-const MobileMenuButton = chakra("button", {
+const MobileMenuButton = agniflow("button", {
   base: {
     display: "flex",
     px: "4",

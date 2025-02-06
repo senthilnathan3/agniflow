@@ -1,5 +1,5 @@
 import * as Playground from "@/components/playground"
-import { Container, HStack, SimpleGrid } from "@chakra-ui/react"
+import { Container, HStack, SimpleGrid } from "@agniflow-ui/react"
 import { AccordionBasic } from "compositions/examples/accordion-basic"
 import { AccordionWithIcon } from "compositions/examples/accordion-with-icon"
 import { AlertWithSpinner } from "compositions/examples/alert-with-spinner"

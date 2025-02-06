@@ -2,7 +2,7 @@
 
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SystemStyleObject,
   chakra,
 } from "../../styled-system"
@@ -20,7 +20,7 @@ export interface GridOptions {
 }
 
 export interface GridProps
-  extends Omit<HTMLChakraProps<"div">, keyof GridOptions>,
+  extends Omit<HTMLAgniflowProps<"div">, keyof GridOptions>,
     GridOptions {}
 
 export const Grid = forwardRef<HTMLDivElement, GridProps>(

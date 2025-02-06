@@ -1,10 +1,10 @@
 "use client"
 
 import { forwardRef } from "react"
-import { type HTMLChakraProps, chakra } from "../styled-system"
+import { type HTMLAgniflowProps, chakra } from "../styled-system"
 import { cx } from "../utils"
 
-export interface ThemeProps extends HTMLChakraProps<"div"> {
+export interface ThemeProps extends HTMLAgniflowProps<"div"> {
   /**
    * The appearance of the theme.
    */

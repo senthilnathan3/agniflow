@@ -1,6 +1,6 @@
 "use client"
 
-import { For, SegmentGroup } from "@chakra-ui/react"
+import { For, SegmentGroup } from "@agniflow-ui/react"
 import * as React from "react"
 
 interface Item {

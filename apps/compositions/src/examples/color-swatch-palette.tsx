@@ -1,4 +1,4 @@
-import { ColorSwatch, Group } from "@chakra-ui/react"
+import { ColorSwatch, Group } from "@agniflow-ui/react"
 
 export const ColorSwatchPalette = () => {
   return (

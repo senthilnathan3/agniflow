@@ -3,7 +3,7 @@
 import type { Assign } from "@ark-ui/react"
 import { PinInput as ArkPinInput } from "@ark-ui/react/pin-input"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   createSlotRecipeContext,
@@ -30,7 +30,7 @@ export interface PinInputRootProviderBaseProps
     UnstyledProp {}
 
 export interface PinInputRootProviderProps
-  extends HTMLChakraProps<"div", PinInputRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", PinInputRootProviderBaseProps> {}
 
 export const PinInputRootProvider = withProvider<
   HTMLDivElement,
@@ -44,7 +44,7 @@ export interface PinInputRootBaseProps
     UnstyledProp {}
 
 export interface PinInputRootProps
-  extends HTMLChakraProps<"div", PinInputRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", PinInputRootBaseProps> {}
 
 export const PinInputRoot = withProvider<HTMLDivElement, PinInputRootProps>(
   ArkPinInput.Root,
@@ -60,7 +60,7 @@ export const PinInputPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface PinInputControlProps
-  extends HTMLChakraProps<"div", ArkPinInput.ControlBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkPinInput.ControlBaseProps> {}
 
 export const PinInputControl = withContext<
   HTMLDivElement,
@@ -70,7 +70,7 @@ export const PinInputControl = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface PinInputInputProps
-  extends HTMLChakraProps<"input", ArkPinInput.InputBaseProps> {}
+  extends HTMLAgniflowProps<"input", ArkPinInput.InputBaseProps> {}
 
 export const PinInputInput = withContext<HTMLInputElement, PinInputInputProps>(
   ArkPinInput.Input,
@@ -80,7 +80,7 @@ export const PinInputInput = withContext<HTMLInputElement, PinInputInputProps>(
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface PinInputLabelProps extends HTMLChakraProps<"label"> {}
+export interface PinInputLabelProps extends HTMLAgniflowProps<"label"> {}
 
 export const PinInputLabel = withContext<HTMLLabelElement, PinInputLabelProps>(
   ArkPinInput.Label,

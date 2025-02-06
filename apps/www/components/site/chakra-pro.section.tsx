@@ -12,7 +12,7 @@ import {
   Image,
   Span,
   Stack,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { HiArrowRight } from "react-icons/hi"
 
 const Logo = () => (
@@ -31,7 +31,7 @@ const Logo = () => (
   </Center>
 )
 
-export const ChakraProSection = () => {
+export const AgniflowProSection = () => {
   return (
     <Box py="20">
       <Stack
@@ -63,7 +63,7 @@ export const ChakraProSection = () => {
                   maxW={{ md: "lg" }}
                   flexShrink="0"
                 >
-                  Build even faster with Chakra Pro 💎
+                  Build even faster with Agniflow Pro 💎
                 </HighlightHeading>
 
                 <Subheading maxW={{ md: "md" }} hideBelow="md">
@@ -75,7 +75,7 @@ export const ChakraProSection = () => {
                   <a
                     target="_blank"
                     rel="noopener"
-                    href="https://pro.chakra-ui.com/?utm_source=chakra-ui.com&utm_medium=homepage-ad"
+                    href="https://pro.agniflow-ui.com/?utm_source=agniflow-ui.com&utm_medium=homepage-ad"
                   >
                     Explore Templates
                     <HiArrowRight />
@@ -85,7 +85,7 @@ export const ChakraProSection = () => {
             </Stack>
           </Container>
         </Stack>
-        <Image src="/chakra-ui-ad.png" alt="Chakra UI Pro" mb="-4" />
+        <Image src="/agniflow-ui-ad.png" alt="Agniflow UI Pro" mb="-4" />
       </Stack>
     </Box>
   )

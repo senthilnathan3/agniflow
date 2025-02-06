@@ -1,4 +1,4 @@
-import { For, Stack, Text } from "@chakra-ui/react"
+import { For, Stack, Text } from "@agniflow-ui/react"
 
 export const TokensTextStyles = () => {
   return (
@@ -23,7 +23,7 @@ export const TokensTextStyles = () => {
             <Text textStyle="sm" fontWeight="medium" color="fg.muted">
               textStyle: {textStyle}
             </Text>
-            <Text textStyle={textStyle}>Chakra UI</Text>
+            <Text textStyle={textStyle}>Agniflow UI</Text>
           </Stack>
         )}
       </For>

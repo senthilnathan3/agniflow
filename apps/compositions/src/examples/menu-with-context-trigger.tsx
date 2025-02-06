@@ -1,4 +1,4 @@
-import { Center } from "@chakra-ui/react"
+import { Center } from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuContextTrigger,

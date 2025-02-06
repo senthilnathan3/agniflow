@@ -1,4 +1,4 @@
-import { HStack } from "@chakra-ui/react"
+import { HStack } from "@agniflow-ui/react"
 import { SegmentedControl } from "compositions/ui/segmented-control"
 import { LuGrid2X2, LuList, LuTable } from "react-icons/lu"
 

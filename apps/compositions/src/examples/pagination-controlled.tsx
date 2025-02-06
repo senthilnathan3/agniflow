@@ -1,6 +1,6 @@
 "use client"
 
-import { HStack } from "@chakra-ui/react"
+import { HStack } from "@agniflow-ui/react"
 import {
   PaginationItems,
   PaginationNextTrigger,

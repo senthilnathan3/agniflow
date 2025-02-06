@@ -8,13 +8,13 @@ import { TypegenCommand } from "./commands/typegen.js"
 process.setMaxListeners(Infinity)
 
 const req = createRequire(import.meta.url)
-const packageJson = req("@chakra-ui/cli/package.json")
+const packageJson = req("@agniflow-ui/cli/package.json")
 
 export async function run() {
-  p.intro("Chakra CLI ⚡️")
+  p.intro("agniflow CLI ⚡️")
   const program = new Command()
     .name("chakra-ui")
-    .description("The official CLI for Chakra UI projects")
+    .description("The official CLI for agniflow UI projects")
     .version(packageJson.version)
 
   program

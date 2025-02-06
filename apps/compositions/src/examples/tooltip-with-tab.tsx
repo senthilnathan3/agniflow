@@ -1,4 +1,4 @@
-import { Tabs } from "@chakra-ui/react"
+import { Tabs } from "@agniflow-ui/react"
 import { Tooltip } from "compositions/ui/tooltip"
 import { LuFolder, LuSquareCheck, LuUser } from "react-icons/lu"
 

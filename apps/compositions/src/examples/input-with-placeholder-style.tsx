@@ -1,4 +1,4 @@
-import { Input } from "@chakra-ui/react"
+import { Input } from "@agniflow-ui/react"
 
 export const InputWithPlaceholderStyle = () => {
   return (

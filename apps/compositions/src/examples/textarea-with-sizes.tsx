@@ -1,4 +1,4 @@
-import { Stack, Textarea } from "@chakra-ui/react"
+import { Stack, Textarea } from "@agniflow-ui/react"
 
 export const TextareaWithSizes = () => {
   return (

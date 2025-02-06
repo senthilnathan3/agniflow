@@ -1,4 +1,4 @@
-import { HStack } from "@chakra-ui/react"
+import { HStack } from "@agniflow-ui/react"
 import { Switch } from "compositions/ui/switch"
 
 export const SwitchWithSizes = () => {

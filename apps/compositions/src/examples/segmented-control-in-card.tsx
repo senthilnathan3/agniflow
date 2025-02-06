@@ -1,4 +1,4 @@
-import { Button, Card, Heading } from "@chakra-ui/react"
+import { Button, Card, Heading } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 import { SegmentedControl } from "compositions/ui/segmented-control"
 import { LuSearch } from "react-icons/lu"

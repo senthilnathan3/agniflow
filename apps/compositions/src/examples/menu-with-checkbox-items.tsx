@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, useCheckboxGroup } from "@chakra-ui/react"
+import { Button, useCheckboxGroup } from "@agniflow-ui/react"
 import {
   MenuCheckboxItem,
   MenuContent,

@@ -11,7 +11,7 @@ import {
   Span,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { Blob } from "./blob"
 import {
   GoldSponsorIcon,
@@ -30,7 +30,7 @@ const CallToActions = () => (
       size="lg"
       _icon={{ height: "5", width: "auto" }}
     >
-      <a href="https://opencollective.com/chakra-ui">
+      <a href="https://opencollective.com/agniflow-ui">
         <OpenCollective />
         Sponsor
       </a>
@@ -134,7 +134,7 @@ const TierHeading = (props: { tier: string; icon: React.ElementType }) => {
 
 const SponsorsList = async () => {
   const response = await fetch(
-    "https://opencollective.com/chakra-ui/members/all.json",
+    "https://opencollective.com/agniflow-ui/members/all.json",
   )
 
   const allSponsors: Sponsor[] = await response.json()
@@ -195,7 +195,7 @@ export const SponsorSection = () => {
             <Stack gap="6" mt="4">
               <Text textStyle="xl" maxW={{ lg: "lg" }}>
                 Our maintainers devote their time, effort, and heart to ensure
-                Chakra UI keeps getting better.{" "}
+                Agniflow UI keeps getting better.{" "}
                 <Span color="fg.muted">
                   Support us by donating to our collective 🙏
                 </Span>

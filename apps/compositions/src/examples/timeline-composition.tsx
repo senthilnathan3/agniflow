@@ -1,4 +1,4 @@
-import { Button, Card, Icon, Input, Span } from "@chakra-ui/react"
+import { Button, Card, Icon, Input, Span } from "@agniflow-ui/react"
 import { Avatar } from "compositions/ui/avatar"
 import {
   TimelineConnector,

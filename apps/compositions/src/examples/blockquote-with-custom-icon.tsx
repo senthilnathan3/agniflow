@@ -1,4 +1,4 @@
-import { Circle, Float } from "@chakra-ui/react"
+import { Circle, Float } from "@agniflow-ui/react"
 import { Blockquote } from "compositions/ui/blockquote"
 import { LuQuote } from "react-icons/lu"
 

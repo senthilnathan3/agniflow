@@ -10,7 +10,7 @@ import {
 import type { JSX } from "react"
 import { forwardRef } from "react"
 import {
-  type HTMLChakraProps,
+  type HTMLAgniflowProps,
   type SlotRecipeProps,
   type UnstyledProp,
   chakra,
@@ -39,7 +39,7 @@ export interface RadioCardRootProviderBaseProps
     UnstyledProp {}
 
 export interface RadioCardRootProviderProps
-  extends HTMLChakraProps<"div", RadioCardRootProviderBaseProps> {}
+  extends HTMLAgniflowProps<"div", RadioCardRootProviderBaseProps> {}
 
 export const RadioCardRootProvider = withProvider<
   HTMLDivElement,
@@ -53,7 +53,7 @@ export interface RadioCardRootBaseProps
     UnstyledProp {}
 
 export interface RadioCardRootProps
-  extends HTMLChakraProps<"div", RadioCardRootBaseProps> {}
+  extends HTMLAgniflowProps<"div", RadioCardRootBaseProps> {}
 
 export const RadioCardRoot = withProvider<HTMLDivElement, RadioCardRootProps>(
   ArkRadioGroup.Root,
@@ -69,7 +69,7 @@ export const RadioCardPropsProvider =
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RadioCardLabelProps
-  extends HTMLChakraProps<"div", ArkRadioGroup.LabelBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRadioGroup.LabelBaseProps> {}
 
 export const RadioCardLabel = withContext<HTMLDivElement, RadioCardLabelProps>(
   ArkRadioGroup.Label,
@@ -80,7 +80,7 @@ export const RadioCardLabel = withContext<HTMLDivElement, RadioCardLabelProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RadioCardItemProps
-  extends HTMLChakraProps<"div", ArkRadioGroup.ItemBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRadioGroup.ItemBaseProps> {}
 
 export const RadioCardItem = withContext<HTMLDivElement, RadioCardItemProps>(
   ArkRadioGroup.Item,
@@ -91,7 +91,7 @@ export const RadioCardItem = withContext<HTMLDivElement, RadioCardItemProps>(
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RadioCardItemTextProps
-  extends HTMLChakraProps<"span", ArkRadioGroup.ItemTextBaseProps> {}
+  extends HTMLAgniflowProps<"span", ArkRadioGroup.ItemTextBaseProps> {}
 
 export const RadioCardItemText = withContext<
   HTMLSpanElement,
@@ -100,7 +100,8 @@ export const RadioCardItemText = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface RadioCardItemDescriptionProps extends HTMLChakraProps<"div"> {}
+export interface RadioCardItemDescriptionProps
+  extends HTMLAgniflowProps<"div"> {}
 
 export const RadioCardItemDescription = withContext<
   HTMLSpanElement,
@@ -110,7 +111,7 @@ export const RadioCardItemDescription = withContext<
 ////////////////////////////////////////////////////////////////////////////////////
 
 export interface RadioCardItemControlProps
-  extends HTMLChakraProps<"div", ArkRadioGroup.ItemControlBaseProps> {}
+  extends HTMLAgniflowProps<"div", ArkRadioGroup.ItemControlBaseProps> {}
 
 export const RadioCardItemControl = withContext<
   HTMLDivElement,
@@ -119,7 +120,7 @@ export const RadioCardItemControl = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface RadioCardItemContentProps extends HTMLChakraProps<"div"> {}
+export interface RadioCardItemContentProps extends HTMLAgniflowProps<"div"> {}
 
 export const RadioCardItemContent = withContext<
   HTMLDivElement,
@@ -128,7 +129,7 @@ export const RadioCardItemContent = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface RadioCardItemAddonProps extends HTMLChakraProps<"div"> {}
+export interface RadioCardItemAddonProps extends HTMLAgniflowProps<"div"> {}
 
 export const RadioCardItemAddon = withContext<
   HTMLElement,
@@ -137,7 +138,7 @@ export const RadioCardItemAddon = withContext<
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export interface RadioCardItemIndicatorProps extends HTMLChakraProps<"span"> {
+export interface RadioCardItemIndicatorProps extends HTMLAgniflowProps<"span"> {
   checked?: React.ReactElement
 }
 

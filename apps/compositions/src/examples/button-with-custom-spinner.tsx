@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react"
+import { Button } from "@agniflow-ui/react"
 import { BeatLoader } from "react-spinners"
 
 export const ButtonWithCustomSpinner = () => {

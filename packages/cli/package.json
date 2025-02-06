@@ -1,18 +1,16 @@
 {
-  "name": "@chakra-ui/cli",
-  "version": "3.7.0",
+  "name": "@agniflow-ui/cli",
+  "version": "0.0.1",
   "description": "Generate theme typings for autocomplete",
   "keywords": [
     "theme",
     "theming",
     "typings",
     "generator",
-    "chakra-ui",
+    "agniflow-ui",
     "typegen",
     "theme"
   ],
-  "author": "Segun Adebayo <sage@adebayosegun.com>",
-  "homepage": "https://github.com/chakra-ui/chakra-ui#readme",
   "license": "MIT",
   "type": "module",
   "main": "dist/esm/index.js",
@@ -28,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chakra-ui/chakra-ui.git"
+    "url": "git+https://github.com/agniflow-ui/agniflow-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/chakra-ui/chakra-ui/issues"
+    "url": "https://github.com/agniflow-ui/agniflow-ui/issues"
   },
   "bin": {
-    "chakra": "bin/index.js"
+    "agniflow": "bin/index.js"
   },
   "scripts": {
     "prepack": "tsx ../../scripts/conditions.ts",
@@ -67,10 +65,10 @@
     "zod": "^3.23.8"
   },
   "peerDependencies": {
-    "@chakra-ui/react": ">=3.0.0-next.0"
+    "@agniflow-ui/react": ">=0.0.1"
   },
   "devDependencies": {
-    "@chakra-ui/react": "workspace:*"
+    "@agniflow-ui/react": "workspace:*"
   },
   "exports": {
     ".": {

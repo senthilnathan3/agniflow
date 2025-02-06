@@ -1,5 +1,5 @@
-import type { MenuItemProps } from "@chakra-ui/react"
-import { Button } from "@chakra-ui/react"
+import type { MenuItemProps } from "@agniflow-ui/react"
+import { Button } from "@agniflow-ui/react"
 import {
   MenuContent,
   MenuItem,

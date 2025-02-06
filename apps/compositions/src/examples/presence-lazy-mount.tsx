@@ -7,7 +7,7 @@ import {
   Presence,
   Stack,
   useDisclosure,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 
 export const PresenceLazyMount = () => {
   const { open, onToggle } = useDisclosure()

@@ -1,7 +1,7 @@
 import { defineRecipe } from "../def"
 
 export const separatorRecipe = defineRecipe({
-  className: "separator",
+  className: "chakra-separator",
   base: {
     display: "block",
     borderColor: "border",
@@ -20,11 +20,9 @@ export const separatorRecipe = defineRecipe({
     },
     orientation: {
       vertical: {
-        height: "100%",
         borderInlineStartWidth: "var(--separator-thickness)",
       },
       horizontal: {
-        width: "100%",
         borderTopWidth: "var(--separator-thickness)",
       },
     },

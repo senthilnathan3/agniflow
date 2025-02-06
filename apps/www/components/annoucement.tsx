@@ -1,8 +1,8 @@
 "use client"
 
-import { chakra } from "@chakra-ui/react"
+import { agniflow } from "@agniflow-ui/react"
 
-export const Annoucement = chakra("div", {
+export const Annoucement = agniflow("div", {
   base: {
     display: "inline-flex",
     alignItems: "center",

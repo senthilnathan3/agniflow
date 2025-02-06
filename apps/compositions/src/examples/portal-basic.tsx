@@ -1,4 +1,4 @@
-import { Portal } from "@chakra-ui/react"
+import { Portal } from "@agniflow-ui/react"
 
 export default {
   title: "Components / Portal",

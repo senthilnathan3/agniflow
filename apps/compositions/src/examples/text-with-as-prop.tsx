@@ -1,4 +1,4 @@
-import { Code, Stack, Text } from "@chakra-ui/react"
+import { Code, Stack, Text } from "@agniflow-ui/react"
 
 export const TextWithAsProp = () => {
   return (

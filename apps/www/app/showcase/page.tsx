@@ -6,7 +6,7 @@ import {
   Heading,
   SimpleGrid,
   Stack,
-} from "@chakra-ui/react"
+} from "@agniflow-ui/react"
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
@@ -14,7 +14,8 @@ import { showcases } from ".velite"
 
 export const metadata: Metadata = {
   title: "Showcase",
-  description: "A collection of beautiful websites that are built in Chakra UI",
+  description:
+    "A collection of beautiful websites that are built in Agniflow UI",
   openGraph: {
     images: `/og?title=Showcase`,
   },
@@ -29,7 +30,7 @@ export default function ShowcasePage() {
             <Heading as="h1" textStyle={{ base: "4xl", md: "5xl" }}>
               Showcase
             </Heading>
-            <Subheading>Beautiful websites built with Chakra UI</Subheading>
+            <Subheading>Beautiful websites built with Agniflow UI</Subheading>
           </Stack>
         </Stack>
 

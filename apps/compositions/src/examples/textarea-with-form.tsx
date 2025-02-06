@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Stack, Textarea } from "@chakra-ui/react"
+import { Button, Stack, Textarea } from "@agniflow-ui/react"
 import { Field } from "compositions/ui/field"
 
 export const TextareaWithForm = () => {
